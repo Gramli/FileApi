@@ -24,7 +24,7 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildUploadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapPost("file/upload",
-                async (IFormFileCollection files, [FromServices]IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
+                async (IFormFileCollection files, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
                         .Produces<bool>()
                         .WithName("AddFiles")
