@@ -1,5 +1,5 @@
 ﻿using File.Core.Abstractions;
-using File.Domain.Abstractions;
+using File.Domain.Dtos;
 
 namespace File.API.Extensions
 {
@@ -11,12 +11,12 @@ namespace File.API.Extensions
             return Results.Json(response.Data, statusCode: (int)response.StatusCode);
         }
 
-        internal static async Task<IResult> GetFileAsync<TResponse, TRequest>(this IRequestHandler<TResponse, TRequest> requestHandler, TRequest request, CancellationToken cancellationToken) where TResponse : IFile
+        internal static async Task<IResult> GetFileAsync<TResponse, TRequest>(this IRequestHandler<TResponse, TRequest> requestHandler, TRequest request, CancellationToken cancellationToken) where TResponse : FileDto
         {
             var response = await requestHandler.HandleAsync(request, cancellationToken);
             if(response.Data is not null)
             {
-                return Results.File(await response.Data.GetData(), response.Data.ContentType, response.Data.Name);
+                return Results.File(response.Data.Data, response.Data.ContentType, response.Data.Name);
             }
             return Results.NotFound();
         }

@@ -6,7 +6,7 @@ namespace File.Core.Abstractions
 {
     public interface IFileQueriesRepository
     {
-        IFile GetFile(DownloadFileQuery downloadFileQuery);
-        IEnumerable<FileDto> GetFilesInfo();
+        FileDto GetFile(DownloadFileQuery downloadFileQuery, CancellationToken cancellationToken);
+        IEnumerable<FileInfoDto> GetFilesInfo(CancellationToken cancellationToken);
     }
 }
