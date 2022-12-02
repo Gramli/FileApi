@@ -11,7 +11,7 @@ namespace File.Core.Queries
         
         }
 
-        public Task<HttpDataResponse<IEnumerable<FileDto>>> HandleAsync(EmptyRequest request, CancellationToken cancellationToken)
+        public Task<HttpDataResponse<IEnumerable<FileInfoDto>>> HandleAsync(EmptyRequest request, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }
