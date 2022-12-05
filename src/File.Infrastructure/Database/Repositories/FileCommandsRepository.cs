@@ -1,13 +1,25 @@
-﻿using File.Core.Abstractions;
-using File.Domain.Abstractions;
+﻿using Ardalis.GuardClauses;
+using File.Core.Abstractions;
+using File.Domain.Dtos;
+using File.Infrastructure.Database.EFContext;
+using File.Infrastructure.Database.EFContext.Entities;
+using Mapster;
 
 namespace File.Infrastructure.Database.Repositories
 {
     internal class FileCommandsRepository : IFileCommandsRepository
     {
-        public Task<int> AddFileAsync(IFile file)
+        private readonly FileContext _context;
+        public FileCommandsRepository(FileContext fileContext)
         {
-            throw new NotImplementedException();
+            _context = Guard.Against.Null(fileContext);
+        }
+        public async Task<int> AddFileAsync(FileDto fileDto, CancellationToken cancellationToken)
+        {
+            var fileEntity = fileDto.Adapt<FileEntity>();
+            await _context.Files.AddAsync(fileEntity);
+            await _context.SaveChangesAsync(cancellationToken);
+            return fileEntity.Id;
         }
     }
 }

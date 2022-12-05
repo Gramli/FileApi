@@ -3,30 +3,28 @@ using File.Core.Abstractions;
 using File.Domain.Dtos;
 using File.Domain.Queries;
 using File.Infrastructure.Database.EFContext;
-using MapsterMapper;
+using Mapster;
 using Microsoft.EntityFrameworkCore;
 
 namespace File.Infrastructure.Database.Repositories
 {
     internal class FileQueriesRepository : IFileQueriesRepository
     {
-        private readonly IMapper _mapper;
         private readonly FileContext _context;
-        public FileQueriesRepository(FileContext fileContext, IMapper mapper)
+        public FileQueriesRepository(FileContext fileContext)
         {
             _context = Guard.Against.Null(fileContext);
-            _mapper = Guard.Against.Null(mapper);
         }
 
-        public FileDto GetFile(DownloadFileQuery downloadFileQuery, CancellationToken cancellationToken)
+        public async Task<FileDto> GetFile(DownloadFileQuery downloadFileQuery, CancellationToken cancellationToken)
         {
-            var file = _context.Files.FirstAsync(x => x.Id.Equals(downloadFileQuery.Id), cancellationToken);
-            return _mapper.Map<FileDto>(file);
+            var file = await _context.Files.FirstAsync(x => x.Id.Equals(downloadFileQuery.Id), cancellationToken);
+            return file.Adapt<FileDto>();
         }
 
-        public IEnumerable<FileInfoDto> GetFilesInfo(CancellationToken cancellationToken)
+        public async Task<IEnumerable<FileInfoDto>> GetFilesInfo(CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return await _context.Files.ProjectToType<FileInfoDto>().ToListAsync(cancellationToken);
         }
     }
 }

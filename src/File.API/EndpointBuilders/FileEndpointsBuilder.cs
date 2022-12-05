@@ -17,7 +17,8 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder
                 .BuildUploadEndpoints()
                 .BuildDownloadEndpoints()
-                .BuildGetEndpoints();
+                .BuildGetEndpoints()
+                .BuildParseEndpoints();
             return endpointRouteBuilder;
         }
 
@@ -38,8 +39,8 @@ namespace File.API.EndpointBuilders
                 async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new DownloadFileQuery(id), cancellationToken))
                         .Produces<FileContentHttpResult>()
-                        .WithName("AddFiles")
-                        .WithTags("Add");
+                        .WithName("DownloadFile")
+                        .WithTags("Get");
             return endpointRouteBuilder;
         }
 
@@ -49,8 +50,19 @@ namespace File.API.EndpointBuilders
                 async (int id, [FromServices] IGetFilesInfoQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(EmptyRequest.Instance, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
-                        .WithName("AddFiles")
-                        .WithTags("Add");
+                        .WithName("GetFilesInfo")
+                        .WithTags("Get");
+            return endpointRouteBuilder;
+        }
+
+        private static IEndpointRouteBuilder BuildParseEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
+        {
+            endpointRouteBuilder.MapPut("file/parse",
+                async ([AsParameters]ParseFileQuery parseFileQuery,[FromServices] IParseFileQueryHandler handler, CancellationToken cancellationToken) =>
+                    await handler.SendAsync(parseFileQuery, cancellationToken))
+                        .Produces<IEnumerable<FileInfoDto>>()
+                        .WithName("ParseFile")
+                        .WithTags("Put");
             return endpointRouteBuilder;
         }
     }

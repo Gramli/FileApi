@@ -1,8 +1,8 @@
 using File.API.Configuration;
+using File.API.Extensions;
 using File.API.Middlewares;
 using File.Core.Configuration;
 using File.Infrastructure.Configuration;
-using Microsoft.AspNetCore.StaticFiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +13,9 @@ builder.Services.AddCore();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-new FileExtensionContentTypeProvider
-
 var app = builder.Build();
+
+app.AddCustomContentTypes();
 
 if (app.Environment.IsDevelopment())
 {
