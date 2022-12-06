@@ -11,18 +11,15 @@ namespace File.Core.Validation
         public AddFileCommandSpecificationHolder()
         {
             Specification<IFile> fileSpecification = f => f
-            .Member(m => m.Name, m => m.Rule(GeneralPredicates.isValidString))
-            .Member(m => m.FileName, m => m
-                    .Rule(GeneralPredicates.isValidString)
-                    .Rule(GeneralPredicates.isValidFileName));
-            //.Member(m=>m.ContentType,)
-            //.Member(m=>m.Length, ;
+                .Member(m => m.Name, m => m.Rule(GeneralPredicates.isValidString))
+                .Member(m => m.FileName, m => m
+                        .Rule(GeneralPredicates.isValidString)
+                        .Rule(GeneralPredicates.isValidFileName));
 
-            //Specification<AddFilesCommand> addFileCommandSpecification = s => s
-            //    .Member(m => m.Files, );
+            Specification<AddFilesCommand> addFileCommandSpecification = s => s
+                .Member(m => m.Files, m => m.AsCollection(fileSpecification));
 
-            //Specification = addFileCommandSpecification;
-            //TODO VALIDATION WITH OPTIONS?
+            Specification = addFileCommandSpecification;
         }
     }
 }
