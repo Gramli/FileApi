@@ -1,5 +1,4 @@
-﻿using File.Domain.Abstractions;
-using File.Domain.Dtos;
+﻿using File.Domain.Dtos;
 
 namespace File.Core.Abstractions
 {
