@@ -1,4 +1,5 @@
 using File.API.Configuration;
+using File.API.EndpointBuilders;
 using File.API.Extensions;
 using File.API.Middlewares;
 using File.Core.Configuration;
@@ -8,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.AddLogging();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddCore();
+builder.Services.AddCore(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,5 +27,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseMiddleware<ExceptionMiddleware>();
+app.BuildWeatherEndpoints();
 
 app.Run();
