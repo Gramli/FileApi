@@ -1,6 +1,7 @@
 ﻿using File.Core.Abstractions;
 using File.Core.Commands;
 using File.Core.Extensions;
+using File.Core.Queries;
 using File.Core.Validation;
 using File.Domain.Commands;
 using File.Domain.Options;
@@ -24,7 +25,8 @@ namespace File.Core.Configuration
         private static IServiceCollection AddCommandHandlers(this IServiceCollection serviceCollection)
         {
             return serviceCollection
-                .AddScoped<IAddFilesCommandHandler, AddFilesCommandHandler>();
+                .AddScoped<IAddFilesCommandHandler, AddFilesCommandHandler>()
+                .AddScoped<IGetFilesInfoQueryHandler, GetFilesInfoQueryHandler>();
         }
 
         private static IServiceCollection AddValidation(this IServiceCollection serviceCollection)

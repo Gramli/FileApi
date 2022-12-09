@@ -1,19 +1,23 @@
-﻿using File.Core.Abstractions;
+﻿using Ardalis.GuardClauses;
+using File.Core.Abstractions;
 using File.Domain.Dtos;
+using File.Domain.Extensions;
 using File.Domain.Http;
 
 namespace File.Core.Queries
 {
     internal class GetFilesInfoQueryHandler : IGetFilesInfoQueryHandler
     {
-        public GetFilesInfoQueryHandler() 
+        private readonly IFileQueriesRepository _fileQueriesRepository;
+        public GetFilesInfoQueryHandler(IFileQueriesRepository fileQueriesRepository) 
         { 
-        
+            _fileQueriesRepository = Guard.Against.Null(fileQueriesRepository);
         }
 
-        public Task<HttpDataResponse<IEnumerable<FileInfoDto>>> HandleAsync(EmptyRequest request, CancellationToken cancellationToken)
+        public async Task<HttpDataResponse<IEnumerable<FileInfoDto>>> HandleAsync(EmptyRequest request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var filesInfo = await _fileQueriesRepository.GetFilesInfo(cancellationToken);
+            return HttpDataResponses.AsOK(filesInfo);
         }
     }
 }

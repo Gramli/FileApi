@@ -47,7 +47,7 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildGetEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapGet("file/files-info",
-                async (int id, [FromServices] IGetFilesInfoQueryHandler handler, CancellationToken cancellationToken) =>
+                async ([FromServices] IGetFilesInfoQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(EmptyRequest.Instance, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
                         .WithName("GetFilesInfo")
