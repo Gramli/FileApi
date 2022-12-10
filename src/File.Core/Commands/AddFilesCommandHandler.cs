@@ -15,12 +15,12 @@ namespace File.Core.Commands
     {
         private readonly IAddFilesCommandValidator _addFilesCommandValidator;
         private readonly IFileCommandsRepository _fileCommandsRepository;
-        private readonly ILogger<AddFilesCommandHandler> _logger;
+        private readonly ILogger<IAddFilesCommandHandler> _logger;
 
         public AddFilesCommandHandler(
             IAddFilesCommandValidator addFilesCommandValidator, 
             IFileCommandsRepository fileCommandsRepository, 
-            ILogger<AddFilesCommandHandler> logger)
+            ILogger<IAddFilesCommandHandler> logger)
         {
             _addFilesCommandValidator = Guard.Against.Null(addFilesCommandValidator);
             _fileCommandsRepository = Guard.Against.Null(fileCommandsRepository);

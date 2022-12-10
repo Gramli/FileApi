@@ -16,7 +16,7 @@ namespace File.API.Extensions
             var response = await requestHandler.HandleAsync(request, cancellationToken);
             if(response.Data is not null)
             {
-                return Results.File(response.Data.Data, response.Data.ContentType, response.Data.Name);
+                return Results.File(response.Data.Data, response.Data.ContentType, response.Data.FileName);
             }
             return Results.NotFound();
         }

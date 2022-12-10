@@ -10,5 +10,12 @@
         public static readonly int AddFileStreamError = 2100;
 
         public static readonly int AddFileDatabaseError = 2200;
+
+        //Get File
+        public static readonly int GetFileGeneralError = 3000;
+
+        public static readonly int GetFileStreamError = 3100;
+
+        public static readonly int GetFileValidationError = 3200;
     }
 }

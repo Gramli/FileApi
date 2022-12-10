@@ -5,6 +5,7 @@ using File.Core.Queries;
 using File.Core.Validation;
 using File.Domain.Commands;
 using File.Domain.Options;
+using File.Domain.Queries;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Validot;
@@ -26,14 +27,16 @@ namespace File.Core.Configuration
         {
             return serviceCollection
                 .AddScoped<IAddFilesCommandHandler, AddFilesCommandHandler>()
-                .AddScoped<IGetFilesInfoQueryHandler, GetFilesInfoQueryHandler>();
+                .AddScoped<IGetFilesInfoQueryHandler, GetFilesInfoQueryHandler>()
+                .AddScoped<IDownloadFileQueryHandler, DownloadFileQueryHandler>();
         }
 
         private static IServiceCollection AddValidation(this IServiceCollection serviceCollection)
         {
             return serviceCollection
                 .AddScoped<IAddFilesCommandValidator, AddFilesCommandValidator>()
-                .AddValidotSingleton<IValidator<AddFilesCommand>, AddFileCommandSpecificationHolder, AddFilesCommand>();
+                .AddValidotSingleton<IValidator<AddFilesCommand>, AddFileCommandSpecificationHolder, AddFilesCommand>()
+                .AddValidotSingleton<IValidator<DownloadFileQuery>, DownloadFileQuerySpecificationHolder, DownloadFileQuery>();
         }
     }
 }
