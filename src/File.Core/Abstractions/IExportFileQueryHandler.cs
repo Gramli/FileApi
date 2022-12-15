@@ -3,7 +3,7 @@ using File.Domain.Queries;
 
 namespace File.Core.Abstractions
 {
-    public interface IParseFileQueryHandler : IRequestHandler<FileDto, ParseFileQuery>
+    public interface IExportFileQueryHandler : IRequestHandler<FileDto, ExportFileQuery>
     {
     }
 }

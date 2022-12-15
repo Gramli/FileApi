@@ -1,6 +1,7 @@
 ﻿using File.API.Extensions;
 using File.API.Files;
 using File.Core.Abstractions;
+using File.Core.Queries;
 using File.Domain.Commands;
 using File.Domain.Dtos;
 using File.Domain.Http;
@@ -14,12 +15,12 @@ namespace File.API.EndpointBuilders
     {
         public static IEndpointRouteBuilder BuildWeatherEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder
+            return endpointRouteBuilder
                 .BuildUploadEndpoints()
                 .BuildDownloadEndpoints()
                 .BuildGetEndpoints()
-                .BuildParseEndpoints();
-            return endpointRouteBuilder;
+                .BuildParseEndpoints()
+                .BuildExportEndpoints();
         }
 
         private static IEndpointRouteBuilder BuildUploadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
@@ -29,7 +30,7 @@ namespace File.API.EndpointBuilders
                     await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
                         .Produces<bool>()
                         .WithName("AddFiles")
-                        .WithTags("Add");
+                        .WithTags("Post");
             return endpointRouteBuilder;
         }
 
@@ -57,12 +58,23 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildParseEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapPut("file/parse",
-                async ([AsParameters]ParseFileQuery parseFileQuery,[FromServices] IParseFileQueryHandler handler, CancellationToken cancellationToken) =>
-                    await handler.SendAsync(parseFileQuery, cancellationToken))
+            endpointRouteBuilder.MapGet("file/export",
+                async ([AsParameters]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
+                    await handler.GetFileAsync(parseFileQuery, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
-                        .WithName("ParseFile")
-                        .WithTags("Put");
+                        .WithName("Export")
+                        .WithTags("Get");
+            return endpointRouteBuilder;
+        }
+
+        private static IEndpointRouteBuilder BuildExportEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
+        {
+            endpointRouteBuilder.MapGet("file/convert",
+                async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
+                    await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
+                        .Produces<IEnumerable<FileInfoDto>>()
+                        .WithName("ConvertTo")
+                        .WithTags("Get");
             return endpointRouteBuilder;
         }
     }

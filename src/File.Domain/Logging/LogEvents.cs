@@ -17,5 +17,10 @@
         public static readonly int GetFileStreamError = 3100;
 
         public static readonly int GetFileValidationError = 3200;
+
+        //Export File
+        public static readonly int ExportFileGeneralError = 4000;
+
+        public static readonly int ExportFileValidationError = 4100;
     }
 }
