@@ -1,4 +1,7 @@
-﻿using File.Core.Abstractions;
+﻿using Ardalis.GuardClauses;
+using File.Core.Abstractions;
+using File.Core.Extensions;
+using File.Core.Resources;
 using File.Domain.Dtos;
 using File.Domain.Extensions;
 using File.Domain.Http;
@@ -15,6 +18,20 @@ namespace File.Core.Queries
         private readonly IValidator<ExportFileQuery> _exportFileQueryValidator;
         private readonly IFileQueriesRepository _fileQueriesRepository;
         private readonly ILogger<IExportFileQueryHandler> _logger;
+        private readonly IFileConvertService _fileConvertService;
+
+        public ExportFileQueryHandler(
+            IValidator<ExportFileQuery> exportFileQueryValidator, 
+            IFileQueriesRepository fileQueriesRepository, 
+            ILogger<IExportFileQueryHandler> logger, 
+            IFileConvertService fileConvertService)
+        {
+            _exportFileQueryValidator = Guard.Against.Null(exportFileQueryValidator);
+            _fileQueriesRepository = Guard.Against.Null(fileQueriesRepository);
+            _logger = Guard.Against.Null(logger);
+            _fileConvertService = Guard.Against.Null(fileConvertService);
+        }
+
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ExportFileQuery request, CancellationToken cancellationToken)
         {
             var validationResult = _exportFileQueryValidator.Validate(request);
@@ -26,7 +43,15 @@ namespace File.Core.Queries
 
             var file = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
 
-            throw new NotImplementedException();
+            var exportResult = await _fileConvertService.ExportTo(file, request.Format, cancellationToken);
+
+            if(exportResult.IsFailed)
+            {
+                _logger.LogError(LogEvents.ExportFileGeneralError, exportResult.Errors.JoinToMessage());
+                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Format));
+            }
+
+            return HttpDataResponses.AsOK(await exportResult.Value.CreateFileDto(cancellationToken));
         }
     }
 }

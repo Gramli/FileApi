@@ -6,12 +6,12 @@ namespace File.Core.Queries
     {
         public IFile File { get; init; }
 
-        public string FormatToExport { get; init; } = string.Empty;
+        public string FormatToConvert{ get; init; } = string.Empty;
 
-        public ConvertToQuery(IFile file, string formatToExport)
+        public ConvertToQuery(IFile file, string formatToConvert)
         {
             File = file;
-            FormatToExport = formatToExport;
+            FormatToConvert = formatToConvert;
         }
     }
 }

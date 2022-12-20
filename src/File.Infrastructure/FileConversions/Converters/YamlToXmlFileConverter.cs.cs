@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
-    internal class JsonFileConverter : IFileConverter
+    internal class YamlToXmlFileConverter : IFileConverter
     {
-        public Task<Result<IFile>> Convert(IFile sourceFile)
+        public Task<Result<IFile>> Convert(byte[] sourceFileData, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }

@@ -61,6 +61,24 @@ namespace File.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to convert file: {0} to format {1}.
+        /// </summary>
+        internal static string ConvertFileFailed {
+            get {
+                return ResourceManager.GetString("ConvertFileFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to export file id: {0} to format {1}.
+        /// </summary>
+        internal static string ExportFileFailed {
+            get {
+                return ResourceManager.GetString("ExportFileFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to read file: {0}.
         /// </summary>
         internal static string ReadFileStreamFailed {

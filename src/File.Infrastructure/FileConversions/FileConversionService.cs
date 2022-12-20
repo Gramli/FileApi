@@ -16,9 +16,16 @@ namespace File.Infrastructure.FileConversions
             _fileConverterFactory = Guard.Against.Null(fileConverterFactory);
         }
 
-        public Task<Result<IFile>> ConvertTo(IFile sourceFile, string destinationFormat)
+        public async Task<Result<IFile>> ConvertTo(IFile sourceFile, string destinationFormat, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var converter = _fileConverterFactory.Create(Path.GetExtension(sourceFile.FileName), destinationFormat);
+            return await converter.Convert(await sourceFile.GetData(), cancellationToken);
+        }
+
+        public async Task<Result<IFile>> ExportTo(FileDto sourceFile, string destinationFormat, CancellationToken cancellationToken)
+        {
+            var converter = _fileConverterFactory.Create(Path.GetExtension(sourceFile.FileName), destinationFormat);
+            return await converter.Convert(sourceFile.Data, cancellationToken);
         }
     }
 }

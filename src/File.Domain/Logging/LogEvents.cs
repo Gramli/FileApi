@@ -22,5 +22,8 @@
         public static readonly int ExportFileGeneralError = 4000;
 
         public static readonly int ExportFileValidationError = 4100;
+
+        //Convert File
+        public static readonly int ConvertFileGeneralError = 4000;
     }
 }

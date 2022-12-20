@@ -1,6 +1,7 @@
 ﻿using File.Domain.Abstractions;
 using File.Infrastructure.Abstractions;
 using FluentResults;
+using LunarLabs.Parser.YAML;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
-    internal class XmlFileConverter : IFileConverter
+    internal class JsonToYamlFileConverter : IFileConverter
     {
-        public Task<Result<IFile>> Convert(IFile sourceFile)
+        public Task<Result<IFile>> Convert(byte[] sourceFileData,, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }
