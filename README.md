@@ -25,6 +25,24 @@ As Minimal API allows to inject handlers into endpoint map methods, I decided to
 
 Instead of throwing exceptions, project use **[Result pattern](https://www.forevolve.com/en/articles/2018/03/19/operation-result/)** (using [FluentResuls package](https://github.com/altmann/FluentResults)) and for returning exact http response, every handler returns data wraped into HttpDataResponse object which contains also error messages collection and http response code.
 
+#### Clean Architecture Layers
+
+Solution contains four layers: 
+* **File.API** - entry point of the application, top layer
+	*  Endpoints
+	*  Middlewares (or Filters)
+	*  API Configuration
+* **File.Infrastructure** - layer for communication with external resources like database, cache, web service.. 
+	*  Repositories Implementation - access to database
+	*  External Services Proxies - proxy classes implementation - to obtain data from external web services
+	*  Infastructure Specific Services - services which are needed to interact with external libraries and frameworks
+* **File.Core** - business logic of the application
+	*  Request Handlers/Managers/.. - business implementation
+	*  Abstractions - besides abstractions for business logic are there abstractions for Infrastructure layer (Service, Repository, ..) to be able use them in this (core) layer
+* **File.Domain** - all what should be shared across all projects
+	* DTOs
+	* General Extensions
+
 #### Horizontal Diagram (references)
 ![Project Clean Architecture Diagram](./doc/img/cleanArchitecture.jpg)
 
