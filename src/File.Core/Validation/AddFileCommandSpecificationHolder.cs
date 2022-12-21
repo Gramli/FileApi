@@ -11,7 +11,6 @@ namespace File.Core.Validation
         public AddFileCommandSpecificationHolder()
         {
             Specification<IFile> fileSpecification = f => f
-                .Member(m => m.Name, m => m.Rule(GeneralPredicates.isValidString))
                 .Member(m => m.FileName, m => m
                         .Rule(GeneralPredicates.isValidString)
                         .Rule(GeneralPredicates.isValidFileName));

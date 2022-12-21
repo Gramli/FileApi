@@ -28,7 +28,9 @@ namespace File.Core.Configuration
             return serviceCollection
                 .AddScoped<IAddFilesCommandHandler, AddFilesCommandHandler>()
                 .AddScoped<IGetFilesInfoQueryHandler, GetFilesInfoQueryHandler>()
-                .AddScoped<IDownloadFileQueryHandler, DownloadFileQueryHandler>();
+                .AddScoped<IDownloadFileQueryHandler, DownloadFileQueryHandler>()
+                .AddScoped<IExportFileQueryHandler, ExportFileQueryHandler>()
+                .AddScoped<IConvertToQueryHandler, ConvertToQueryHandler>();
         }
 
         private static IServiceCollection AddValidation(this IServiceCollection serviceCollection)

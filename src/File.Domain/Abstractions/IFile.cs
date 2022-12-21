@@ -2,7 +2,6 @@
 {
     public interface IFile
     {
-        string Name { get; }
         string FileName { get; }
         string ContentType { get; }
         long Length { get; }

@@ -13,7 +13,7 @@ namespace File.Core.Queries
     internal class ConvertToQueryHandler : IConvertToQueryHandler
     {
         private readonly ILogger<IConvertToQueryHandler> _logger;
-        private IFileConvertService _fileConvertService;
+        private readonly IFileConvertService _fileConvertService;
 
         public ConvertToQueryHandler(ILogger<IConvertToQueryHandler> logger, IFileConvertService fileConvertService)
         {
@@ -23,12 +23,13 @@ namespace File.Core.Queries
 
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ConvertToQuery request, CancellationToken cancellationToken)
         {
-            var convertResult = await _fileConvertService.ConvertTo(request.File, request.FormatToConvert, cancellationToken);
+            //TODO ADD VALIDATION
+            var convertResult = await _fileConvertService.ConvertTo(request.File, request.ExtensionToConvert, cancellationToken);
 
             if(convertResult.IsFailed)
             {
                 _logger.LogError(LogEvents.ConvertFileGeneralError, convertResult.Errors.JoinToMessage());
-                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ConvertFileFailed, request.File.FileName, request.FormatToConvert));
+                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ConvertFileFailed, request.File.FileName, request.ExtensionToConvert));
             }
 
             return HttpDataResponses.AsOK(await convertResult.Value.CreateFileDto(cancellationToken));

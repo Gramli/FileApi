@@ -3,6 +3,6 @@
     public sealed class ExportFileQuery
     {
         public int Id { get; init; }
-        public string Format { get; init; } = string.Empty;
+        public string Extension { get; init; } = string.Empty;
     }
 }

@@ -1,20 +1,17 @@
-﻿using File.Domain.Abstractions;
-using File.Infrastructure.Abstractions;
-using FluentResults;
+﻿using File.Infrastructure.Abstractions;
+using LunarLabs.Parser.JSON;
 using LunarLabs.Parser.YAML;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
     internal class JsonToYamlFileConverter : IFileConverter
     {
-        public Task<Result<IFile>> Convert(byte[] sourceFileData,, CancellationToken cancellationToken)
+        public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var root = JSONReader.ReadFromString(fileContent);
+            cancellationToken.ThrowIfCancellationRequested();
+            var jsonContent = YAMLWriter.WriteToString(root);
+            return Task.FromResult(jsonContent);
         }
     }
 }

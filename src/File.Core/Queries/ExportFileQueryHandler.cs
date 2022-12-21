@@ -43,12 +43,12 @@ namespace File.Core.Queries
 
             var file = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
 
-            var exportResult = await _fileConvertService.ExportTo(file, request.Format, cancellationToken);
+            var exportResult = await _fileConvertService.ExportTo(file, request.Extension, cancellationToken);
 
             if(exportResult.IsFailed)
             {
                 _logger.LogError(LogEvents.ExportFileGeneralError, exportResult.Errors.JoinToMessage());
-                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Format));
+                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Extension));
             }
 
             return HttpDataResponses.AsOK(await exportResult.Value.CreateFileDto(cancellationToken));

@@ -2,6 +2,6 @@
 {
     internal interface IFileConverterFactory
     {
-        IFileConverter Create(string sourceFormat, string destinationFormat);
+        IFileConverter Create(string sourceFormat, string destinationExtension);
     }
 }

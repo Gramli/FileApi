@@ -7,15 +7,12 @@ namespace File.Core.Extensions
     {
         public async static Task<FileDto> CreateFileDto(this IFile file, CancellationToken cancellationToken)
         {
-            var data = await file.GetData(cancellationToken);
-
             return new FileDto
             {
                 ContentType = file.ContentType,
-                Data = data,
-                FileName = file.FileName,
-                Name = file.FileName,
-                Length = data.Length
+                Data = await file.GetData(cancellationToken),
+                FileName = Path.GetFileName(file.FileName),
+                Length = file.Length
             };
         }
     }

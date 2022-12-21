@@ -10,8 +10,6 @@ namespace File.API.Files
 
         public long Length => _formFile.Length;
 
-        public string Name => _formFile.Name;
-
         public string FileName => _formFile.FileName;
 
         public FormFileProxy(IFormFile formFile)
