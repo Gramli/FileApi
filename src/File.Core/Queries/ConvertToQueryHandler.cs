@@ -13,17 +13,24 @@ namespace File.Core.Queries
     internal class ConvertToQueryHandler : IConvertToQueryHandler
     {
         private readonly ILogger<IConvertToQueryHandler> _logger;
+        private readonly IConvertToQueryValidator _convertToQueryValidator;
         private readonly IFileConvertService _fileConvertService;
 
-        public ConvertToQueryHandler(ILogger<IConvertToQueryHandler> logger, IFileConvertService fileConvertService)
+        public ConvertToQueryHandler(ILogger<IConvertToQueryHandler> logger, IFileConvertService fileConvertService, IConvertToQueryValidator convertToQueryValidator)
         {
             _logger = Guard.Against.Null(logger);
             _fileConvertService = Guard.Against.Null(fileConvertService);
+            _convertToQueryValidator = Guard.Against.Null(convertToQueryValidator);
         }
 
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ConvertToQuery request, CancellationToken cancellationToken)
         {
-            //TODO ADD VALIDATION
+            var validationResult = _convertToQueryValidator.Validate(request);
+            if (validationResult.IsFailed)
+            {
+                return HttpDataResponses.AsBadRequest<FileDto>(validationResult.Errors.ToErrorMessages());
+            }
+
             var convertResult = await _fileConvertService.ConvertTo(request.File, request.ExtensionToConvert, cancellationToken);
 
             if(convertResult.IsFailed)

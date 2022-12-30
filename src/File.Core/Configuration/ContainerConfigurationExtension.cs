@@ -37,8 +37,11 @@ namespace File.Core.Configuration
         {
             return serviceCollection
                 .AddScoped<IAddFilesCommandValidator, AddFilesCommandValidator>()
+                .AddScoped<IConvertToQueryValidator, ConvertToQueryValidator>()
+                .AddScoped<IFileByOptionsValidator, FileByOptionsValidator>()
                 .AddValidotSingleton<IValidator<AddFilesCommand>, AddFileCommandSpecificationHolder, AddFilesCommand>()
-                .AddValidotSingleton<IValidator<DownloadFileQuery>, DownloadFileQuerySpecificationHolder, DownloadFileQuery>();
+                .AddValidotSingleton<IValidator<DownloadFileQuery>, DownloadFileQuerySpecificationHolder, DownloadFileQuery>()
+                .AddValidotSingleton<IValidator<ConvertToQuery>, ConvertToQuerySpecificationHolder, ConvertToQuery>();
         }
     }
 }

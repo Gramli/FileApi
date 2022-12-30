@@ -1,5 +1,4 @@
-﻿using File.Domain.Abstractions;
-using File.Domain.Commands;
+﻿using File.Domain.Commands;
 using Validot;
 
 namespace File.Core.Validation
@@ -10,13 +9,8 @@ namespace File.Core.Validation
 
         public AddFileCommandSpecificationHolder()
         {
-            Specification<IFile> fileSpecification = f => f
-                .Member(m => m.FileName, m => m
-                        .Rule(GeneralPredicates.isValidString)
-                        .Rule(GeneralPredicates.isValidFileName));
-
             Specification<AddFilesCommand> addFileCommandSpecification = s => s
-                .Member(m => m.Files, m => m.AsCollection(fileSpecification));
+                .Member(m => m.Files, m => m.AsCollection(GeneralPredicates.fileSpecification));
 
             Specification = addFileCommandSpecification;
         }

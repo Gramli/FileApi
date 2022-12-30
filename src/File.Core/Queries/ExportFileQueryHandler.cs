@@ -34,6 +34,7 @@ namespace File.Core.Queries
 
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ExportFileQuery request, CancellationToken cancellationToken)
         {
+            //TODO IMPLEMENT VALIDATOR
             var validationResult = _exportFileQueryValidator.Validate(request);
             if (validationResult.AnyErrors)
             {

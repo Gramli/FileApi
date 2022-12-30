@@ -1,10 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using File.Core.Abstractions;
-using File.Core.Resources;
 using File.Domain.Commands;
-using File.Domain.Options;
 using FluentResults;
-using Microsoft.Extensions.Options;
 using Validot;
 
 namespace File.Core.Validation
@@ -12,11 +9,11 @@ namespace File.Core.Validation
     internal class AddFilesCommandValidator : IAddFilesCommandValidator
     {
         private readonly IValidator<AddFilesCommand> _addFilesCommandValidator;
-        private readonly IOptions<FilesOptions> _fileOptions;
-        public AddFilesCommandValidator(IValidator<AddFilesCommand> addFilesCommandValidator, IOptions<FilesOptions> fileOptions)
+        private readonly IFileByOptionsValidator _fileByOptionsValidator;
+        public AddFilesCommandValidator(IValidator<AddFilesCommand> addFilesCommandValidator, IFileByOptionsValidator fileByOptionsValidator)
         {
             _addFilesCommandValidator = Guard.Against.Null(addFilesCommandValidator);
-            _fileOptions = Guard.Against.Null(fileOptions);
+            _fileByOptionsValidator = Guard.Against.Null(fileByOptionsValidator);
         }
 
         public Result<bool> Validate(AddFilesCommand addFilesCommand)
@@ -29,15 +26,11 @@ namespace File.Core.Validation
 
             foreach(var file in addFilesCommand.Files)
             {
-                var options = _fileOptions.Value.AllowedFiles.SingleOrDefault(x => x.ContentType.Equals(file.ContentType));
-                if(options is null)
-                {
-                    return Result.Fail(string.Format(ValidationErrorMessages.UnsupportedFormat, file.FileName, file.ContentType));
-                }
+                var fileValidationResult = _fileByOptionsValidator.Validate(file);
 
-                if(file.Length > _fileOptions.Value.MaxFileLength) 
+                if(fileValidationResult.IsFailed)
                 {
-                    return Result.Fail(string.Format(ValidationErrorMessages.MaximalFileSize, file.FileName));
+                    return fileValidationResult;
                 }
             }
 
