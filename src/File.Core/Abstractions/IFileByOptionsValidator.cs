@@ -6,5 +6,6 @@ namespace File.Core.Abstractions
     internal interface IFileByOptionsValidator
     {
         Result<bool> Validate(IFile file);
+        Result<bool> Validate(string extension);
     }
 }

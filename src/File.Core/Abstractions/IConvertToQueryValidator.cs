@@ -5,6 +5,6 @@ namespace File.Core.Abstractions
 {
     public interface IConvertToQueryValidator
     {
-        Result<bool> Validate(ConvertToQuery addFilesCommand);
+        Result<bool> Validate(ConvertToQuery convertToQuery);
     }
 }

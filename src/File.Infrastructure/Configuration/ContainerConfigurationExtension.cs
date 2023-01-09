@@ -14,7 +14,8 @@ namespace File.Infrastructure.Configuration
         public static IServiceCollection AddInfrastructure(this IServiceCollection serviceCollection, IConfiguration configuration)
         {
             return serviceCollection
-                .AddDatabase();
+                .AddDatabase()
+                .AddConversion();
         }
 
         private static IServiceCollection AddConversion(this IServiceCollection serviceCollection)

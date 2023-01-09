@@ -9,19 +9,18 @@ using File.Domain.Logging;
 using File.Domain.Queries;
 using Mapster;
 using Microsoft.Extensions.Logging;
-using Validot;
 
 namespace File.Core.Queries
 {
     internal class ExportFileQueryHandler : IExportFileQueryHandler
     {
-        private readonly IValidator<ExportFileQuery> _exportFileQueryValidator;
+        private readonly IExportFileQueryValidator _exportFileQueryValidator;
         private readonly IFileQueriesRepository _fileQueriesRepository;
         private readonly ILogger<IExportFileQueryHandler> _logger;
         private readonly IFileConvertService _fileConvertService;
 
         public ExportFileQueryHandler(
-            IValidator<ExportFileQuery> exportFileQueryValidator, 
+            IExportFileQueryValidator exportFileQueryValidator, 
             IFileQueriesRepository fileQueriesRepository, 
             ILogger<IExportFileQueryHandler> logger, 
             IFileConvertService fileConvertService)
@@ -34,9 +33,8 @@ namespace File.Core.Queries
 
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ExportFileQuery request, CancellationToken cancellationToken)
         {
-            //TODO IMPLEMENT VALIDATOR
             var validationResult = _exportFileQueryValidator.Validate(request);
-            if (validationResult.AnyErrors)
+            if (validationResult.IsFailed)
             {
                 _logger.LogError(LogEvents.ExportFileValidationError, validationResult.ToString());
                 HttpDataResponses.AsBadRequest<FileDto>(validationResult.ToString());

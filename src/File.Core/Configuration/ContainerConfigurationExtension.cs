@@ -38,10 +38,12 @@ namespace File.Core.Configuration
             return serviceCollection
                 .AddScoped<IAddFilesCommandValidator, AddFilesCommandValidator>()
                 .AddScoped<IConvertToQueryValidator, ConvertToQueryValidator>()
+                .AddScoped<IExportFileQueryValidator, ExportFileQueryValidator>()
                 .AddScoped<IFileByOptionsValidator, FileByOptionsValidator>()
                 .AddValidotSingleton<IValidator<AddFilesCommand>, AddFileCommandSpecificationHolder, AddFilesCommand>()
                 .AddValidotSingleton<IValidator<DownloadFileQuery>, DownloadFileQuerySpecificationHolder, DownloadFileQuery>()
-                .AddValidotSingleton<IValidator<ConvertToQuery>, ConvertToQuerySpecificationHolder, ConvertToQuery>();
+                .AddValidotSingleton<IValidator<ConvertToQuery>, ConvertToQuerySpecificationHolder, ConvertToQuery>()
+                .AddValidotSingleton<IValidator<ExportFileQuery>, ExportFileQuerySpecificationHolder, ExportFileQuery>();
         }
     }
 }

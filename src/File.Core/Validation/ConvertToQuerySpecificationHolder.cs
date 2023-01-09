@@ -10,10 +10,10 @@ namespace File.Core.Validation
 
         public ConvertToQuerySpecificationHolder()
         {
-            Specification<ConvertToQuery> addFileCommandSpecification = s => s
+            Specification<ConvertToQuery> convertToQuerySpecification = s => s
                 .Member(m => m.File, GeneralPredicates.fileSpecification);
 
-            Specification = addFileCommandSpecification;
+            Specification = convertToQuerySpecification;
         }
     }
 }

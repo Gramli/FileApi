@@ -9,7 +9,6 @@ using Microsoft.Extensions.Options;
 
 namespace File.Core.Validation
 {
-    //TODO IMPLEMENT EXTENSION VALIDATION
     internal class FileByOptionsValidator : IFileByOptionsValidator
     {
         private readonly IOptions<FilesOptions> _fileOptions;
@@ -29,6 +28,17 @@ namespace File.Core.Validation
             if (file.Length > _fileOptions.Value.MaxFileLength)
             {
                 return Result.Fail(string.Format(ValidationErrorMessages.MaximalFileSize, file.FileName));
+            }
+
+            return Result.Ok(true);
+        }
+
+        public Result<bool> Validate(string extension)
+        {
+            var options = _fileOptions.Value.AllowedFiles.SingleOrDefault(x => x.Format.Equals(extension));
+            if (options is null)
+            {
+                return Result.Fail(string.Format(ValidationErrorMessages.UnsupportedExtension, extension));
             }
 
             return Result.Ok(true);
