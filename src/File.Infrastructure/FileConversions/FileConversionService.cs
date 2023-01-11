@@ -33,7 +33,7 @@ namespace File.Infrastructure.FileConversions
         {
             var encoding = _encodingFactory.CreateEncoding(data);
 
-            var converter = _fileConverterFactory.Create(Path.GetExtension(fileName), destinationExtension);
+            var converter = _fileConverterFactory.Create(Path.GetExtension(fileName).Substring(1), destinationExtension);
             var convertedContent = await converter.Convert(encoding.GetString(data), cancellationToken);
 
             var convertedData = encoding.GetBytes(convertedContent);

@@ -1,6 +1,6 @@
 ﻿using File.Infrastructure.Abstractions;
-using LunarLabs.Parser.JSON;
-using LunarLabs.Parser.XML;
+using Newtonsoft.Json;
+using System.Xml;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
@@ -8,10 +8,10 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            var root = XMLReader.ReadFromString(fileContent);
-            cancellationToken.ThrowIfCancellationRequested();
-            var jsonContent = JSONWriter.WriteToString(root);
-            return Task.FromResult(jsonContent);
+            var doc = new XmlDocument();
+            doc.LoadXml(fileContent);
+            var jsonText = JsonConvert.SerializeXmlNode(doc);
+            return Task.FromResult(jsonText);
         }
     }
 }

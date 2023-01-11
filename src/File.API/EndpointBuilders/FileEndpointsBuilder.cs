@@ -58,23 +58,23 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildParseEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapGet("file/export",
+            endpointRouteBuilder.MapPost("file/export",
                 async ([AsParameters]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(parseFileQuery, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
                         .WithName("Export")
-                        .WithTags("Get");
+                        .WithTags("Post");
             return endpointRouteBuilder;
         }
 
         private static IEndpointRouteBuilder BuildExportEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapGet("file/convert",
+            endpointRouteBuilder.MapPost("file/convert",
                 async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
                         .WithName("ConvertTo")
-                        .WithTags("Get");
+                        .WithTags("Post");
             return endpointRouteBuilder;
         }
     }

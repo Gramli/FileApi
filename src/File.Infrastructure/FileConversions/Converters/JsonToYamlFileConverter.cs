@@ -1,6 +1,7 @@
-﻿using File.Infrastructure.Abstractions;
-using LunarLabs.Parser.JSON;
-using LunarLabs.Parser.YAML;
+﻿using ChoETL;
+using File.Infrastructure.Abstractions;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
@@ -8,10 +9,13 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            var root = JSONReader.ReadFromString(fileContent);
-            cancellationToken.ThrowIfCancellationRequested();
-            var jsonContent = YAMLWriter.WriteToString(root);
-            return Task.FromResult(jsonContent);
+            using var textReader = new StringReader(fileContent);
+            using var jsonTextReader = new JsonTextReader(textReader);
+            using var jsonCoReader = new ChoJSONReader(jsonTextReader);
+            var stringBuilder = new StringBuilder();
+            using var yamlWriter = new ChoYamlWriter(stringBuilder).SingleDocument();
+            yamlWriter.Write(jsonCoReader);
+            return Task.FromResult(stringBuilder.ToString());
         }
     }
 }

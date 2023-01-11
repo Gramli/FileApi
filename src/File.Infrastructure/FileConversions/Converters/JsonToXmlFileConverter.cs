@@ -1,17 +1,18 @@
 ﻿using File.Infrastructure.Abstractions;
-using LunarLabs.Parser.JSON;
-using LunarLabs.Parser.XML;
+using Newtonsoft.Json;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
     internal class JsonToXmlFileConverter : IFileConverter
     {
-        public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
+        public Task<string> Convert(string jsonString, CancellationToken cancellationToken)
         {
-            var root = JSONReader.ReadFromString(fileContent);
-            cancellationToken.ThrowIfCancellationRequested();
-            var jsonContent = XMLWriter.WriteToString(root);
-            return Task.FromResult(jsonContent);
+            var doc = JsonConvert.DeserializeXmlNode(jsonString);
+            if(doc is null)
+            {
+                throw new ArgumentException(nameof(jsonString));
+            }
+            return Task.FromResult(doc.OuterXml);
         }
     }
 }
