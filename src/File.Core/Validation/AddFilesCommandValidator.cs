@@ -6,7 +6,7 @@ using Validot;
 
 namespace File.Core.Validation
 {
-    internal class AddFilesCommandValidator : IAddFilesCommandValidator
+    internal sealed class AddFilesCommandValidator : IAddFilesCommandValidator
     {
         private readonly IValidator<AddFilesCommand> _addFilesCommandValidator;
         private readonly IFileByOptionsValidator _fileByOptionsValidator;

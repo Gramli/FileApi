@@ -6,7 +6,7 @@ using Validot;
 
 namespace File.Core.Validation
 {
-    internal class ExportFileQueryValidator : IExportFileQueryValidator
+    internal sealed class ExportFileQueryValidator : IExportFileQueryValidator
     {
         private readonly IValidator<ExportFileQuery> _exportFileQueryValidator;
         private readonly IFileByOptionsValidator _fileByOptionsValidator;

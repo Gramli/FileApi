@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace File.Infrastructure.Database.Repositories
 {
-    internal class FileQueriesRepository : IFileQueriesRepository
+    internal sealed class FileQueriesRepository : IFileQueriesRepository
     {
         private readonly FileContext _context;
         public FileQueriesRepository(FileContext fileContext)

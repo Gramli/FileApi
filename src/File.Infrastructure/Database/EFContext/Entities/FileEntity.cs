@@ -1,6 +1,6 @@
 ﻿namespace File.Infrastructure.Database.EFContext.Entities
 {
-    internal class FileEntity
+    internal sealed class FileEntity
     {
         public int Id { get; set; }
         public string FileName { get; init; } = string.Empty;

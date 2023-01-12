@@ -3,7 +3,7 @@ using Validot;
 
 namespace File.Core.Validation
 {
-    internal class AddFileCommandSpecificationHolder : ISpecificationHolder<AddFilesCommand>
+    internal sealed class AddFileCommandSpecificationHolder : ISpecificationHolder<AddFilesCommand>
     {
         public Specification<AddFilesCommand> Specification { get; }
 

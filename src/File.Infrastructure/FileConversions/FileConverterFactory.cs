@@ -3,7 +3,7 @@ using File.Infrastructure.FileConversions.Converters;
 
 namespace File.Infrastructure.FileConversions
 {
-    internal class FileConverterFactory : IFileConverterFactory
+    internal sealed class FileConverterFactory : IFileConverterFactory
     {
         private readonly Dictionary<(string,string), IFileConverter> _converters = new Dictionary<(string, string), IFileConverter>
         {

@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Options
 {
-    public class AllowedFile
+    public sealed class AllowedFile
     {
         public string Format { get; set; } = string.Empty;
 

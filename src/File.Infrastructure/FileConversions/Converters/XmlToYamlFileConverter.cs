@@ -1,18 +1,21 @@
 ﻿using ChoETL;
 using File.Infrastructure.Abstractions;
+using File.Infrastructure.Extensions;
+using FluentResults;
 using System.Text;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
-    internal class XmlToYamlFileConverter : IFileConverter
+    internal sealed class XmlToYamlFileConverter : IFileConverter
     {
-        public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
+        public Task<Result<string>> Convert(string fileContent, CancellationToken cancellationToken)
         {
             using var xmlCoReader = ChoXmlReader.LoadText(fileContent);
             var stringBuilder = new StringBuilder();
             using var yamlWriter = new ChoYamlWriter(stringBuilder);
             yamlWriter.Write(xmlCoReader);
-            return Task.FromResult(stringBuilder.ToString());
+            var yamlContent = stringBuilder.ToString();
+            return Task.FromResult(yamlContent.OkIfNotNull());
         }
     }
 }

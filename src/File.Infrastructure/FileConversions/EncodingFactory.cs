@@ -3,7 +3,7 @@ using System.Text;
 
 namespace File.Infrastructure.FileConversions
 {
-    internal class EncodingFactory : IEncodingFactory
+    internal sealed class EncodingFactory : IEncodingFactory
     {
         private static readonly Dictionary<byte[], Encoding> _encodingMap = new Dictionary<byte[], Encoding>
         {

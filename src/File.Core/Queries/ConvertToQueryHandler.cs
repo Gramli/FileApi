@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace File.Core.Queries
 {
-    internal class ConvertToQueryHandler : IConvertToQueryHandler
+    internal sealed class ConvertToQueryHandler : IConvertToQueryHandler
     {
         private readonly ILogger<IConvertToQueryHandler> _logger;
         private readonly IConvertToQueryValidator _convertToQueryValidator;

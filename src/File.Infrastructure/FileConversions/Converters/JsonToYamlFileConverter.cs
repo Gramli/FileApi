@@ -1,19 +1,21 @@
 ﻿using ChoETL;
 using File.Infrastructure.Abstractions;
-using Newtonsoft.Json;
+using File.Infrastructure.Extensions;
+using FluentResults;
 using System.Text;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
-    internal class JsonToYamlFileConverter : IFileConverter
+    internal sealed class JsonToYamlFileConverter : IFileConverter
     {
-        public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
+        public Task<Result<string>> Convert(string fileContent, CancellationToken cancellationToken)
         {
             using var jsonCoReader = ChoJSONReader.LoadText(fileContent);
             var stringBuilder = new StringBuilder();
             using var yamlWriter = new ChoYamlWriter(stringBuilder).SingleDocument();
             yamlWriter.Write(jsonCoReader);
-            return Task.FromResult(stringBuilder.ToString());
+            var yamlContent = stringBuilder.ToString();
+            return Task.FromResult(yamlContent.OkIfNotNull());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Http
 {
-    public class EmptyRequest
+    public sealed class EmptyRequest
     {
         private static EmptyRequest? _instance;
         public static EmptyRequest Instance

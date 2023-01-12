@@ -6,7 +6,7 @@ using File.Domain.Http;
 
 namespace File.Core.Queries
 {
-    internal class GetFilesInfoQueryHandler : IGetFilesInfoQueryHandler
+    internal sealed class GetFilesInfoQueryHandler : IGetFilesInfoQueryHandler
     {
         private readonly IFileQueriesRepository _fileQueriesRepository;
         public GetFilesInfoQueryHandler(IFileQueriesRepository fileQueriesRepository) 

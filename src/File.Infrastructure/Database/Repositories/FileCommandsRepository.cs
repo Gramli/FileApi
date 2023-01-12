@@ -3,12 +3,11 @@ using File.Core.Abstractions;
 using File.Domain.Dtos;
 using File.Infrastructure.Database.EFContext;
 using File.Infrastructure.Database.EFContext.Entities;
-using FluentResults;
 using Mapster;
 
 namespace File.Infrastructure.Database.Repositories
 {
-    internal class FileCommandsRepository : IFileCommandsRepository
+    internal sealed class FileCommandsRepository : IFileCommandsRepository
     {
         private readonly FileContext _context;
         public FileCommandsRepository(FileContext fileContext)

@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Queries
 {
-    public class DownloadFileQuery
+    public sealed class DownloadFileQuery
     {
         public int Id {  get; init; }
 

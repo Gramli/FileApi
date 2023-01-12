@@ -3,7 +3,7 @@ using Validot;
 
 namespace File.Core.Validation
 {
-    internal class ExportFileQuerySpecificationHolder : ISpecificationHolder<ExportFileQuery>
+    internal sealed class ExportFileQuerySpecificationHolder : ISpecificationHolder<ExportFileQuery>
     {
         public Specification<ExportFileQuery> Specification { get; }
 

@@ -2,14 +2,13 @@
 using File.Core.Abstractions;
 using File.Core.Resources;
 using File.Domain.Abstractions;
-using File.Domain.Commands;
 using File.Domain.Options;
 using FluentResults;
 using Microsoft.Extensions.Options;
 
 namespace File.Core.Validation
 {
-    internal class FileByOptionsValidator : IFileByOptionsValidator
+    internal sealed class FileByOptionsValidator : IFileByOptionsValidator
     {
         private readonly IOptions<FilesOptions> _fileOptions;
         public FileByOptionsValidator(IOptions<FilesOptions> fileOptions)

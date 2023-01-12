@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Options
 {
-    public class FilesOptions
+    public sealed class FilesOptions
     {
         public const string Files= "Files";
 

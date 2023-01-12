@@ -1,6 +1,5 @@
 ﻿using File.Infrastructure.Abstractions;
 using File.Infrastructure.FileConversions.Converters;
-using System.Globalization;
 
 namespace File.Infrastructure.UnitTests.FileConversions.Converters
 {
@@ -22,7 +21,8 @@ namespace File.Infrastructure.UnitTests.FileConversions.Converters
             //Act
             var result = await _uut.Convert(reader.ReadToEnd(), CancellationToken.None);
             //Assert
-            Assert.NotEmpty(result);
+            Assert.True(result.IsSuccess);
+            Assert.NotEmpty(result.Value);
         }
     }
 }

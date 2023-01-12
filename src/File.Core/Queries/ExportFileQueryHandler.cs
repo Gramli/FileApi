@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace File.Core.Queries
 {
-    internal class ExportFileQueryHandler : IExportFileQueryHandler
+    internal sealed class ExportFileQueryHandler : IExportFileQueryHandler
     {
         private readonly IExportFileQueryValidator _exportFileQueryValidator;
         private readonly IFileQueriesRepository _fileQueriesRepository;

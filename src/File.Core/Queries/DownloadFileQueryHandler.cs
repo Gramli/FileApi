@@ -10,7 +10,7 @@ using Validot;
 
 namespace File.Core.Queries
 {
-    internal class DownloadFileQueryHandler : IDownloadFileQueryHandler
+    internal sealed class DownloadFileQueryHandler : IDownloadFileQueryHandler
     {
         private readonly IValidator<DownloadFileQuery> _downloadFileQueryValidator;
         private readonly ILogger<IDownloadFileQueryHandler> _logger;

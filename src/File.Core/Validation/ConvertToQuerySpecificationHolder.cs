@@ -1,10 +1,9 @@
 ﻿using File.Core.Queries;
-using File.Domain.Commands;
 using Validot;
 
 namespace File.Core.Validation
 {
-    internal class ConvertToQuerySpecificationHolder : ISpecificationHolder<ConvertToQuery>
+    internal sealed class ConvertToQuerySpecificationHolder : ISpecificationHolder<ConvertToQuery>
     {
         public Specification<ConvertToQuery> Specification { get; }
 

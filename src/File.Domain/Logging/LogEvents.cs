@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Logging
 {
-    public class LogEvents
+    public static class LogEvents
     {
         public static readonly int GeneralError = 1000;
 

@@ -1,7 +1,9 @@
-﻿namespace File.Infrastructure.Abstractions
+﻿using FluentResults;
+
+namespace File.Infrastructure.Abstractions
 {
     internal interface IFileConverter
     {
-        Task<string> Convert(string fileContent, CancellationToken cancellationToken); 
+        Task<Result<string>> Convert(string fileContent, CancellationToken cancellationToken); 
     }
 }

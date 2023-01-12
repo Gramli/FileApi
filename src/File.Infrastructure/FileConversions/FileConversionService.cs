@@ -8,7 +8,7 @@ using FluentResults;
 
 namespace File.Infrastructure.FileConversions
 {
-    internal class FileConversionService : IFileConvertService
+    internal sealed class FileConversionService : IFileConvertService
     {
         private readonly IFileConverterFactory _fileConverterFactory;
         private readonly IEncodingFactory _encodingFactory;
@@ -35,9 +35,14 @@ namespace File.Infrastructure.FileConversions
             var encoding = _encodingFactory.CreateEncoding(data);
 
             var converter = _fileConverterFactory.Create(fileName.GetFileExtension(), destinationExtension);
-            var convertedContent = await converter.Convert(encoding.GetString(data), cancellationToken);
+            var convertedContentResult = await converter.Convert(encoding.GetString(data), cancellationToken);
 
-            var convertedData = encoding.GetBytes(convertedContent);
+            if(convertedContentResult.IsFailed)
+            {
+                return Result.Fail<IFile>(convertedContentResult.Errors);
+            }
+
+            var convertedData = encoding.GetBytes(convertedContentResult.Value);
             var convertedFileName = $"{Path.GetFileNameWithoutExtension(fileName)}.{destinationExtension}";
 
             return Result.Ok<IFile>(new ConvertedFile(convertedFileName, contentType, convertedData));

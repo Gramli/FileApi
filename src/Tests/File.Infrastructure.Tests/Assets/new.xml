@@ -1,4 +1,4 @@
-<root>
+<rootElement>
 	<swagger>2.0</swagger>
 	<info>
 		<title>FileAPI</title>
@@ -9,4 +9,4 @@
 	<schemes>https</schemes>
 	<basePath>/v1</basePath>
 	<produces>application/json</produces>
-</root>
+</rootElement>

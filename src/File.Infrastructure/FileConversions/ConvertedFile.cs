@@ -3,7 +3,7 @@ using File.Domain.Abstractions;
 
 namespace File.Infrastructure.FileConversions
 {
-    internal class ConvertedFile : IFile
+    internal sealed class ConvertedFile : IFile
     {
         public string FileName { get; }
 

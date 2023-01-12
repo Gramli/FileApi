@@ -7,7 +7,7 @@ using Validot;
 
 namespace File.Core.Validation
 {
-    internal class ConvertToQueryValidator : IConvertToQueryValidator
+    internal sealed class ConvertToQueryValidator : IConvertToQueryValidator
     {
         private readonly IValidator<ConvertToQuery> _convertToQueryValidator;
         private readonly IFileByOptionsValidator _fileByOptionsValidator;
