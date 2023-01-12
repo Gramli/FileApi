@@ -1,0 +1,12 @@
+<root>
+	<swagger>2.0</swagger>
+	<info>
+		<title>FileAPI</title>
+		<description>File api description</description>
+		<version>1.0.0</version>
+	</info>
+	<host>fileAPI.com</host>
+	<schemes>https</schemes>
+	<basePath>/v1</basePath>
+	<produces>application/json</produces>
+</root>

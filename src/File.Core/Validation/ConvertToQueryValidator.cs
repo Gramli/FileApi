@@ -1,6 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using File.Core.Abstractions;
 using File.Core.Queries;
+using File.Domain.Extensions;
 using FluentResults;
 using Validot;
 
@@ -29,6 +30,13 @@ namespace File.Core.Validation
             if (fileValidationResult.IsFailed)
             {
                 return fileValidationResult;
+            }
+
+            var conversionValidationResult = _fileByOptionsValidator.ValidateConversion(convertToQuery.File.FileName.GetFileExtension(), convertToQuery.ExtensionToConvert);
+
+            if(conversionValidationResult.IsFailed)
+            {
+                return conversionValidationResult;
             }
 
             return Result.Ok(true);

@@ -1,7 +1,6 @@
 ﻿using ChoETL;
 using File.Infrastructure.Abstractions;
 using System.Text;
-using System.Xml;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
@@ -9,9 +8,7 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            using var textReader = new StringReader(fileContent);
-            using var xmlReader = XmlReader.Create(textReader);
-            using var xmlCoReader = new ChoXmlReader(xmlReader);
+            using var xmlCoReader = ChoXmlReader.LoadText(fileContent);
             var stringBuilder = new StringBuilder();
             using var yamlWriter = new ChoYamlWriter(stringBuilder);
             yamlWriter.Write(xmlCoReader);

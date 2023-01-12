@@ -8,8 +8,7 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            using var stringReader = new StringReader(fileContent);
-            using var yamlReader = new ChoYamlReader(stringReader);
+            using var yamlReader = ChoYamlReader.LoadText(fileContent);
             var stringBuilder = new StringBuilder();
             using var yamlWriter = new ChoYamlWriter(stringBuilder);
             yamlWriter.Write(yamlReader);

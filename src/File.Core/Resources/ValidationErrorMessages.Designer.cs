@@ -70,6 +70,15 @@ namespace File.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unsuported conversion. source{0}, destination{1}..
+        /// </summary>
+        internal static string UnsuportedConversion {
+            get {
+                return ResourceManager.GetString("UnsuportedConversion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unsuported format. Extension{0}..
         /// </summary>
         internal static string UnsupportedExtension {

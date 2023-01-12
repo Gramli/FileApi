@@ -7,7 +7,7 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string jsonString, CancellationToken cancellationToken)
         {
-            var doc = JsonConvert.DeserializeXmlNode(jsonString);
+            var doc = JsonConvert.DeserializeXmlNode(jsonString, "root");
             if(doc is null)
             {
                 throw new ArgumentException(nameof(jsonString));

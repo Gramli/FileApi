@@ -120,6 +120,9 @@
   <data name="MaximalFileSize" xml:space="preserve">
     <value>Maximum file size exceeded. File: {0}.</value>
   </data>
+  <data name="UnsuportedConversion" xml:space="preserve">
+    <value>Unsuported conversion. source{0}, destination{1}.</value>
+  </data>
   <data name="UnsupportedExtension" xml:space="preserve">
     <value>Unsuported format. Extension{0}.</value>
   </data>

@@ -8,11 +8,10 @@ namespace File.Infrastructure.FileConversions
         private readonly Dictionary<(string,string), IFileConverter> _converters = new Dictionary<(string, string), IFileConverter>
         {
             {("json","xml") ,new JsonToXmlFileConverter() },
-            {("json","yml") ,new JsonToYamlFileConverter() },
-            {("yml","xml") ,new YamlToXmlFileConverter() },
-            {("yml","json") ,new YamlToJsonFileConverter() },
+            {("json","yaml") ,new JsonToYamlFileConverter() },
+            {("yaml","json") ,new YamlToJsonFileConverter() },
             {("xml","json") ,new XmlToJsonFileConverter() },
-            {("xml","yml") ,new XmlToYamlFileConverter() }
+            {("xml","yaml") ,new XmlToYamlFileConverter() }
         };
 
         public IFileConverter Create(string sourceFormat, string destinationFormat)

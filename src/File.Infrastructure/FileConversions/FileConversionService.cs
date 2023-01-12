@@ -2,6 +2,7 @@
 using File.Core.Abstractions;
 using File.Domain.Abstractions;
 using File.Domain.Dtos;
+using File.Domain.Extensions;
 using File.Infrastructure.Abstractions;
 using FluentResults;
 
@@ -33,7 +34,7 @@ namespace File.Infrastructure.FileConversions
         {
             var encoding = _encodingFactory.CreateEncoding(data);
 
-            var converter = _fileConverterFactory.Create(Path.GetExtension(fileName).Substring(1), destinationExtension);
+            var converter = _fileConverterFactory.Create(fileName.GetFileExtension(), destinationExtension);
             var convertedContent = await converter.Convert(encoding.GetString(data), cancellationToken);
 
             var convertedData = encoding.GetBytes(convertedContent);

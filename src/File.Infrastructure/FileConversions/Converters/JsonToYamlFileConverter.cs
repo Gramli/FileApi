@@ -9,9 +9,7 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<string> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            using var textReader = new StringReader(fileContent);
-            using var jsonTextReader = new JsonTextReader(textReader);
-            using var jsonCoReader = new ChoJSONReader(jsonTextReader);
+            using var jsonCoReader = ChoJSONReader.LoadText(fileContent);
             var stringBuilder = new StringBuilder();
             using var yamlWriter = new ChoYamlWriter(stringBuilder).SingleDocument();
             yamlWriter.Write(jsonCoReader);

@@ -43,5 +43,21 @@ namespace File.Core.Validation
 
             return Result.Ok(true);
         }
+
+        public Result<bool> ValidateConversion(string sourceExtension, string destinationExtension)
+        {
+            var options = _fileOptions.Value.AllowedFiles.SingleOrDefault(x => x.Format.Equals(sourceExtension));
+            if (options is null)
+            {
+                return Result.Fail(string.Format(ValidationErrorMessages.UnsupportedExtension, sourceExtension));
+            }
+
+            if(!options.CanBeExportedTo.Any(x=>x.Equals(destinationExtension, StringComparison.OrdinalIgnoreCase)))
+            {
+                return Result.Fail(string.Format(ValidationErrorMessages.UnsuportedConversion, sourceExtension, destinationExtension));
+            }
+
+            return Result.Ok(true);
+        }
     }
 }

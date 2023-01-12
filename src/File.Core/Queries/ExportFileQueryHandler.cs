@@ -18,17 +18,20 @@ namespace File.Core.Queries
         private readonly IFileQueriesRepository _fileQueriesRepository;
         private readonly ILogger<IExportFileQueryHandler> _logger;
         private readonly IFileConvertService _fileConvertService;
+        private readonly IFileByOptionsValidator _fileByOptionsValidator;
 
         public ExportFileQueryHandler(
             IExportFileQueryValidator exportFileQueryValidator, 
             IFileQueriesRepository fileQueriesRepository, 
             ILogger<IExportFileQueryHandler> logger, 
-            IFileConvertService fileConvertService)
+            IFileConvertService fileConvertService,
+            IFileByOptionsValidator fileByOptionsValidator)
         {
             _exportFileQueryValidator = Guard.Against.Null(exportFileQueryValidator);
             _fileQueriesRepository = Guard.Against.Null(fileQueriesRepository);
             _logger = Guard.Against.Null(logger);
             _fileConvertService = Guard.Against.Null(fileConvertService);
+            _fileByOptionsValidator = Guard.Against.Null(fileByOptionsValidator);
         }
 
         public async Task<HttpDataResponse<FileDto>> HandleAsync(ExportFileQuery request, CancellationToken cancellationToken)
@@ -41,6 +44,13 @@ namespace File.Core.Queries
             }
 
             var file = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
+
+            var conversionValidationResult = _fileByOptionsValidator.ValidateConversion(file.FileName.GetFileExtension(), request.Extension);
+            if (conversionValidationResult.IsFailed)
+            {
+                _logger.LogError(LogEvents.ExportFileGeneralError, conversionValidationResult.Errors.JoinToMessage());
+                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Extension));
+            }
 
             var exportResult = await _fileConvertService.ExportTo(file, request.Extension, cancellationToken);
 
