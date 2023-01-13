@@ -1,6 +1,7 @@
 ﻿using File.Infrastructure.Abstractions;
 using File.Infrastructure.FileConversions.Converters;
-using File.Infrastructure.UnitTests.Extensions;
+using File.Infrastructure.UnitTests.Assets;
+using Newtonsoft.Json;
 
 namespace File.Infrastructure.Tests.FileConversions.Converters
 {
@@ -14,17 +15,22 @@ namespace File.Infrastructure.Tests.FileConversions.Converters
         }
 
         [Fact]
-        public async Task Convert_Success()
+        public async Task Empty_Json()
         {
             //Arrange
-            using var fileStream = new FileStream("Assets/new.json", FileMode.Open, FileAccess.Read, FileShare.Read);
-            using var reader = new StreamReader(fileStream);
+            var emptyJson = "{}";
             //Act
-            var result = await _uut.Convert(reader.ReadToEnd(), CancellationToken.None);
+            var result = await _uut.Convert(emptyJson, CancellationToken.None);
             //Assert
             Assert.True(result.IsSuccess);
-            Assert.NotEmpty(result.Value);
-            AssertExtensions.EqualFileContent("Assets/new.yaml", result.Value);
+        }
+
+        [Theory]
+        [ClassData(typeof(InvalidJsonData))]
+        public async Task Invalid_Json(string invalidJson)
+        {
+            //Act & Assert
+            await Assert.ThrowsAsync<JsonReaderException>(() => _uut.Convert(invalidJson, CancellationToken.None));
         }
     }
 }

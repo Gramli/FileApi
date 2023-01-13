@@ -1,5 +1,7 @@
 ﻿using File.Infrastructure.Abstractions;
 using File.Infrastructure.FileConversions.Converters;
+using File.Infrastructure.UnitTests.Assets;
+using System.Xml;
 
 namespace File.Infrastructure.UnitTests.FileConversions.Converters
 {
@@ -13,16 +15,22 @@ namespace File.Infrastructure.UnitTests.FileConversions.Converters
         }
 
         [Fact]
-        public async Task Convert_Success()
+        public async Task Empty_Xml()
         {
             //Arrange
-            using var fileStream = new FileStream("Assets/new.xml", FileMode.Open, FileAccess.Read, FileShare.Read);
-            using var reader = new StreamReader(fileStream);
             //Act
-            var result = await _uut.Convert(reader.ReadToEnd(), CancellationToken.None);
+            var result = await _uut.Convert("<root />", CancellationToken.None);
             //Assert
             Assert.True(result.IsSuccess);
             Assert.NotEmpty(result.Value);
+        }
+
+        [Theory]
+        [ClassData(typeof(InvalidXmlData))]
+        public async Task Invalid_Xml(string invalidXml)
+        {
+            //Act & Assert
+            await Assert.ThrowsAsync<XmlException>(() => _uut.Convert(invalidXml, CancellationToken.None));
         }
     }
 }

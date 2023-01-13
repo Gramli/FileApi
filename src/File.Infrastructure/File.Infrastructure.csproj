@@ -25,6 +25,12 @@
 			<_Parameter1>File.Infrastructure.UnitTests</_Parameter1>
 		</AssemblyAttribute>
 	</ItemGroup>
+	
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>File.Infrastructure.IntegrationTests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
 
 	<ItemGroup>
 	  <Compile Update="Resources\ErrorMessages.Designer.cs">

@@ -1,4 +1,5 @@
-﻿using File.Infrastructure.Abstractions;
+﻿using File.Domain.Extensions;
+using File.Infrastructure.Abstractions;
 using System.Text;
 
 namespace File.Infrastructure.FileConversions
@@ -16,6 +17,11 @@ namespace File.Infrastructure.FileConversions
 
         public Encoding CreateEncoding(byte[] data)
         {
+            if(!data.HasAny() || data.Length < 4)
+            {
+                throw new ArgumentException("EncodingData");
+            }
+
             var firstBytes = new ReadOnlySpan<byte>(data, 0, 4);
             foreach(var encoder in _encodingMap)
             {
