@@ -29,6 +29,11 @@ namespace File.Core.Validation
                 return Result.Fail(string.Format(ValidationErrorMessages.MaximalFileSize, file.FileName));
             }
 
+            if(file.Length == 0)
+            {
+                return Result.Fail(string.Format(ValidationErrorMessages.FileIsEmpty, file.FileName));
+            }
+
             return Result.Ok(true);
         }
 

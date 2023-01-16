@@ -61,6 +61,15 @@ namespace File.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to File is empty {0}..
+        /// </summary>
+        internal static string FileIsEmpty {
+            get {
+                return ResourceManager.GetString("FileIsEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maximum file size exceeded. File: {0}..
         /// </summary>
         internal static string MaximalFileSize {

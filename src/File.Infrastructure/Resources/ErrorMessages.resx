@@ -120,4 +120,7 @@
   <data name="ConversionFailed" xml:space="preserve">
     <value>Conversion failed. Unable to convert.</value>
   </data>
+  <data name="EmptyConversionData" xml:space="preserve">
+    <value>Data for conversion are empty.</value>
+  </data>
 </root>

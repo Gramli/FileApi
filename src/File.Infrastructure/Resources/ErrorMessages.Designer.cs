@@ -68,5 +68,14 @@ namespace File.Infrastructure.Resources {
                 return ResourceManager.GetString("ConversionFailed", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data for conversion are empty..
+        /// </summary>
+        internal static string EmptyConversionData {
+            get {
+                return ResourceManager.GetString("EmptyConversionData", resourceCulture);
+            }
+        }
     }
 }
