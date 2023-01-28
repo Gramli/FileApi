@@ -15,21 +15,9 @@ Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml
 
 # Get Started
 
-Simply Run **File.API** and try it using:
-
-* [Swagger](#swagger)
-
-Or in case You need to edit Content Type, use [Postman](https://www.postman.com/) instead:
-
-* [Postman](#postman)
-
-### Swagger
+Simply Run **File.API** and try it. Or in case You need to edit Content Type, use Postman. [Example gif of how to change ContentType in Postman](doc/img/contentType.gif).
 
 ![Swagger](doc/img/upload.gif)
-
-### Postman
-
-![Postman](doc/img/contentType.gif)
 
 # Motivation
 Main motivation is to write practical example of minimal API with Clean Architecture and experiment with libraries for validation and mapping.
