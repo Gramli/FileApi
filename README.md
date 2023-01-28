@@ -14,10 +14,21 @@ Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml
 * [Technologies](#technologies)
 
 # Get Started
-Simply Run File.API and try it in Swagger:
-![Swagger](doc/img/upload.gif)
+
+Simply Run **File.API** and try it using:
+
+* [Swagger](#swagger)
 
 Or in case of You need to edit Content Type, use [Postman](https://www.postman.com/) instead:
+
+* [Postman](#postman)
+
+### Swagger
+
+![Swagger](doc/img/upload.gif)
+
+### Postman
+
 ![Postman](doc/img/contentType.gif)
 
 # Motivation
