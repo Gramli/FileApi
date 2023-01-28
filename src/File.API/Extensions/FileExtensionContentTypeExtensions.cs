@@ -7,7 +7,7 @@ namespace File.API.Extensions
         internal static void AddCustomContentTypes(this WebApplication webApplication)
         {
             var provider = new FileExtensionContentTypeProvider();
-            provider.Mappings[".yml"] = "text/yml";
+            provider.Mappings[".yaml"] = "text/yaml";
 
             webApplication.UseStaticFiles(new StaticFileOptions
             {
