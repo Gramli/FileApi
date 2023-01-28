@@ -19,7 +19,7 @@ Simply Run **File.API** and try it using:
 
 * [Swagger](#swagger)
 
-Or in case of You need to edit Content Type, use [Postman](https://www.postman.com/) instead:
+Or in case You need to edit Content Type, use [Postman](https://www.postman.com/) instead:
 
 * [Postman](#postman)
 
