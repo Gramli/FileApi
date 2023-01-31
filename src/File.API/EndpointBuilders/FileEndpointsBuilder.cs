@@ -16,6 +16,7 @@ namespace File.API.EndpointBuilders
         public static IEndpointRouteBuilder BuildWeatherEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             return endpointRouteBuilder
+                .MapGroup("file")
                 .BuildUploadEndpoints()
                 .BuildDownloadEndpoints()
                 .BuildGetEndpoints()
@@ -25,7 +26,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildUploadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapPost("file/upload",
+            endpointRouteBuilder.MapPost("v1/upload",
                 async (IFormFileCollection files, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
                         .Produces<bool>()
@@ -36,7 +37,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildDownloadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapGet("file/download/{1}",
+            endpointRouteBuilder.MapGet("v1/download/{1}",
                 async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new DownloadFileQuery(id), cancellationToken))
                         .Produces<FileContentHttpResult>()
@@ -47,7 +48,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildGetEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapGet("file/files-info",
+            endpointRouteBuilder.MapGet("v1/files-info",
                 async ([FromServices] IGetFilesInfoQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(EmptyRequest.Instance, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
@@ -58,7 +59,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildParseEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapPost("file/export",
+            endpointRouteBuilder.MapPost("v1/export",
                 async ([AsParameters]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(parseFileQuery, cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
@@ -69,7 +70,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildExportEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapPost("file/convert",
+            endpointRouteBuilder.MapPost("v1/convert",
                 async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
                         .Produces<IEnumerable<FileInfoDto>>()
