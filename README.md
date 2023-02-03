@@ -1,5 +1,3 @@
-# IN PROGRESS
-
  <img align="left" width="116" height="116" src=".\doc\img\fileApi_icon.png" />
 
 # Clean Architecture FileApi
