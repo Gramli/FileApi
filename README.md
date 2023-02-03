@@ -5,7 +5,7 @@
 
 REST API solution demonstrates how to create clean and modern API with Clean Architecture, minimal API and various of design patterns.
 
-Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **covert between json, xml, yml formats**.
+Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **convert between json, xml, yml formats**.
 
 # Menu
 * [Get Started](#get-started)
