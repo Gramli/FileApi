@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
 
-namespace File.API.SystemTests
+namespace File.API.SystemTests.Tests
 {
     public abstract class SystemTestsBase
     {

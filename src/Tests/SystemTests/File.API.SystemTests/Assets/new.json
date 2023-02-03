@@ -1,0 +1,16 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "FileAPI",
+    "description": "File api description",
+    "version": "1.0.0"
+  },
+  "host": "fileAPI.com",
+  "schemes": [
+    "https"
+  ],
+  "basePath": "/v1",
+  "produces": [
+    "application/json"
+  ]
+}

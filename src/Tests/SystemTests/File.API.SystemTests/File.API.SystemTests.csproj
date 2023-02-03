@@ -22,4 +22,14 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\File.API\File.API.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\new.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

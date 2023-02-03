@@ -37,7 +37,7 @@ namespace File.API.EndpointBuilders
 
         private static IEndpointRouteBuilder BuildDownloadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
-            endpointRouteBuilder.MapGet("v1/download/{1}",
+            endpointRouteBuilder.MapGet("v1/download",
                 async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new DownloadFileQuery(id), cancellationToken))
                         .Produces<FileContentHttpResult>()
@@ -60,9 +60,9 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildParseEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapPost("v1/export",
-                async ([AsParameters]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
+                async ([FromBody]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(parseFileQuery, cancellationToken))
-                        .Produces<IEnumerable<FileInfoDto>>()
+                        .Produces<FileContentHttpResult>()
                         .WithName("Export")
                         .WithTags("Post");
             return endpointRouteBuilder;
@@ -73,7 +73,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapPost("v1/convert",
                 async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
-                        .Produces<IEnumerable<FileInfoDto>>()
+                        .Produces<FileContentHttpResult>()
                         .WithName("ConvertTo")
                         .WithTags("Post");
             return endpointRouteBuilder;
