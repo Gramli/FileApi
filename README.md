@@ -1,6 +1,8 @@
  <img align="left" width="116" height="116" src=".\doc\img\fileApi_icon.png" />
 
 # Clean Architecture FileApi
+[![.NET Build and Test](https://github.com/Gramli/FileApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Gramli/FileApi/actions/workflows/dotnet.yml)
+
 REST API solution demonstrates how to create clean and modern API with Clean Architecture, minimal API and various of design patterns.
 
 Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **covert between json, xml, yml formats**.
