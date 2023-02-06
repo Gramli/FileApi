@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "File.Infrastructure.UnitTes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTests", "SystemTests", "{93865CE0-1284-41CF-89AE-FE95D6B09989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.API.SystemTests", "Tests\SystemTests\File.API.SystemTests\File.API.SystemTests.csproj", "{471F35C0-92C6-4F35-A9A6-EC2FAFF59281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "File.API.SystemTests", "Tests\SystemTests\File.API.SystemTests\File.API.SystemTests.csproj", "{471F35C0-92C6-4F35-A9A6-EC2FAFF59281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "File.UnitTests.Common", "File.UnitTests.Common\File.UnitTests.Common.csproj", "{405B117C-E15C-4C49-AAD0-9D70717A872B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{471F35C0-92C6-4F35-A9A6-EC2FAFF59281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471F35C0-92C6-4F35-A9A6-EC2FAFF59281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471F35C0-92C6-4F35-A9A6-EC2FAFF59281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405B117C-E15C-4C49-AAD0-9D70717A872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405B117C-E15C-4C49-AAD0-9D70717A872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405B117C-E15C-4C49-AAD0-9D70717A872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405B117C-E15C-4C49-AAD0-9D70717A872B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{09731D6F-B61D-4733-A5D1-E3F7D07699C9} = {EAC2DE5D-5317-4988-9628-6FC0D9873ED7}
 		{93865CE0-1284-41CF-89AE-FE95D6B09989} = {D072735D-C2C2-44FF-B7E4-3B67667C464E}
 		{471F35C0-92C6-4F35-A9A6-EC2FAFF59281} = {93865CE0-1284-41CF-89AE-FE95D6B09989}
+		{405B117C-E15C-4C49-AAD0-9D70717A872B} = {EAC2DE5D-5317-4988-9628-6FC0D9873ED7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5ECAF92-D74D-4184-BD5A-7AEC9CE76826}

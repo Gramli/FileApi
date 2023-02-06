@@ -2,6 +2,8 @@
 using File.Core.Queries;
 using File.Core.Resources;
 using File.Domain.Abstractions;
+using File.Domain.Logging;
+using File.UnitTests.Common.Extensions;
 using FluentResults;
 using Microsoft.Extensions.Logging;
 using Moq;
@@ -70,13 +72,38 @@ namespace File.Core.UnitTests.Queries
             Assert.Equal(result.Errors.First(), string.Format(ErrorMessages.ConvertFileFailed, fileName, format));
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request))), Times.Once);
             _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFile>(), It.Is<string>(y=>y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
-            //TODO ADD LOG VERIFY
+            _loggerMock.VerifyLog(LogLevel.Error, LogEvents.ConvertFileGeneralError, Times.Once());
         }
 
         [Fact]
         public async Task Success()
         {
-            throw new NotImplementedException();
+            //Arrange
+            var resultFileData = new byte[10];
+
+            var resultFileMock = new Mock<IFile>();
+            resultFileMock.SetupGet(x=>x.ContentType).Returns("application/json");
+            resultFileMock.SetupGet(x => x.FileName).Returns("resultFileName");
+            resultFileMock.SetupGet(x => x.Length).Returns(resultFileData.Length);
+            resultFileMock.Setup(x => x.GetData(It.IsAny<CancellationToken>())).ReturnsAsync(resultFileData);
+
+            var format = "xml";
+            var request = new ConvertToQuery(_fileMock.Object, format);
+            _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>())).Returns(Result.Ok(true));
+            _fileConvertServiceMock.Setup(x => x.ConvertTo(It.IsAny<IFile>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(Result.Ok(resultFileMock.Object));
+            _fileMock.SetupGet(x => x.FileName).Returns(nameof(FileConvert_Failed));
+
+            //Act
+            var result = await _uut.HandleAsync(request, CancellationToken.None);
+
+            //Assert
+            Assert.Equal(HttpStatusCode.OK, result.StatusCode);
+            _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request))), Times.Once);
+            _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFile>(), It.Is<string>(y => y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
+            resultFileMock.VerifyGet(x => x.ContentType, Times.Once);
+            resultFileMock.VerifyGet(x => x.FileName, Times.Once);
+            resultFileMock.VerifyGet(x => x.Length, Times.Once);
+            resultFileMock.Verify(x => x.GetData(It.IsAny<CancellationToken>()), Times.Once);
         }
     }
 }
