@@ -1,5 +1,6 @@
 ﻿using Ardalis.GuardClauses;
 using File.Core.Abstractions;
+using File.Core.Resources;
 using File.Domain.Dtos;
 using File.Domain.Extensions;
 using File.Domain.Http;
@@ -31,11 +32,18 @@ namespace File.Core.Queries
             if(validationResult.AnyErrors)
             {
                 _logger.LogError(LogEvents.GetFileValidationError, validationResult.ToString());
-                HttpDataResponses.AsBadRequest<FileDto>(validationResult.ToString());
+                return HttpDataResponses.AsBadRequest<FileDto>(ValidationErrorMessages.InvalidRequest);
             }
 
-            var file = await _fileQueriesRepository.GetFile(request, cancellationToken);
-            return HttpDataResponses.AsOK(file);
+            var fileResult = await _fileQueriesRepository.GetFile(request, cancellationToken);
+
+            if(fileResult.IsFailed)
+            {
+                _logger.LogError(LogEvents.GetFileDatabaseError, fileResult.Errors.JoinToMessage());
+                return HttpDataResponses.AsBadRequest<FileDto>(ErrorMessages.FileNotExist);
+            }
+
+            return HttpDataResponses.AsOK(fileResult.Value);
         }
     }
 }

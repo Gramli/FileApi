@@ -77,5 +77,14 @@ namespace File.Infrastructure.Resources {
                 return ResourceManager.GetString("EmptyConversionData", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File id:{0} does not exists..
+        /// </summary>
+        internal static string FileNotExists {
+            get {
+                return ResourceManager.GetString("FileNotExists", resourceCulture);
+            }
+        }
     }
 }

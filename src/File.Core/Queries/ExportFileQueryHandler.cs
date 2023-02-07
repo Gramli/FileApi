@@ -43,16 +43,21 @@ namespace File.Core.Queries
                 HttpDataResponses.AsBadRequest<FileDto>(validationResult.ToString());
             }
 
-            var file = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
+            var fileResult = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
+            if(fileResult.IsFailed)
+            {
+                _logger.LogError(LogEvents.GetFileDatabaseError, fileResult.Errors.JoinToMessage());
+                return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Extension));
+            }
 
-            var conversionValidationResult = _fileByOptionsValidator.ValidateConversion(file.FileName.GetFileExtension(), request.Extension);
+            var conversionValidationResult = _fileByOptionsValidator.ValidateConversion(fileResult.Value.FileName.GetFileExtension(), request.Extension);
             if (conversionValidationResult.IsFailed)
             {
                 _logger.LogError(LogEvents.ExportFileGeneralError, conversionValidationResult.Errors.JoinToMessage());
                 return HttpDataResponses.AsBadRequest<FileDto>(string.Format(ErrorMessages.ExportFileFailed, request.Id, request.Extension));
             }
 
-            var exportResult = await _fileConvertService.ExportTo(file, request.Extension, cancellationToken);
+            var exportResult = await _fileConvertService.ExportTo(fileResult.Value, request.Extension, cancellationToken);
 
             if(exportResult.IsFailed)
             {

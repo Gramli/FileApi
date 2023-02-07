@@ -79,6 +79,15 @@ namespace File.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to File not exist..
+        /// </summary>
+        internal static string FileNotExist {
+            get {
+                return ResourceManager.GetString("FileNotExist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to read file: {0}.
         /// </summary>
         internal static string ReadFileStreamFailed {

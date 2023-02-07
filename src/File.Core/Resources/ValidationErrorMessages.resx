@@ -120,6 +120,9 @@
   <data name="FileIsEmpty" xml:space="preserve">
     <value>File is empty {0}.</value>
   </data>
+  <data name="InvalidRequest" xml:space="preserve">
+    <value>Invalid request.</value>
+  </data>
   <data name="MaximalFileSize" xml:space="preserve">
     <value>Maximum file size exceeded. File: {0}.</value>
   </data>

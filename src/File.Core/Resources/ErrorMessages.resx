@@ -123,6 +123,9 @@
   <data name="ExportFileFailed" xml:space="preserve">
     <value>Failed to export file id: {0} to format {1}</value>
   </data>
+  <data name="FileNotExist" xml:space="preserve">
+    <value>File not exist.</value>
+  </data>
   <data name="ReadFileStreamFailed" xml:space="preserve">
     <value>Failed to read file: {0}</value>
   </data>

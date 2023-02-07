@@ -123,4 +123,7 @@
   <data name="EmptyConversionData" xml:space="preserve">
     <value>Data for conversion are empty.</value>
   </data>
+  <data name="FileNotExists" xml:space="preserve">
+    <value>File id:{0} does not exists.</value>
+  </data>
 </root>

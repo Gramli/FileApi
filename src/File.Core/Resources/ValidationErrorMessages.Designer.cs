@@ -70,6 +70,15 @@ namespace File.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid request..
+        /// </summary>
+        internal static string InvalidRequest {
+            get {
+                return ResourceManager.GetString("InvalidRequest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Maximum file size exceeded. File: {0}..
         /// </summary>
         internal static string MaximalFileSize {
