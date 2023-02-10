@@ -21,7 +21,7 @@ namespace File.Infrastructure.FileConversions
 
         public async Task<Result<IFile>> ConvertTo(IFile sourceFile, string destinationExtension, CancellationToken cancellationToken)
         {
-            var data = await sourceFile.GetData();
+            var data = await sourceFile.GetData(cancellationToken);
             return await ConvertFile(data, sourceFile.FileName, sourceFile.ContentType, destinationExtension, cancellationToken);
         }
 

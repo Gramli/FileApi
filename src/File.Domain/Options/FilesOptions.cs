@@ -2,7 +2,7 @@
 {
     public sealed class FilesOptions
     {
-        public const string Files= "Files";
+        public static readonly string Files= "Files";
 
         public uint MaxFileLength { get; set; }
 

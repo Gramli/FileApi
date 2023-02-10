@@ -6,7 +6,7 @@ namespace File.API.SystemTests.Tests
     {
         protected readonly HttpClient _httpClient;
 
-        public SystemTestsBase()
+        protected SystemTestsBase()
         {
             var application = new WebApplicationFactory<Program>();
             _httpClient = application.CreateClient();
