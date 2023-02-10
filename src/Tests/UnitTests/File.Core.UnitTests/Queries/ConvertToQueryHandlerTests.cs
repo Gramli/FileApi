@@ -1,6 +1,7 @@
 ﻿using File.Core.Abstractions;
 using File.Core.Queries;
 using File.Core.Resources;
+using File.Core.UnitTests.Assets;
 using File.Domain.Abstractions;
 using File.Domain.Logging;
 using File.UnitTests.Common.Extensions;
@@ -80,12 +81,7 @@ namespace File.Core.UnitTests.Queries
         {
             //Arrange
             var resultFileData = new byte[10];
-
-            var resultFileMock = new Mock<IFile>();
-            resultFileMock.SetupGet(x=>x.ContentType).Returns("application/json");
-            resultFileMock.SetupGet(x => x.FileName).Returns("resultFileName");
-            resultFileMock.SetupGet(x => x.Length).Returns(resultFileData.Length);
-            resultFileMock.Setup(x => x.GetData(It.IsAny<CancellationToken>())).ReturnsAsync(resultFileData);
+            var resultFileMock = FileMockFactory.CreateMock(resultFileData, "application/json", "resultFileName");
 
             var format = "xml";
             var request = new ConvertToQuery(_fileMock.Object, format);

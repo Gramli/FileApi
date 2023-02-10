@@ -40,7 +40,7 @@ namespace File.Core.Queries
             if (validationResult.IsFailed)
             {
                 _logger.LogError(LogEvents.ExportFileValidationError, validationResult.ToString());
-                HttpDataResponses.AsBadRequest<FileDto>(validationResult.ToString());
+                return HttpDataResponses.AsBadRequest<FileDto>(validationResult.ToString());
             }
 
             var fileResult = await _fileQueriesRepository.GetFile(request.Adapt<DownloadFileQuery>(), cancellationToken);
