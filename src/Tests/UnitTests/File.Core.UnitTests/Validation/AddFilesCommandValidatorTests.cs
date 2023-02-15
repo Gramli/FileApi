@@ -82,7 +82,7 @@ namespace File.Core.UnitTests.Validation
             var fileMockOne = FileMockFactory.CreateMock(new byte[10], "application/json", fileNameOne);
             var fileMockTwo = FileMockFactory.CreateMock(new byte[10], "application/json", fileNameTwo);
 
-            var command = new AddFilesCommand(new List<IFile>()
+            var command = new AddFilesCommand(new List<IFile>
             {
                 fileMockOne.Object,
                 fileMockTwo.Object
@@ -111,7 +111,7 @@ namespace File.Core.UnitTests.Validation
             var fileMockOne = FileMockFactory.CreateMock(new byte[10], "application/json", "fileNameOne");
             var fileMockTwo = FileMockFactory.CreateMock(new byte[10], "application/json", "fileNameTwo");
 
-            var command = new AddFilesCommand(new List<IFile>()
+            var command = new AddFilesCommand(new List<IFile>
             {
                 fileMockOne.Object,
                 fileMockTwo.Object

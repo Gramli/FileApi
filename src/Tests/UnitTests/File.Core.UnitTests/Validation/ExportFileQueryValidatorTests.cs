@@ -1,13 +1,8 @@
 ﻿using File.Core.Abstractions;
 using File.Core.Validation;
 using File.Domain.Queries;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Validot.Results;
 using Validot;
+using Validot.Results;
 
 namespace File.Core.UnitTests.Validation
 {
@@ -79,7 +74,7 @@ namespace File.Core.UnitTests.Validation
         public void Success()
         {
             //Arrange
-            var request = new ExportFileQuery()
+            var request = new ExportFileQuery
             {
                 Extension = "ex"
             };

@@ -71,32 +71,32 @@
     <File Index="68" Name="E:\GitHub\FileApi\src\Tests\IntegrationTests\File.Infrastructure.IntegrationTests\FileConversions\Converters\XmlToYamlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="57F39608F28CE79AA73A2B3A33CAF4A4CA3DCA27D12E2C83B12B8C313F2A68E9" />
     <File Index="69" Name="E:\GitHub\FileApi\src\Tests\IntegrationTests\File.Infrastructure.IntegrationTests\FileConversions\Converters\YamlToJsonFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="BCF00226C182D86692F69D6391FB2DB1D564EE7E50502E6B32A53D7E4CBD5A2D" />
     <File Index="70" Name="E:\GitHub\FileApi\src\Tests\IntegrationTests\File.Infrastructure.IntegrationTests\Extensions\AssertExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="7440D2DE43C18F8D98D78B65A67AC77E447B1786D1A020D1C845338517FDB2CE" />
-    <File Index="71" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\AddFilesCommandValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="3A3C95CC8C2B9530D9F64C1C17FD86F479E1A1618153D54A98CD75F0D453A9CC" />
-    <File Index="72" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\ConvertToQueryValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="979D65376DE8A8CE32708C927823BE6D5A6B9AB5670C1BA380E1D2C93E36460F" />
-    <File Index="73" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\ExportFileQueryValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="31888F7470C069D229AF429D91E8B55A532D37F773562492B1D8FEB4493B66FC" />
-    <File Index="74" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\FileByOptionsValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="C142E2ABAC04DF888559DCD09CF62E699D4842FA5DE8B18FDDB4FDE8D1C06723" />
-    <File Index="75" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\ConvertToQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="604E5282EE9FF753B4F75FC6324D56A29E21416173B2E23A203F4E7DB26D5160" />
-    <File Index="76" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\DownloadFileQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="C71BAC8885D4258C8CABBDFF4C3D0386704602AB769E2575E03DD478513587E3" />
-    <File Index="77" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\ExportFileQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="3333F65FEFDD35D2E6D989ACFFF0DCAB247914FA858582529213EAD87C83BAD9" />
-    <File Index="78" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Commands\AddFilesCommandHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="A0F5D0F0242971FE944272929610C1DD635A3E42B96DC5C32659C5FA213FF1A2" />
-    <File Index="79" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Assets\FileMockFactory.cs" ChecksumAlgorithm="SHA256" Checksum="DFD8FD3FF5E01657267A303BBF8868E2BBB513892D93F2651E8C0341C802245E" />
-    <File Index="80" Name="E:\GitHub\FileApi\src\File.UnitTests.Common\Extensions\MoqLoggerExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="1E0B94FE084C015C741D66756A15C72920410AADAEC530A6274DBBC85AFFB171" />
-    <File Index="81" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\JsonToYamlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="44FFC9BF3DDB122C3A3F103F7B3533549167AC754BCDC96A925602C6E54FAA9B" />
-    <File Index="82" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\EncodingFactoryTests.cs" ChecksumAlgorithm="SHA256" Checksum="F939FB00D8A130E55CC22FEE8AB8B38CEF9D38C5E8535A3BAB68936B67DBB29E" />
-    <File Index="83" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\FileConversionServiceTests.cs" ChecksumAlgorithm="SHA256" Checksum="1F1DE81C83AAFC6B14286F2B37D63BFEEA9737B4E6215F6E4428BD165419DAD6" />
-    <File Index="84" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\FileConverterFactoryTests.cs" ChecksumAlgorithm="SHA256" Checksum="2E23FEBD5046D791EAB03780A5659D14B35DD286EC634172949F657DF76CAE2D" />
-    <File Index="85" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\JsonToXmlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="638104C79E9908FAC7642249867359CB9C99D6AAFA852F44411C1F1F267ED28D" />
-    <File Index="86" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\XmlToJsonFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="010587DC875C73FD01E100020FD8431AACA173F64066CC0031D44151EFDEEC54" />
-    <File Index="87" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\XmlToYamlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="2FF28238367D8E83CB32184B6CF8A68CCD51211E1064D414FDBF70AD39E8D583" />
-    <File Index="88" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\YamlToJsonFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="7BA8FBF203F01D1FB9D51A457FB47A85A96370ED81FCE315DB47BD9FCAA6C180" />
-    <File Index="89" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Extensions\AssertExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="19FD524B65D53D3F09955031A73C6663B5CB95DF1660CB4C56678A1EC9236EB5" />
-    <File Index="90" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidByteData.cs" ChecksumAlgorithm="SHA256" Checksum="1B2E3899F44AD60932C109E676A10FBC8821BD43E5EABEE36633322C514D30F6" />
-    <File Index="91" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidConverters.cs" ChecksumAlgorithm="SHA256" Checksum="A0A2251DE01B12B437DB93516655459EA17D4AF3DAA256E60FAE3DF72F257956" />
-    <File Index="92" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidJsonData.cs" ChecksumAlgorithm="SHA256" Checksum="26F3F809C7CEA9E6A32384B9E33FCDE26BDB036F4CD76C29C8AD0689E9CACACD" />
-    <File Index="93" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidXmlData.cs" ChecksumAlgorithm="SHA256" Checksum="41295E810FA74028F5C29038B49E9E7B58759F72809DEE1B8CF139CD99F8F31F" />
-    <File Index="94" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidYamlData.cs" ChecksumAlgorithm="SHA256" Checksum="9289068A02AAF7EEDAE3DC87B0068AF58751D94E4902B8DEB6A3E5572A2237A5" />
-    <File Index="95" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\UknownByteData.cs" ChecksumAlgorithm="SHA256" Checksum="37A89DABD4E412DD5938A1DC84D1D9D2D21296C9651E469423E599E88F892CCB" />
-    <File Index="96" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\ValidConverters.cs" ChecksumAlgorithm="SHA256" Checksum="EB5BB54EAD0129D5D4FF9251FC1C167C7E26BC150CC0592D547298B22376C812" />
+    <File Index="71" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\JsonToYamlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="44FFC9BF3DDB122C3A3F103F7B3533549167AC754BCDC96A925602C6E54FAA9B" />
+    <File Index="72" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\EncodingFactoryTests.cs" ChecksumAlgorithm="SHA256" Checksum="F939FB00D8A130E55CC22FEE8AB8B38CEF9D38C5E8535A3BAB68936B67DBB29E" />
+    <File Index="73" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\FileConversionServiceTests.cs" ChecksumAlgorithm="SHA256" Checksum="73463F0B8E9041547032442965F067BF8C23B301CDBDD5EADBC7A469F220338F" />
+    <File Index="74" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\FileConverterFactoryTests.cs" ChecksumAlgorithm="SHA256" Checksum="2E23FEBD5046D791EAB03780A5659D14B35DD286EC634172949F657DF76CAE2D" />
+    <File Index="75" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\JsonToXmlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="638104C79E9908FAC7642249867359CB9C99D6AAFA852F44411C1F1F267ED28D" />
+    <File Index="76" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\XmlToJsonFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="010587DC875C73FD01E100020FD8431AACA173F64066CC0031D44151EFDEEC54" />
+    <File Index="77" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\XmlToYamlFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="2FF28238367D8E83CB32184B6CF8A68CCD51211E1064D414FDBF70AD39E8D583" />
+    <File Index="78" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\FileConversions\Converters\YamlToJsonFileConverterTests.cs" ChecksumAlgorithm="SHA256" Checksum="7BA8FBF203F01D1FB9D51A457FB47A85A96370ED81FCE315DB47BD9FCAA6C180" />
+    <File Index="79" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Extensions\AssertExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="19FD524B65D53D3F09955031A73C6663B5CB95DF1660CB4C56678A1EC9236EB5" />
+    <File Index="80" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidByteData.cs" ChecksumAlgorithm="SHA256" Checksum="1B2E3899F44AD60932C109E676A10FBC8821BD43E5EABEE36633322C514D30F6" />
+    <File Index="81" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidConverters.cs" ChecksumAlgorithm="SHA256" Checksum="A0A2251DE01B12B437DB93516655459EA17D4AF3DAA256E60FAE3DF72F257956" />
+    <File Index="82" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidJsonData.cs" ChecksumAlgorithm="SHA256" Checksum="26F3F809C7CEA9E6A32384B9E33FCDE26BDB036F4CD76C29C8AD0689E9CACACD" />
+    <File Index="83" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidXmlData.cs" ChecksumAlgorithm="SHA256" Checksum="41295E810FA74028F5C29038B49E9E7B58759F72809DEE1B8CF139CD99F8F31F" />
+    <File Index="84" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\InvalidYamlData.cs" ChecksumAlgorithm="SHA256" Checksum="9289068A02AAF7EEDAE3DC87B0068AF58751D94E4902B8DEB6A3E5572A2237A5" />
+    <File Index="85" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\UknownByteData.cs" ChecksumAlgorithm="SHA256" Checksum="37A89DABD4E412DD5938A1DC84D1D9D2D21296C9651E469423E599E88F892CCB" />
+    <File Index="86" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Infrastructure.UnitTests\Assets\ValidConverters.cs" ChecksumAlgorithm="SHA256" Checksum="EB5BB54EAD0129D5D4FF9251FC1C167C7E26BC150CC0592D547298B22376C812" />
+    <File Index="87" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\AddFilesCommandValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="AB1FDDCFB3D490A31DBF45388FF8F9109837D81E2BA54AE4415B9153D4CC1DB6" />
+    <File Index="88" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\ConvertToQueryValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="979D65376DE8A8CE32708C927823BE6D5A6B9AB5670C1BA380E1D2C93E36460F" />
+    <File Index="89" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\ExportFileQueryValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="464E3261E7214BD9EC68E1236F2D9F8635A0EB40851F220AD7622009BB0B3012" />
+    <File Index="90" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Validation\FileByOptionsValidatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="57B88C70C3E44EE10AEF1A00FCECAC09CB7C3A0B4E85EA010685C0FA467009B0" />
+    <File Index="91" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\ConvertToQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="604E5282EE9FF753B4F75FC6324D56A29E21416173B2E23A203F4E7DB26D5160" />
+    <File Index="92" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\DownloadFileQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="C71BAC8885D4258C8CABBDFF4C3D0386704602AB769E2575E03DD478513587E3" />
+    <File Index="93" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Queries\ExportFileQueryHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="3333F65FEFDD35D2E6D989ACFFF0DCAB247914FA858582529213EAD87C83BAD9" />
+    <File Index="94" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Commands\AddFilesCommandHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="D68417BEAB543DC9D72725E4EB02065CCC3F4630CE6B86FD1DCEC84D506D4CDB" />
+    <File Index="95" Name="E:\GitHub\FileApi\src\Tests\UnitTests\File.Core.UnitTests\Assets\FileMockFactory.cs" ChecksumAlgorithm="SHA256" Checksum="DFD8FD3FF5E01657267A303BBF8868E2BBB513892D93F2651E8C0341C802245E" />
+    <File Index="96" Name="E:\GitHub\FileApi\src\File.UnitTests.Common\Extensions\MoqLoggerExtensions.cs" ChecksumAlgorithm="SHA256" Checksum="1E0B94FE084C015C741D66756A15C72920410AADAEC530A6274DBBC85AFFB171" />
   </FileIndices>
   <Assembly Name="File.API" CoveredStatements="108" TotalStatements="111" CoveragePercent="97">
     <Namespace Name="File.API.Configuration" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
@@ -866,141 +866,141 @@
     <Namespace Name="File.Core.UnitTests.Assets" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
       <Type Name="FileMockFactory" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
         <Method Name="CreateMock(System.Byte[],System.String,System.String):Moq.Mock&lt;File.Domain.Abstractions.IFile&gt;" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="79" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-          <Statement FileIndex="79" Line="9" Column="13" EndLine="9" EndColumn="52" Covered="True" />
-          <Statement FileIndex="79" Line="10" Column="13" EndLine="10" EndColumn="78" Covered="True" />
-          <Statement FileIndex="79" Line="11" Column="13" EndLine="11" EndColumn="72" Covered="True" />
-          <Statement FileIndex="79" Line="12" Column="13" EndLine="12" EndColumn="83" Covered="True" />
-          <Statement FileIndex="79" Line="13" Column="13" EndLine="13" EndColumn="110" Covered="True" />
-          <Statement FileIndex="79" Line="14" Column="13" EndLine="14" EndColumn="35" Covered="True" />
-          <Statement FileIndex="79" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="95" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+          <Statement FileIndex="95" Line="9" Column="13" EndLine="9" EndColumn="52" Covered="True" />
+          <Statement FileIndex="95" Line="10" Column="13" EndLine="10" EndColumn="78" Covered="True" />
+          <Statement FileIndex="95" Line="11" Column="13" EndLine="11" EndColumn="72" Covered="True" />
+          <Statement FileIndex="95" Line="12" Column="13" EndLine="12" EndColumn="83" Covered="True" />
+          <Statement FileIndex="95" Line="13" Column="13" EndLine="13" EndColumn="110" Covered="True" />
+          <Statement FileIndex="95" Line="14" Column="13" EndLine="14" EndColumn="35" Covered="True" />
+          <Statement FileIndex="95" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
     <Namespace Name="File.Core.UnitTests.Commands" CoveredStatements="97" TotalStatements="97" CoveragePercent="100">
       <Type Name="AddFilesCommandHandlerTests" CoveredStatements="97" TotalStatements="97" CoveragePercent="100">
-        <Type Name="&lt;AddFileAsync_All_Failed&gt;d__8" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Type Name="&lt;AddFileAsync_All_Failed&gt;d__7" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
-            <Statement FileIndex="78" Line="110" Column="9" EndLine="110" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="112" Column="13" EndLine="112" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="113" Column="13" EndLine="113" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="115" Column="13" EndLine="119" EndColumn="16" Covered="True" />
-            <Statement FileIndex="78" Line="121" Column="13" EndLine="121" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="122" Column="13" EndLine="122" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="124" Column="13" EndLine="124" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="126" Column="13" EndLine="126" EndColumn="130" Covered="True" />
-            <Statement FileIndex="78" Line="128" Column="13" EndLine="128" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="131" Column="13" EndLine="131" EndColumn="64" Covered="True" />
-            <Statement FileIndex="78" Line="132" Column="13" EndLine="132" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="133" Column="13" EndLine="133" EndColumn="127" Covered="True" />
-            <Statement FileIndex="78" Line="134" Column="13" EndLine="134" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="135" Column="13" EndLine="135" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="136" Column="13" EndLine="136" EndColumn="132" Covered="True" />
-            <Statement FileIndex="78" Line="137" Column="9" EndLine="137" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="109" Column="9" EndLine="109" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="111" Column="13" EndLine="111" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="112" Column="13" EndLine="112" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="114" Column="13" EndLine="118" EndColumn="16" Covered="True" />
+            <Statement FileIndex="94" Line="120" Column="13" EndLine="120" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="121" Column="13" EndLine="121" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="123" Column="13" EndLine="123" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="125" Column="13" EndLine="125" EndColumn="130" Covered="True" />
+            <Statement FileIndex="94" Line="127" Column="13" EndLine="127" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="130" Column="13" EndLine="130" EndColumn="64" Covered="True" />
+            <Statement FileIndex="94" Line="131" Column="13" EndLine="131" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="132" Column="13" EndLine="132" EndColumn="127" Covered="True" />
+            <Statement FileIndex="94" Line="133" Column="13" EndLine="133" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="134" Column="13" EndLine="134" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="135" Column="13" EndLine="135" EndColumn="132" Covered="True" />
+            <Statement FileIndex="94" Line="136" Column="9" EndLine="136" EndColumn="10" Covered="True" />
           </Method>
         </Type>
-        <Type Name="&lt;AddFileAsync_IOException_All_Failed&gt;d__6" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
+        <Type Name="&lt;AddFileAsync_IOException_All_Failed&gt;d__5" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
-            <Statement FileIndex="78" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="52" Column="13" EndLine="52" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="53" Column="13" EndLine="53" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="55" Column="13" EndLine="59" EndColumn="16" Covered="True" />
-            <Statement FileIndex="78" Line="61" Column="13" EndLine="61" EndColumn="103" Covered="True" />
-            <Statement FileIndex="78" Line="62" Column="13" EndLine="62" EndColumn="103" Covered="True" />
-            <Statement FileIndex="78" Line="64" Column="13" EndLine="64" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="67" Column="13" EndLine="67" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="70" Column="13" EndLine="70" EndColumn="64" Covered="True" />
-            <Statement FileIndex="78" Line="71" Column="13" EndLine="71" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="72" Column="13" EndLine="72" EndColumn="127" Covered="True" />
-            <Statement FileIndex="78" Line="73" Column="13" EndLine="73" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="74" Column="13" EndLine="74" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="51" Column="13" EndLine="51" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="52" Column="13" EndLine="52" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="54" Column="13" EndLine="58" EndColumn="16" Covered="True" />
+            <Statement FileIndex="94" Line="60" Column="13" EndLine="60" EndColumn="103" Covered="True" />
+            <Statement FileIndex="94" Line="61" Column="13" EndLine="61" EndColumn="103" Covered="True" />
+            <Statement FileIndex="94" Line="63" Column="13" EndLine="63" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="66" Column="13" EndLine="66" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="69" Column="13" EndLine="69" EndColumn="64" Covered="True" />
+            <Statement FileIndex="94" Line="70" Column="13" EndLine="70" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="71" Column="13" EndLine="71" EndColumn="127" Covered="True" />
+            <Statement FileIndex="94" Line="72" Column="13" EndLine="72" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="73" Column="13" EndLine="73" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
           </Method>
         </Type>
-        <Type Name="&lt;AddFileAsync_IOException_One_Failed&gt;d__7" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Type Name="&lt;AddFileAsync_IOException_One_Failed&gt;d__6" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
-            <Statement FileIndex="78" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="81" Column="13" EndLine="81" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="82" Column="13" EndLine="82" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="84" Column="13" EndLine="88" EndColumn="16" Covered="True" />
-            <Statement FileIndex="78" Line="90" Column="13" EndLine="90" EndColumn="103" Covered="True" />
-            <Statement FileIndex="78" Line="91" Column="13" EndLine="91" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="93" Column="13" EndLine="93" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="95" Column="13" EndLine="95" EndColumn="129" Covered="True" />
-            <Statement FileIndex="78" Line="97" Column="13" EndLine="97" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="100" Column="13" EndLine="100" EndColumn="64" Covered="True" />
-            <Statement FileIndex="78" Line="101" Column="13" EndLine="101" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="102" Column="13" EndLine="102" EndColumn="127" Covered="True" />
-            <Statement FileIndex="78" Line="103" Column="13" EndLine="103" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="104" Column="13" EndLine="104" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="105" Column="13" EndLine="105" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="106" Column="9" EndLine="106" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="80" Column="13" EndLine="80" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="81" Column="13" EndLine="81" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="83" Column="13" EndLine="87" EndColumn="16" Covered="True" />
+            <Statement FileIndex="94" Line="89" Column="13" EndLine="89" EndColumn="103" Covered="True" />
+            <Statement FileIndex="94" Line="90" Column="13" EndLine="90" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="92" Column="13" EndLine="92" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="94" Column="13" EndLine="94" EndColumn="129" Covered="True" />
+            <Statement FileIndex="94" Line="96" Column="13" EndLine="96" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="99" Column="13" EndLine="99" EndColumn="64" Covered="True" />
+            <Statement FileIndex="94" Line="100" Column="13" EndLine="100" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="101" Column="13" EndLine="101" EndColumn="127" Covered="True" />
+            <Statement FileIndex="94" Line="102" Column="13" EndLine="102" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="103" Column="13" EndLine="103" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="104" Column="13" EndLine="104" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
           </Method>
         </Type>
-        <Type Name="&lt;AddFileAsync_One_Failed&gt;d__9" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
+        <Type Name="&lt;AddFileAsync_One_Failed&gt;d__8" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
-            <Statement FileIndex="78" Line="141" Column="9" EndLine="141" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="143" Column="13" EndLine="143" EndColumn="39" Covered="True" />
-            <Statement FileIndex="78" Line="145" Column="13" EndLine="145" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="146" Column="13" EndLine="146" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="148" Column="13" EndLine="152" EndColumn="16" Covered="True" />
-            <Statement FileIndex="78" Line="154" Column="13" EndLine="154" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="155" Column="13" EndLine="155" EndColumn="70" Covered="True" />
-            <Statement FileIndex="78" Line="156" Column="13" EndLine="156" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="158" Column="13" EndLine="158" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="160" Column="13" EndLine="160" EndColumn="164" Covered="True" />
-            <Statement FileIndex="78" Line="161" Column="13" EndLine="161" EndColumn="195" Covered="True" />
-            <Statement FileIndex="78" Line="164" Column="13" EndLine="164" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="167" Column="13" EndLine="167" EndColumn="64" Covered="True" />
-            <Statement FileIndex="78" Line="168" Column="13" EndLine="168" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="169" Column="13" EndLine="169" EndColumn="127" Covered="True" />
-            <Statement FileIndex="78" Line="170" Column="13" EndLine="170" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="171" Column="13" EndLine="171" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="172" Column="13" EndLine="172" EndColumn="132" Covered="True" />
-            <Statement FileIndex="78" Line="173" Column="9" EndLine="173" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="142" Column="13" EndLine="142" EndColumn="39" Covered="True" />
+            <Statement FileIndex="94" Line="144" Column="13" EndLine="144" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="145" Column="13" EndLine="145" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="147" Column="13" EndLine="151" EndColumn="16" Covered="True" />
+            <Statement FileIndex="94" Line="153" Column="13" EndLine="153" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="154" Column="13" EndLine="154" EndColumn="70" Covered="True" />
+            <Statement FileIndex="94" Line="155" Column="13" EndLine="155" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="157" Column="13" EndLine="157" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="159" Column="13" EndLine="159" EndColumn="164" Covered="True" />
+            <Statement FileIndex="94" Line="160" Column="13" EndLine="160" EndColumn="195" Covered="True" />
+            <Statement FileIndex="94" Line="163" Column="13" EndLine="163" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="166" Column="13" EndLine="166" EndColumn="64" Covered="True" />
+            <Statement FileIndex="94" Line="167" Column="13" EndLine="167" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="168" Column="13" EndLine="168" EndColumn="127" Covered="True" />
+            <Statement FileIndex="94" Line="169" Column="13" EndLine="169" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="170" Column="13" EndLine="170" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="171" Column="13" EndLine="171" EndColumn="132" Covered="True" />
+            <Statement FileIndex="94" Line="172" Column="9" EndLine="172" EndColumn="10" Covered="True" />
           </Method>
         </Type>
-        <Type Name="&lt;Success&gt;d__10" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
+        <Type Name="&lt;Success&gt;d__9" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
-            <Statement FileIndex="78" Line="177" Column="9" EndLine="177" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="179" Column="13" EndLine="179" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="180" Column="13" EndLine="180" EndColumn="50" Covered="True" />
-            <Statement FileIndex="78" Line="182" Column="13" EndLine="186" EndColumn="16" Covered="True" />
-            <Statement FileIndex="78" Line="188" Column="13" EndLine="188" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="189" Column="13" EndLine="189" EndColumn="106" Covered="True" />
-            <Statement FileIndex="78" Line="191" Column="13" EndLine="191" EndColumn="126" Covered="True" />
-            <Statement FileIndex="78" Line="193" Column="13" EndLine="193" EndColumn="129" Covered="True" />
-            <Statement FileIndex="78" Line="196" Column="13" EndLine="196" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="199" Column="13" EndLine="199" EndColumn="64" Covered="True" />
-            <Statement FileIndex="78" Line="200" Column="13" EndLine="200" EndColumn="41" Covered="True" />
-            <Statement FileIndex="78" Line="201" Column="13" EndLine="201" EndColumn="127" Covered="True" />
-            <Statement FileIndex="78" Line="202" Column="13" EndLine="202" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="203" Column="13" EndLine="203" EndColumn="85" Covered="True" />
-            <Statement FileIndex="78" Line="204" Column="13" EndLine="204" EndColumn="132" Covered="True" />
-            <Statement FileIndex="78" Line="205" Column="9" EndLine="205" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="176" Column="9" EndLine="176" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="178" Column="13" EndLine="178" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="179" Column="13" EndLine="179" EndColumn="50" Covered="True" />
+            <Statement FileIndex="94" Line="181" Column="13" EndLine="185" EndColumn="16" Covered="True" />
+            <Statement FileIndex="94" Line="187" Column="13" EndLine="187" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="188" Column="13" EndLine="188" EndColumn="106" Covered="True" />
+            <Statement FileIndex="94" Line="190" Column="13" EndLine="190" EndColumn="126" Covered="True" />
+            <Statement FileIndex="94" Line="192" Column="13" EndLine="192" EndColumn="129" Covered="True" />
+            <Statement FileIndex="94" Line="195" Column="13" EndLine="195" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="198" Column="13" EndLine="198" EndColumn="64" Covered="True" />
+            <Statement FileIndex="94" Line="199" Column="13" EndLine="199" EndColumn="41" Covered="True" />
+            <Statement FileIndex="94" Line="200" Column="13" EndLine="200" EndColumn="127" Covered="True" />
+            <Statement FileIndex="94" Line="201" Column="13" EndLine="201" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="202" Column="13" EndLine="202" EndColumn="85" Covered="True" />
+            <Statement FileIndex="94" Line="203" Column="13" EndLine="203" EndColumn="132" Covered="True" />
+            <Statement FileIndex="94" Line="204" Column="9" EndLine="204" EndColumn="10" Covered="True" />
           </Method>
         </Type>
-        <Type Name="&lt;Validation_Failed&gt;d__5" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+        <Type Name="&lt;Validation_Failed&gt;d__4" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-            <Statement FileIndex="78" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
-            <Statement FileIndex="78" Line="34" Column="13" EndLine="34" EndColumn="69" Covered="True" />
-            <Statement FileIndex="78" Line="35" Column="13" EndLine="35" EndColumn="74" Covered="True" />
-            <Statement FileIndex="78" Line="37" Column="13" EndLine="37" EndColumn="147" Covered="True" />
-            <Statement FileIndex="78" Line="40" Column="13" EndLine="40" EndColumn="82" Covered="True" />
-            <Statement FileIndex="78" Line="43" Column="13" EndLine="43" EndColumn="72" Covered="True" />
-            <Statement FileIndex="78" Line="44" Column="13" EndLine="44" EndColumn="75" Covered="True" />
-            <Statement FileIndex="78" Line="45" Column="13" EndLine="45" EndColumn="125" Covered="True" />
-            <Statement FileIndex="78" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+            <Statement FileIndex="94" Line="33" Column="13" EndLine="33" EndColumn="69" Covered="True" />
+            <Statement FileIndex="94" Line="34" Column="13" EndLine="34" EndColumn="74" Covered="True" />
+            <Statement FileIndex="94" Line="36" Column="13" EndLine="36" EndColumn="147" Covered="True" />
+            <Statement FileIndex="94" Line="39" Column="13" EndLine="39" EndColumn="82" Covered="True" />
+            <Statement FileIndex="94" Line="42" Column="13" EndLine="42" EndColumn="72" Covered="True" />
+            <Statement FileIndex="94" Line="43" Column="13" EndLine="43" EndColumn="75" Covered="True" />
+            <Statement FileIndex="94" Line="44" Column="13" EndLine="44" EndColumn="125" Covered="True" />
+            <Statement FileIndex="94" Line="45" Column="9" EndLine="45" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="78" Line="21" Column="9" EndLine="21" EndColumn="45" Covered="True" />
-          <Statement FileIndex="78" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
-          <Statement FileIndex="78" Line="23" Column="13" EndLine="23" EndColumn="83" Covered="True" />
-          <Statement FileIndex="78" Line="24" Column="13" EndLine="24" EndColumn="79" Covered="True" />
-          <Statement FileIndex="78" Line="25" Column="13" EndLine="25" EndColumn="72" Covered="True" />
-          <Statement FileIndex="78" Line="27" Column="13" EndLine="27" EndColumn="141" Covered="True" />
-          <Statement FileIndex="78" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="94" Line="20" Column="9" EndLine="20" EndColumn="45" Covered="True" />
+          <Statement FileIndex="94" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+          <Statement FileIndex="94" Line="22" Column="13" EndLine="22" EndColumn="83" Covered="True" />
+          <Statement FileIndex="94" Line="23" Column="13" EndLine="23" EndColumn="79" Covered="True" />
+          <Statement FileIndex="94" Line="24" Column="13" EndLine="24" EndColumn="75" Covered="True" />
+          <Statement FileIndex="94" Line="26" Column="13" EndLine="26" EndColumn="140" Covered="True" />
+          <Statement FileIndex="94" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -1008,523 +1008,523 @@
       <Type Name="ConvertToQueryHandlerTests" CoveredStatements="51" TotalStatements="51" CoveragePercent="100">
         <Type Name="&lt;FileConvert_Failed&gt;d__7" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="16" TotalStatements="16" CoveragePercent="100">
-            <Statement FileIndex="75" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
-            <Statement FileIndex="75" Line="59" Column="13" EndLine="59" EndColumn="55" Covered="True" />
-            <Statement FileIndex="75" Line="60" Column="13" EndLine="60" EndColumn="33" Covered="True" />
-            <Statement FileIndex="75" Line="61" Column="13" EndLine="61" EndColumn="72" Covered="True" />
-            <Statement FileIndex="75" Line="62" Column="13" EndLine="62" EndColumn="60" Covered="True" />
-            <Statement FileIndex="75" Line="63" Column="13" EndLine="63" EndColumn="118" Covered="True" />
-            <Statement FileIndex="75" Line="64" Column="13" EndLine="64" EndColumn="172" Covered="True" />
-            <Statement FileIndex="75" Line="65" Column="13" EndLine="65" EndColumn="67" Covered="True" />
-            <Statement FileIndex="75" Line="68" Column="13" EndLine="68" EndColumn="82" Covered="True" />
-            <Statement FileIndex="75" Line="71" Column="13" EndLine="71" EndColumn="72" Covered="True" />
-            <Statement FileIndex="75" Line="72" Column="13" EndLine="72" EndColumn="42" Covered="True" />
-            <Statement FileIndex="75" Line="73" Column="13" EndLine="73" EndColumn="115" Covered="True" />
-            <Statement FileIndex="75" Line="74" Column="13" EndLine="74" EndColumn="125" Covered="True" />
-            <Statement FileIndex="75" Line="75" Column="13" EndLine="75" EndColumn="160" Covered="True" />
-            <Statement FileIndex="75" Line="76" Column="13" EndLine="76" EndColumn="100" Covered="True" />
-            <Statement FileIndex="75" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="59" Column="13" EndLine="59" EndColumn="55" Covered="True" />
+            <Statement FileIndex="91" Line="60" Column="13" EndLine="60" EndColumn="33" Covered="True" />
+            <Statement FileIndex="91" Line="61" Column="13" EndLine="61" EndColumn="72" Covered="True" />
+            <Statement FileIndex="91" Line="62" Column="13" EndLine="62" EndColumn="60" Covered="True" />
+            <Statement FileIndex="91" Line="63" Column="13" EndLine="63" EndColumn="118" Covered="True" />
+            <Statement FileIndex="91" Line="64" Column="13" EndLine="64" EndColumn="172" Covered="True" />
+            <Statement FileIndex="91" Line="65" Column="13" EndLine="65" EndColumn="67" Covered="True" />
+            <Statement FileIndex="91" Line="68" Column="13" EndLine="68" EndColumn="82" Covered="True" />
+            <Statement FileIndex="91" Line="71" Column="13" EndLine="71" EndColumn="72" Covered="True" />
+            <Statement FileIndex="91" Line="72" Column="13" EndLine="72" EndColumn="42" Covered="True" />
+            <Statement FileIndex="91" Line="73" Column="13" EndLine="73" EndColumn="115" Covered="True" />
+            <Statement FileIndex="91" Line="74" Column="13" EndLine="74" EndColumn="125" Covered="True" />
+            <Statement FileIndex="91" Line="75" Column="13" EndLine="75" EndColumn="160" Covered="True" />
+            <Statement FileIndex="91" Line="76" Column="13" EndLine="76" EndColumn="100" Covered="True" />
+            <Statement FileIndex="91" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;RequestValidation_Failed&gt;d__6" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
-            <Statement FileIndex="75" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
-            <Statement FileIndex="75" Line="40" Column="13" EndLine="40" EndColumn="66" Covered="True" />
-            <Statement FileIndex="75" Line="41" Column="13" EndLine="41" EndColumn="127" Covered="True" />
-            <Statement FileIndex="75" Line="43" Column="13" EndLine="43" EndColumn="78" Covered="True" />
-            <Statement FileIndex="75" Line="46" Column="13" EndLine="46" EndColumn="82" Covered="True" />
-            <Statement FileIndex="75" Line="49" Column="13" EndLine="49" EndColumn="72" Covered="True" />
-            <Statement FileIndex="75" Line="50" Column="13" EndLine="50" EndColumn="42" Covered="True" />
-            <Statement FileIndex="75" Line="51" Column="13" EndLine="51" EndColumn="64" Covered="True" />
-            <Statement FileIndex="75" Line="52" Column="13" EndLine="52" EndColumn="125" Covered="True" />
-            <Statement FileIndex="75" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="40" Column="13" EndLine="40" EndColumn="66" Covered="True" />
+            <Statement FileIndex="91" Line="41" Column="13" EndLine="41" EndColumn="127" Covered="True" />
+            <Statement FileIndex="91" Line="43" Column="13" EndLine="43" EndColumn="78" Covered="True" />
+            <Statement FileIndex="91" Line="46" Column="13" EndLine="46" EndColumn="82" Covered="True" />
+            <Statement FileIndex="91" Line="49" Column="13" EndLine="49" EndColumn="72" Covered="True" />
+            <Statement FileIndex="91" Line="50" Column="13" EndLine="50" EndColumn="42" Covered="True" />
+            <Statement FileIndex="91" Line="51" Column="13" EndLine="51" EndColumn="64" Covered="True" />
+            <Statement FileIndex="91" Line="52" Column="13" EndLine="52" EndColumn="125" Covered="True" />
+            <Statement FileIndex="91" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Success&gt;d__8" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-            <Statement FileIndex="75" Line="81" Column="9" EndLine="81" EndColumn="10" Covered="True" />
-            <Statement FileIndex="75" Line="83" Column="13" EndLine="83" EndColumn="47" Covered="True" />
-            <Statement FileIndex="75" Line="84" Column="13" EndLine="84" EndColumn="115" Covered="True" />
-            <Statement FileIndex="75" Line="86" Column="13" EndLine="86" EndColumn="32" Covered="True" />
-            <Statement FileIndex="75" Line="87" Column="13" EndLine="87" EndColumn="72" Covered="True" />
-            <Statement FileIndex="75" Line="88" Column="13" EndLine="88" EndColumn="118" Covered="True" />
-            <Statement FileIndex="75" Line="89" Column="13" EndLine="89" EndColumn="178" Covered="True" />
-            <Statement FileIndex="75" Line="90" Column="13" EndLine="90" EndColumn="85" Covered="True" />
-            <Statement FileIndex="75" Line="93" Column="13" EndLine="93" EndColumn="82" Covered="True" />
-            <Statement FileIndex="75" Line="96" Column="13" EndLine="96" EndColumn="64" Covered="True" />
-            <Statement FileIndex="75" Line="97" Column="13" EndLine="97" EndColumn="125" Covered="True" />
-            <Statement FileIndex="75" Line="98" Column="13" EndLine="98" EndColumn="162" Covered="True" />
-            <Statement FileIndex="75" Line="99" Column="13" EndLine="99" EndColumn="70" Covered="True" />
-            <Statement FileIndex="75" Line="100" Column="13" EndLine="100" EndColumn="67" Covered="True" />
-            <Statement FileIndex="75" Line="101" Column="13" EndLine="101" EndColumn="65" Covered="True" />
-            <Statement FileIndex="75" Line="102" Column="13" EndLine="102" EndColumn="94" Covered="True" />
-            <Statement FileIndex="75" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="81" Column="9" EndLine="81" EndColumn="10" Covered="True" />
+            <Statement FileIndex="91" Line="83" Column="13" EndLine="83" EndColumn="47" Covered="True" />
+            <Statement FileIndex="91" Line="84" Column="13" EndLine="84" EndColumn="115" Covered="True" />
+            <Statement FileIndex="91" Line="86" Column="13" EndLine="86" EndColumn="32" Covered="True" />
+            <Statement FileIndex="91" Line="87" Column="13" EndLine="87" EndColumn="72" Covered="True" />
+            <Statement FileIndex="91" Line="88" Column="13" EndLine="88" EndColumn="118" Covered="True" />
+            <Statement FileIndex="91" Line="89" Column="13" EndLine="89" EndColumn="178" Covered="True" />
+            <Statement FileIndex="91" Line="90" Column="13" EndLine="90" EndColumn="85" Covered="True" />
+            <Statement FileIndex="91" Line="93" Column="13" EndLine="93" EndColumn="82" Covered="True" />
+            <Statement FileIndex="91" Line="96" Column="13" EndLine="96" EndColumn="64" Covered="True" />
+            <Statement FileIndex="91" Line="97" Column="13" EndLine="97" EndColumn="125" Covered="True" />
+            <Statement FileIndex="91" Line="98" Column="13" EndLine="98" EndColumn="162" Covered="True" />
+            <Statement FileIndex="91" Line="99" Column="13" EndLine="99" EndColumn="70" Covered="True" />
+            <Statement FileIndex="91" Line="100" Column="13" EndLine="100" EndColumn="67" Covered="True" />
+            <Statement FileIndex="91" Line="101" Column="13" EndLine="101" EndColumn="65" Covered="True" />
+            <Statement FileIndex="91" Line="102" Column="13" EndLine="102" EndColumn="94" Covered="True" />
+            <Statement FileIndex="91" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="75" Line="25" Column="9" EndLine="25" EndColumn="44" Covered="True" />
-          <Statement FileIndex="75" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
-          <Statement FileIndex="75" Line="27" Column="13" EndLine="27" EndColumn="71" Covered="True" />
-          <Statement FileIndex="75" Line="28" Column="13" EndLine="28" EndColumn="81" Covered="True" />
-          <Statement FileIndex="75" Line="29" Column="13" EndLine="29" EndColumn="71" Covered="True" />
-          <Statement FileIndex="75" Line="31" Column="13" EndLine="31" EndColumn="43" Covered="True" />
-          <Statement FileIndex="75" Line="33" Column="13" EndLine="33" EndColumn="135" Covered="True" />
-          <Statement FileIndex="75" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+          <Statement FileIndex="91" Line="25" Column="9" EndLine="25" EndColumn="44" Covered="True" />
+          <Statement FileIndex="91" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="91" Line="27" Column="13" EndLine="27" EndColumn="71" Covered="True" />
+          <Statement FileIndex="91" Line="28" Column="13" EndLine="28" EndColumn="81" Covered="True" />
+          <Statement FileIndex="91" Line="29" Column="13" EndLine="29" EndColumn="71" Covered="True" />
+          <Statement FileIndex="91" Line="31" Column="13" EndLine="31" EndColumn="43" Covered="True" />
+          <Statement FileIndex="91" Line="33" Column="13" EndLine="33" EndColumn="135" Covered="True" />
+          <Statement FileIndex="91" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="DownloadFileQueryHandlerTests" CoveredStatements="52" TotalStatements="52" CoveragePercent="100">
         <Type Name="&lt;GetFileFailed&gt;d__7" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-            <Statement FileIndex="76" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
-            <Statement FileIndex="76" Line="65" Column="13" EndLine="65" EndColumn="50" Covered="True" />
-            <Statement FileIndex="76" Line="67" Column="13" EndLine="67" EndColumn="151" Covered="True" />
-            <Statement FileIndex="76" Line="68" Column="13" EndLine="68" EndColumn="73" Covered="True" />
-            <Statement FileIndex="76" Line="70" Column="13" EndLine="70" EndColumn="164" Covered="True" />
-            <Statement FileIndex="76" Line="73" Column="13" EndLine="73" EndColumn="80" Covered="True" />
-            <Statement FileIndex="76" Line="76" Column="13" EndLine="76" EndColumn="72" Covered="True" />
-            <Statement FileIndex="76" Line="77" Column="13" EndLine="77" EndColumn="38" Covered="True" />
-            <Statement FileIndex="76" Line="78" Column="13" EndLine="78" EndColumn="42" Covered="True" />
-            <Statement FileIndex="76" Line="79" Column="13" EndLine="79" EndColumn="77" Covered="True" />
-            <Statement FileIndex="76" Line="80" Column="13" EndLine="80" EndColumn="147" Covered="True" />
-            <Statement FileIndex="76" Line="81" Column="13" EndLine="81" EndColumn="71" Covered="True" />
-            <Statement FileIndex="76" Line="82" Column="13" EndLine="82" EndColumn="97" Covered="True" />
-            <Statement FileIndex="76" Line="83" Column="13" EndLine="83" EndColumn="154" Covered="True" />
-            <Statement FileIndex="76" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="65" Column="13" EndLine="65" EndColumn="50" Covered="True" />
+            <Statement FileIndex="92" Line="67" Column="13" EndLine="67" EndColumn="151" Covered="True" />
+            <Statement FileIndex="92" Line="68" Column="13" EndLine="68" EndColumn="73" Covered="True" />
+            <Statement FileIndex="92" Line="70" Column="13" EndLine="70" EndColumn="164" Covered="True" />
+            <Statement FileIndex="92" Line="73" Column="13" EndLine="73" EndColumn="80" Covered="True" />
+            <Statement FileIndex="92" Line="76" Column="13" EndLine="76" EndColumn="72" Covered="True" />
+            <Statement FileIndex="92" Line="77" Column="13" EndLine="77" EndColumn="38" Covered="True" />
+            <Statement FileIndex="92" Line="78" Column="13" EndLine="78" EndColumn="42" Covered="True" />
+            <Statement FileIndex="92" Line="79" Column="13" EndLine="79" EndColumn="77" Covered="True" />
+            <Statement FileIndex="92" Line="80" Column="13" EndLine="80" EndColumn="147" Covered="True" />
+            <Statement FileIndex="92" Line="81" Column="13" EndLine="81" EndColumn="71" Covered="True" />
+            <Statement FileIndex="92" Line="82" Column="13" EndLine="82" EndColumn="97" Covered="True" />
+            <Statement FileIndex="92" Line="83" Column="13" EndLine="83" EndColumn="154" Covered="True" />
+            <Statement FileIndex="92" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Success&gt;d__8" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
-            <Statement FileIndex="76" Line="88" Column="9" EndLine="88" EndColumn="10" Covered="True" />
-            <Statement FileIndex="76" Line="90" Column="13" EndLine="90" EndColumn="50" Covered="True" />
-            <Statement FileIndex="76" Line="91" Column="13" EndLine="91" EndColumn="43" Covered="True" />
-            <Statement FileIndex="76" Line="93" Column="13" EndLine="93" EndColumn="151" Covered="True" />
-            <Statement FileIndex="76" Line="94" Column="13" EndLine="94" EndColumn="73" Covered="True" />
-            <Statement FileIndex="76" Line="96" Column="13" EndLine="96" EndColumn="159" Covered="True" />
-            <Statement FileIndex="76" Line="99" Column="13" EndLine="99" EndColumn="80" Covered="True" />
-            <Statement FileIndex="76" Line="102" Column="13" EndLine="102" EndColumn="64" Covered="True" />
-            <Statement FileIndex="76" Line="103" Column="13" EndLine="103" EndColumn="50" Covered="True" />
-            <Statement FileIndex="76" Line="104" Column="13" EndLine="104" EndColumn="41" Covered="True" />
-            <Statement FileIndex="76" Line="105" Column="13" EndLine="105" EndColumn="147" Covered="True" />
-            <Statement FileIndex="76" Line="106" Column="13" EndLine="106" EndColumn="71" Covered="True" />
-            <Statement FileIndex="76" Line="107" Column="13" EndLine="107" EndColumn="154" Covered="True" />
-            <Statement FileIndex="76" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="88" Column="9" EndLine="88" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="90" Column="13" EndLine="90" EndColumn="50" Covered="True" />
+            <Statement FileIndex="92" Line="91" Column="13" EndLine="91" EndColumn="43" Covered="True" />
+            <Statement FileIndex="92" Line="93" Column="13" EndLine="93" EndColumn="151" Covered="True" />
+            <Statement FileIndex="92" Line="94" Column="13" EndLine="94" EndColumn="73" Covered="True" />
+            <Statement FileIndex="92" Line="96" Column="13" EndLine="96" EndColumn="159" Covered="True" />
+            <Statement FileIndex="92" Line="99" Column="13" EndLine="99" EndColumn="80" Covered="True" />
+            <Statement FileIndex="92" Line="102" Column="13" EndLine="102" EndColumn="64" Covered="True" />
+            <Statement FileIndex="92" Line="103" Column="13" EndLine="103" EndColumn="50" Covered="True" />
+            <Statement FileIndex="92" Line="104" Column="13" EndLine="104" EndColumn="41" Covered="True" />
+            <Statement FileIndex="92" Line="105" Column="13" EndLine="105" EndColumn="147" Covered="True" />
+            <Statement FileIndex="92" Line="106" Column="13" EndLine="106" EndColumn="71" Covered="True" />
+            <Statement FileIndex="92" Line="107" Column="13" EndLine="107" EndColumn="154" Covered="True" />
+            <Statement FileIndex="92" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;ValidationFailed&gt;d__6" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-            <Statement FileIndex="76" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
-            <Statement FileIndex="76" Line="41" Column="13" EndLine="41" EndColumn="50" Covered="True" />
-            <Statement FileIndex="76" Line="43" Column="13" EndLine="43" EndColumn="151" Covered="True" />
-            <Statement FileIndex="76" Line="44" Column="13" EndLine="44" EndColumn="70" Covered="True" />
-            <Statement FileIndex="76" Line="45" Column="13" EndLine="45" EndColumn="78" Covered="True" />
-            <Statement FileIndex="76" Line="48" Column="13" EndLine="48" EndColumn="80" Covered="True" />
-            <Statement FileIndex="76" Line="51" Column="13" EndLine="51" EndColumn="72" Covered="True" />
-            <Statement FileIndex="76" Line="52" Column="13" EndLine="52" EndColumn="38" Covered="True" />
-            <Statement FileIndex="76" Line="53" Column="13" EndLine="53" EndColumn="42" Covered="True" />
-            <Statement FileIndex="76" Line="54" Column="13" EndLine="54" EndColumn="89" Covered="True" />
-            <Statement FileIndex="76" Line="55" Column="13" EndLine="55" EndColumn="145" Covered="True" />
-            <Statement FileIndex="76" Line="56" Column="13" EndLine="56" EndColumn="71" Covered="True" />
-            <Statement FileIndex="76" Line="57" Column="13" EndLine="57" EndColumn="69" Covered="True" />
-            <Statement FileIndex="76" Line="58" Column="13" EndLine="58" EndColumn="99" Covered="True" />
-            <Statement FileIndex="76" Line="59" Column="9" EndLine="59" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
+            <Statement FileIndex="92" Line="41" Column="13" EndLine="41" EndColumn="50" Covered="True" />
+            <Statement FileIndex="92" Line="43" Column="13" EndLine="43" EndColumn="151" Covered="True" />
+            <Statement FileIndex="92" Line="44" Column="13" EndLine="44" EndColumn="70" Covered="True" />
+            <Statement FileIndex="92" Line="45" Column="13" EndLine="45" EndColumn="78" Covered="True" />
+            <Statement FileIndex="92" Line="48" Column="13" EndLine="48" EndColumn="80" Covered="True" />
+            <Statement FileIndex="92" Line="51" Column="13" EndLine="51" EndColumn="72" Covered="True" />
+            <Statement FileIndex="92" Line="52" Column="13" EndLine="52" EndColumn="38" Covered="True" />
+            <Statement FileIndex="92" Line="53" Column="13" EndLine="53" EndColumn="42" Covered="True" />
+            <Statement FileIndex="92" Line="54" Column="13" EndLine="54" EndColumn="89" Covered="True" />
+            <Statement FileIndex="92" Line="55" Column="13" EndLine="55" EndColumn="145" Covered="True" />
+            <Statement FileIndex="92" Line="56" Column="13" EndLine="56" EndColumn="71" Covered="True" />
+            <Statement FileIndex="92" Line="57" Column="13" EndLine="57" EndColumn="69" Covered="True" />
+            <Statement FileIndex="92" Line="58" Column="13" EndLine="58" EndColumn="99" Covered="True" />
+            <Statement FileIndex="92" Line="59" Column="9" EndLine="59" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="76" Line="26" Column="9" EndLine="26" EndColumn="47" Covered="True" />
-          <Statement FileIndex="76" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
-          <Statement FileIndex="76" Line="28" Column="13" EndLine="28" EndColumn="89" Covered="True" />
-          <Statement FileIndex="76" Line="29" Column="13" EndLine="29" EndColumn="74" Covered="True" />
-          <Statement FileIndex="76" Line="30" Column="13" EndLine="30" EndColumn="77" Covered="True" />
-          <Statement FileIndex="76" Line="32" Column="13" EndLine="32" EndColumn="63" Covered="True" />
-          <Statement FileIndex="76" Line="34" Column="13" EndLine="34" EndColumn="144" Covered="True" />
-          <Statement FileIndex="76" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="92" Line="26" Column="9" EndLine="26" EndColumn="47" Covered="True" />
+          <Statement FileIndex="92" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+          <Statement FileIndex="92" Line="28" Column="13" EndLine="28" EndColumn="89" Covered="True" />
+          <Statement FileIndex="92" Line="29" Column="13" EndLine="29" EndColumn="74" Covered="True" />
+          <Statement FileIndex="92" Line="30" Column="13" EndLine="30" EndColumn="77" Covered="True" />
+          <Statement FileIndex="92" Line="32" Column="13" EndLine="32" EndColumn="63" Covered="True" />
+          <Statement FileIndex="92" Line="34" Column="13" EndLine="34" EndColumn="144" Covered="True" />
+          <Statement FileIndex="92" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="ExportFileQueryHandlerTests" CoveredStatements="88" TotalStatements="88" CoveragePercent="100">
         <Type Name="&lt;ExportTo_Failed&gt;d__10" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
-            <Statement FileIndex="77" Line="117" Column="9" EndLine="117" EndColumn="10" Covered="True" />
-            <Statement FileIndex="77" Line="119" Column="13" EndLine="122" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="123" Column="13" EndLine="123" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="124" Column="13" EndLine="127" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="129" Column="13" EndLine="129" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="130" Column="13" EndLine="130" EndColumn="120" Covered="True" />
-            <Statement FileIndex="77" Line="131" Column="13" EndLine="132" EndColumn="51" Covered="True" />
-            <Statement FileIndex="77" Line="133" Column="13" EndLine="133" EndColumn="139" Covered="True" />
-            <Statement FileIndex="77" Line="134" Column="13" EndLine="134" EndColumn="171" Covered="True" />
-            <Statement FileIndex="77" Line="137" Column="13" EndLine="137" EndColumn="82" Covered="True" />
-            <Statement FileIndex="77" Line="140" Column="13" EndLine="140" EndColumn="72" Covered="True" />
-            <Statement FileIndex="77" Line="141" Column="13" EndLine="141" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="142" Column="13" EndLine="142" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="143" Column="13" EndLine="143" EndColumn="114" Covered="True" />
-            <Statement FileIndex="77" Line="144" Column="13" EndLine="144" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="145" Column="13" EndLine="145" EndColumn="137" Covered="True" />
-            <Statement FileIndex="77" Line="146" Column="13" EndLine="146" EndColumn="183" Covered="True" />
-            <Statement FileIndex="77" Line="147" Column="13" EndLine="147" EndColumn="181" Covered="True" />
-            <Statement FileIndex="77" Line="148" Column="9" EndLine="148" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="117" Column="9" EndLine="117" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="119" Column="13" EndLine="122" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="123" Column="13" EndLine="123" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="124" Column="13" EndLine="127" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="129" Column="13" EndLine="129" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="130" Column="13" EndLine="130" EndColumn="120" Covered="True" />
+            <Statement FileIndex="93" Line="131" Column="13" EndLine="132" EndColumn="51" Covered="True" />
+            <Statement FileIndex="93" Line="133" Column="13" EndLine="133" EndColumn="139" Covered="True" />
+            <Statement FileIndex="93" Line="134" Column="13" EndLine="134" EndColumn="171" Covered="True" />
+            <Statement FileIndex="93" Line="137" Column="13" EndLine="137" EndColumn="82" Covered="True" />
+            <Statement FileIndex="93" Line="140" Column="13" EndLine="140" EndColumn="72" Covered="True" />
+            <Statement FileIndex="93" Line="141" Column="13" EndLine="141" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="142" Column="13" EndLine="142" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="143" Column="13" EndLine="143" EndColumn="114" Covered="True" />
+            <Statement FileIndex="93" Line="144" Column="13" EndLine="144" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="145" Column="13" EndLine="145" EndColumn="137" Covered="True" />
+            <Statement FileIndex="93" Line="146" Column="13" EndLine="146" EndColumn="183" Covered="True" />
+            <Statement FileIndex="93" Line="147" Column="13" EndLine="147" EndColumn="181" Covered="True" />
+            <Statement FileIndex="93" Line="148" Column="9" EndLine="148" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;GetFile_Failed&gt;d__8" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
-            <Statement FileIndex="77" Line="62" Column="9" EndLine="62" EndColumn="10" Covered="True" />
-            <Statement FileIndex="77" Line="64" Column="13" EndLine="64" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="66" Column="13" EndLine="66" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="67" Column="13" EndLine="67" EndColumn="120" Covered="True" />
-            <Statement FileIndex="77" Line="68" Column="13" EndLine="68" EndColumn="163" Covered="True" />
-            <Statement FileIndex="77" Line="71" Column="13" EndLine="71" EndColumn="82" Covered="True" />
-            <Statement FileIndex="77" Line="74" Column="13" EndLine="74" EndColumn="72" Covered="True" />
-            <Statement FileIndex="77" Line="75" Column="13" EndLine="75" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="76" Column="13" EndLine="76" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="77" Column="13" EndLine="77" EndColumn="112" Covered="True" />
-            <Statement FileIndex="77" Line="78" Column="13" EndLine="78" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="79" Column="13" EndLine="79" EndColumn="137" Covered="True" />
-            <Statement FileIndex="77" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="62" Column="9" EndLine="62" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="64" Column="13" EndLine="64" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="66" Column="13" EndLine="66" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="67" Column="13" EndLine="67" EndColumn="120" Covered="True" />
+            <Statement FileIndex="93" Line="68" Column="13" EndLine="68" EndColumn="163" Covered="True" />
+            <Statement FileIndex="93" Line="71" Column="13" EndLine="71" EndColumn="82" Covered="True" />
+            <Statement FileIndex="93" Line="74" Column="13" EndLine="74" EndColumn="72" Covered="True" />
+            <Statement FileIndex="93" Line="75" Column="13" EndLine="75" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="76" Column="13" EndLine="76" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="77" Column="13" EndLine="77" EndColumn="112" Covered="True" />
+            <Statement FileIndex="93" Line="78" Column="13" EndLine="78" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="79" Column="13" EndLine="79" EndColumn="137" Covered="True" />
+            <Statement FileIndex="93" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Success&gt;d__11" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
-            <Statement FileIndex="77" Line="152" Column="9" EndLine="152" EndColumn="10" Covered="True" />
-            <Statement FileIndex="77" Line="154" Column="13" EndLine="157" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="158" Column="13" EndLine="158" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="159" Column="13" EndLine="162" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="164" Column="13" EndLine="164" EndColumn="47" Covered="True" />
-            <Statement FileIndex="77" Line="165" Column="13" EndLine="165" EndColumn="115" Covered="True" />
-            <Statement FileIndex="77" Line="167" Column="13" EndLine="167" EndColumn="120" Covered="True" />
-            <Statement FileIndex="77" Line="168" Column="13" EndLine="169" EndColumn="51" Covered="True" />
-            <Statement FileIndex="77" Line="170" Column="13" EndLine="170" EndColumn="139" Covered="True" />
-            <Statement FileIndex="77" Line="171" Column="13" EndLine="171" EndColumn="179" Covered="True" />
-            <Statement FileIndex="77" Line="174" Column="13" EndLine="174" EndColumn="82" Covered="True" />
-            <Statement FileIndex="77" Line="177" Column="13" EndLine="177" EndColumn="64" Covered="True" />
-            <Statement FileIndex="77" Line="178" Column="13" EndLine="178" EndColumn="41" Covered="True" />
-            <Statement FileIndex="77" Line="179" Column="13" EndLine="179" EndColumn="69" Covered="True" />
-            <Statement FileIndex="77" Line="180" Column="13" EndLine="180" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="181" Column="13" EndLine="181" EndColumn="137" Covered="True" />
-            <Statement FileIndex="77" Line="182" Column="13" EndLine="182" EndColumn="183" Covered="True" />
-            <Statement FileIndex="77" Line="183" Column="13" EndLine="183" EndColumn="181" Covered="True" />
-            <Statement FileIndex="77" Line="184" Column="9" EndLine="184" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="152" Column="9" EndLine="152" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="154" Column="13" EndLine="157" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="158" Column="13" EndLine="158" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="159" Column="13" EndLine="162" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="164" Column="13" EndLine="164" EndColumn="47" Covered="True" />
+            <Statement FileIndex="93" Line="165" Column="13" EndLine="165" EndColumn="115" Covered="True" />
+            <Statement FileIndex="93" Line="167" Column="13" EndLine="167" EndColumn="120" Covered="True" />
+            <Statement FileIndex="93" Line="168" Column="13" EndLine="169" EndColumn="51" Covered="True" />
+            <Statement FileIndex="93" Line="170" Column="13" EndLine="170" EndColumn="139" Covered="True" />
+            <Statement FileIndex="93" Line="171" Column="13" EndLine="171" EndColumn="179" Covered="True" />
+            <Statement FileIndex="93" Line="174" Column="13" EndLine="174" EndColumn="82" Covered="True" />
+            <Statement FileIndex="93" Line="177" Column="13" EndLine="177" EndColumn="64" Covered="True" />
+            <Statement FileIndex="93" Line="178" Column="13" EndLine="178" EndColumn="41" Covered="True" />
+            <Statement FileIndex="93" Line="179" Column="13" EndLine="179" EndColumn="69" Covered="True" />
+            <Statement FileIndex="93" Line="180" Column="13" EndLine="180" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="181" Column="13" EndLine="181" EndColumn="137" Covered="True" />
+            <Statement FileIndex="93" Line="182" Column="13" EndLine="182" EndColumn="183" Covered="True" />
+            <Statement FileIndex="93" Line="183" Column="13" EndLine="183" EndColumn="181" Covered="True" />
+            <Statement FileIndex="93" Line="184" Column="9" EndLine="184" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;ValidateConversion_Failed&gt;d__9" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-            <Statement FileIndex="77" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
-            <Statement FileIndex="77" Line="86" Column="13" EndLine="89" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="90" Column="13" EndLine="90" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="91" Column="13" EndLine="94" EndColumn="15" Covered="True" />
-            <Statement FileIndex="77" Line="96" Column="13" EndLine="96" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="97" Column="13" EndLine="97" EndColumn="120" Covered="True" />
-            <Statement FileIndex="77" Line="98" Column="13" EndLine="99" EndColumn="51" Covered="True" />
-            <Statement FileIndex="77" Line="100" Column="13" EndLine="100" EndColumn="148" Covered="True" />
-            <Statement FileIndex="77" Line="103" Column="13" EndLine="103" EndColumn="82" Covered="True" />
-            <Statement FileIndex="77" Line="106" Column="13" EndLine="106" EndColumn="72" Covered="True" />
-            <Statement FileIndex="77" Line="107" Column="13" EndLine="107" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="108" Column="13" EndLine="108" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="109" Column="13" EndLine="109" EndColumn="114" Covered="True" />
-            <Statement FileIndex="77" Line="110" Column="13" EndLine="110" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="111" Column="13" EndLine="111" EndColumn="137" Covered="True" />
-            <Statement FileIndex="77" Line="112" Column="13" EndLine="112" EndColumn="181" Covered="True" />
-            <Statement FileIndex="77" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="86" Column="13" EndLine="89" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="90" Column="13" EndLine="90" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="91" Column="13" EndLine="94" EndColumn="15" Covered="True" />
+            <Statement FileIndex="93" Line="96" Column="13" EndLine="96" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="97" Column="13" EndLine="97" EndColumn="120" Covered="True" />
+            <Statement FileIndex="93" Line="98" Column="13" EndLine="99" EndColumn="51" Covered="True" />
+            <Statement FileIndex="93" Line="100" Column="13" EndLine="100" EndColumn="148" Covered="True" />
+            <Statement FileIndex="93" Line="103" Column="13" EndLine="103" EndColumn="82" Covered="True" />
+            <Statement FileIndex="93" Line="106" Column="13" EndLine="106" EndColumn="72" Covered="True" />
+            <Statement FileIndex="93" Line="107" Column="13" EndLine="107" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="108" Column="13" EndLine="108" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="109" Column="13" EndLine="109" EndColumn="114" Covered="True" />
+            <Statement FileIndex="93" Line="110" Column="13" EndLine="110" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="111" Column="13" EndLine="111" EndColumn="137" Covered="True" />
+            <Statement FileIndex="93" Line="112" Column="13" EndLine="112" EndColumn="181" Covered="True" />
+            <Statement FileIndex="93" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;ValidateRequest_Failed&gt;d__7" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
-            <Statement FileIndex="77" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
-            <Statement FileIndex="77" Line="44" Column="13" EndLine="44" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="46" Column="13" EndLine="46" EndColumn="49" Covered="True" />
-            <Statement FileIndex="77" Line="47" Column="13" EndLine="47" EndColumn="129" Covered="True" />
-            <Statement FileIndex="77" Line="50" Column="13" EndLine="50" EndColumn="82" Covered="True" />
-            <Statement FileIndex="77" Line="53" Column="13" EndLine="53" EndColumn="72" Covered="True" />
-            <Statement FileIndex="77" Line="54" Column="13" EndLine="54" EndColumn="42" Covered="True" />
-            <Statement FileIndex="77" Line="55" Column="13" EndLine="55" EndColumn="67" Covered="True" />
-            <Statement FileIndex="77" Line="56" Column="13" EndLine="56" EndColumn="102" Covered="True" />
-            <Statement FileIndex="77" Line="57" Column="13" EndLine="57" EndColumn="127" Covered="True" />
-            <Statement FileIndex="77" Line="58" Column="9" EndLine="58" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+            <Statement FileIndex="93" Line="44" Column="13" EndLine="44" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="46" Column="13" EndLine="46" EndColumn="49" Covered="True" />
+            <Statement FileIndex="93" Line="47" Column="13" EndLine="47" EndColumn="129" Covered="True" />
+            <Statement FileIndex="93" Line="50" Column="13" EndLine="50" EndColumn="82" Covered="True" />
+            <Statement FileIndex="93" Line="53" Column="13" EndLine="53" EndColumn="72" Covered="True" />
+            <Statement FileIndex="93" Line="54" Column="13" EndLine="54" EndColumn="42" Covered="True" />
+            <Statement FileIndex="93" Line="55" Column="13" EndLine="55" EndColumn="67" Covered="True" />
+            <Statement FileIndex="93" Line="56" Column="13" EndLine="56" EndColumn="102" Covered="True" />
+            <Statement FileIndex="93" Line="57" Column="13" EndLine="57" EndColumn="127" Covered="True" />
+            <Statement FileIndex="93" Line="58" Column="9" EndLine="58" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="77" Line="24" Column="9" EndLine="24" EndColumn="45" Covered="True" />
-          <Statement FileIndex="77" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
-          <Statement FileIndex="77" Line="26" Column="13" EndLine="26" EndColumn="83" Covered="True" />
-          <Statement FileIndex="77" Line="27" Column="13" EndLine="27" EndColumn="77" Covered="True" />
-          <Statement FileIndex="77" Line="28" Column="13" EndLine="28" EndColumn="72" Covered="True" />
-          <Statement FileIndex="77" Line="29" Column="13" EndLine="29" EndColumn="71" Covered="True" />
-          <Statement FileIndex="77" Line="30" Column="13" EndLine="30" EndColumn="79" Covered="True" />
-          <Statement FileIndex="77" Line="32" Column="13" EndLine="37" EndColumn="53" Covered="True" />
-          <Statement FileIndex="77" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="93" Line="24" Column="9" EndLine="24" EndColumn="45" Covered="True" />
+          <Statement FileIndex="93" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+          <Statement FileIndex="93" Line="26" Column="13" EndLine="26" EndColumn="83" Covered="True" />
+          <Statement FileIndex="93" Line="27" Column="13" EndLine="27" EndColumn="77" Covered="True" />
+          <Statement FileIndex="93" Line="28" Column="13" EndLine="28" EndColumn="72" Covered="True" />
+          <Statement FileIndex="93" Line="29" Column="13" EndLine="29" EndColumn="71" Covered="True" />
+          <Statement FileIndex="93" Line="30" Column="13" EndLine="30" EndColumn="79" Covered="True" />
+          <Statement FileIndex="93" Line="32" Column="13" EndLine="37" EndColumn="53" Covered="True" />
+          <Statement FileIndex="93" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
     <Namespace Name="File.Core.UnitTests.Validation" CoveredStatements="223" TotalStatements="223" CoveragePercent="100">
       <Type Name="AddFilesCommandValidatorTests" CoveredStatements="61" TotalStatements="61" CoveragePercent="100">
         <Method Name=".ctor():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="71" Line="19" Column="9" EndLine="19" EndColumn="47" Covered="True" />
-          <Statement FileIndex="71" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
-          <Statement FileIndex="71" Line="21" Column="13" EndLine="21" EndColumn="85" Covered="True" />
-          <Statement FileIndex="71" Line="22" Column="13" EndLine="22" EndColumn="79" Covered="True" />
-          <Statement FileIndex="71" Line="23" Column="13" EndLine="23" EndColumn="67" Covered="True" />
-          <Statement FileIndex="71" Line="25" Column="13" EndLine="25" EndColumn="123" Covered="True" />
-          <Statement FileIndex="71" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="19" Column="9" EndLine="19" EndColumn="47" Covered="True" />
+          <Statement FileIndex="87" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="21" Column="13" EndLine="21" EndColumn="85" Covered="True" />
+          <Statement FileIndex="87" Line="22" Column="13" EndLine="22" EndColumn="79" Covered="True" />
+          <Statement FileIndex="87" Line="23" Column="13" EndLine="23" EndColumn="67" Covered="True" />
+          <Statement FileIndex="87" Line="25" Column="13" EndLine="25" EndColumn="123" Covered="True" />
+          <Statement FileIndex="87" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="AllFilesValidation_Failed():System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-          <Statement FileIndex="71" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
-          <Statement FileIndex="71" Line="50" Column="13" EndLine="50" EndColumn="113" Covered="True" />
-          <Statement FileIndex="71" Line="51" Column="13" EndLine="51" EndColumn="113" Covered="True" />
-          <Statement FileIndex="71" Line="53" Column="13" EndLine="57" EndColumn="16" Covered="True" />
-          <Statement FileIndex="71" Line="58" Column="13" EndLine="58" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="60" Column="13" EndLine="60" EndColumn="77" Covered="True" />
-          <Statement FileIndex="71" Line="61" Column="13" EndLine="61" EndColumn="151" Covered="True" />
-          <Statement FileIndex="71" Line="62" Column="13" EndLine="62" EndColumn="119" Covered="True" />
-          <Statement FileIndex="71" Line="65" Column="13" EndLine="65" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="68" Column="13" EndLine="68" EndColumn="42" Covered="True" />
-          <Statement FileIndex="71" Line="69" Column="13" EndLine="69" EndColumn="42" Covered="True" />
-          <Statement FileIndex="71" Line="70" Column="13" EndLine="70" EndColumn="75" Covered="True" />
-          <Statement FileIndex="71" Line="71" Column="13" EndLine="71" EndColumn="145" Covered="True" />
-          <Statement FileIndex="71" Line="72" Column="13" EndLine="72" EndColumn="96" Covered="True" />
-          <Statement FileIndex="71" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="50" Column="13" EndLine="50" EndColumn="113" Covered="True" />
+          <Statement FileIndex="87" Line="51" Column="13" EndLine="51" EndColumn="113" Covered="True" />
+          <Statement FileIndex="87" Line="53" Column="13" EndLine="57" EndColumn="16" Covered="True" />
+          <Statement FileIndex="87" Line="58" Column="13" EndLine="58" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="60" Column="13" EndLine="60" EndColumn="77" Covered="True" />
+          <Statement FileIndex="87" Line="61" Column="13" EndLine="61" EndColumn="151" Covered="True" />
+          <Statement FileIndex="87" Line="62" Column="13" EndLine="62" EndColumn="119" Covered="True" />
+          <Statement FileIndex="87" Line="65" Column="13" EndLine="65" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="68" Column="13" EndLine="68" EndColumn="42" Covered="True" />
+          <Statement FileIndex="87" Line="69" Column="13" EndLine="69" EndColumn="42" Covered="True" />
+          <Statement FileIndex="87" Line="70" Column="13" EndLine="70" EndColumn="75" Covered="True" />
+          <Statement FileIndex="87" Line="71" Column="13" EndLine="71" EndColumn="145" Covered="True" />
+          <Statement FileIndex="87" Line="72" Column="13" EndLine="72" EndColumn="96" Covered="True" />
+          <Statement FileIndex="87" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="CommandValidation_Failed():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="71" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
-          <Statement FileIndex="71" Line="32" Column="13" EndLine="32" EndColumn="74" Covered="True" />
-          <Statement FileIndex="71" Line="34" Column="13" EndLine="34" EndColumn="74" Covered="True" />
-          <Statement FileIndex="71" Line="35" Column="13" EndLine="35" EndColumn="149" Covered="True" />
-          <Statement FileIndex="71" Line="38" Column="13" EndLine="38" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="41" Column="13" EndLine="41" EndColumn="42" Covered="True" />
-          <Statement FileIndex="71" Line="42" Column="13" EndLine="42" EndColumn="75" Covered="True" />
-          <Statement FileIndex="71" Line="43" Column="13" EndLine="43" EndColumn="143" Covered="True" />
-          <Statement FileIndex="71" Line="44" Column="9" EndLine="44" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="32" Column="13" EndLine="32" EndColumn="74" Covered="True" />
+          <Statement FileIndex="87" Line="34" Column="13" EndLine="34" EndColumn="74" Covered="True" />
+          <Statement FileIndex="87" Line="35" Column="13" EndLine="35" EndColumn="149" Covered="True" />
+          <Statement FileIndex="87" Line="38" Column="13" EndLine="38" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="41" Column="13" EndLine="41" EndColumn="42" Covered="True" />
+          <Statement FileIndex="87" Line="42" Column="13" EndLine="42" EndColumn="75" Covered="True" />
+          <Statement FileIndex="87" Line="43" Column="13" EndLine="43" EndColumn="143" Covered="True" />
+          <Statement FileIndex="87" Line="44" Column="9" EndLine="44" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="OneFilesValidation_Failed():System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-          <Statement FileIndex="71" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
-          <Statement FileIndex="71" Line="79" Column="13" EndLine="79" EndColumn="45" Covered="True" />
-          <Statement FileIndex="71" Line="80" Column="13" EndLine="80" EndColumn="45" Covered="True" />
-          <Statement FileIndex="71" Line="82" Column="13" EndLine="82" EndColumn="105" Covered="True" />
-          <Statement FileIndex="71" Line="83" Column="13" EndLine="83" EndColumn="105" Covered="True" />
-          <Statement FileIndex="71" Line="85" Column="13" EndLine="89" EndColumn="16" Covered="True" />
-          <Statement FileIndex="71" Line="90" Column="13" EndLine="90" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="92" Column="13" EndLine="92" EndColumn="77" Covered="True" />
-          <Statement FileIndex="71" Line="93" Column="13" EndLine="93" EndColumn="151" Covered="True" />
-          <Statement FileIndex="71" Line="94" Column="13" EndLine="94" EndColumn="149" Covered="True" />
-          <Statement FileIndex="71" Line="95" Column="13" EndLine="95" EndColumn="139" Covered="True" />
-          <Statement FileIndex="71" Line="98" Column="13" EndLine="98" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="101" Column="13" EndLine="101" EndColumn="42" Covered="True" />
-          <Statement FileIndex="71" Line="102" Column="13" EndLine="102" EndColumn="75" Covered="True" />
-          <Statement FileIndex="71" Line="103" Column="13" EndLine="103" EndColumn="145" Covered="True" />
-          <Statement FileIndex="71" Line="104" Column="13" EndLine="104" EndColumn="102" Covered="True" />
-          <Statement FileIndex="71" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="79" Column="13" EndLine="79" EndColumn="45" Covered="True" />
+          <Statement FileIndex="87" Line="80" Column="13" EndLine="80" EndColumn="45" Covered="True" />
+          <Statement FileIndex="87" Line="82" Column="13" EndLine="82" EndColumn="105" Covered="True" />
+          <Statement FileIndex="87" Line="83" Column="13" EndLine="83" EndColumn="105" Covered="True" />
+          <Statement FileIndex="87" Line="85" Column="13" EndLine="89" EndColumn="16" Covered="True" />
+          <Statement FileIndex="87" Line="90" Column="13" EndLine="90" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="92" Column="13" EndLine="92" EndColumn="77" Covered="True" />
+          <Statement FileIndex="87" Line="93" Column="13" EndLine="93" EndColumn="151" Covered="True" />
+          <Statement FileIndex="87" Line="94" Column="13" EndLine="94" EndColumn="149" Covered="True" />
+          <Statement FileIndex="87" Line="95" Column="13" EndLine="95" EndColumn="139" Covered="True" />
+          <Statement FileIndex="87" Line="98" Column="13" EndLine="98" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="101" Column="13" EndLine="101" EndColumn="42" Covered="True" />
+          <Statement FileIndex="87" Line="102" Column="13" EndLine="102" EndColumn="75" Covered="True" />
+          <Statement FileIndex="87" Line="103" Column="13" EndLine="103" EndColumn="145" Covered="True" />
+          <Statement FileIndex="87" Line="104" Column="13" EndLine="104" EndColumn="102" Covered="True" />
+          <Statement FileIndex="87" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Success():System.Void" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
-          <Statement FileIndex="71" Line="109" Column="9" EndLine="109" EndColumn="10" Covered="True" />
-          <Statement FileIndex="71" Line="111" Column="13" EndLine="111" EndColumn="107" Covered="True" />
-          <Statement FileIndex="71" Line="112" Column="13" EndLine="112" EndColumn="107" Covered="True" />
-          <Statement FileIndex="71" Line="114" Column="13" EndLine="118" EndColumn="16" Covered="True" />
-          <Statement FileIndex="71" Line="120" Column="13" EndLine="120" EndColumn="77" Covered="True" />
-          <Statement FileIndex="71" Line="121" Column="13" EndLine="121" EndColumn="151" Covered="True" />
-          <Statement FileIndex="71" Line="122" Column="13" EndLine="122" EndColumn="108" Covered="True" />
-          <Statement FileIndex="71" Line="125" Column="13" EndLine="125" EndColumn="49" Covered="True" />
-          <Statement FileIndex="71" Line="128" Column="13" EndLine="128" EndColumn="43" Covered="True" />
-          <Statement FileIndex="71" Line="129" Column="13" EndLine="129" EndColumn="75" Covered="True" />
-          <Statement FileIndex="71" Line="130" Column="13" EndLine="130" EndColumn="145" Covered="True" />
-          <Statement FileIndex="71" Line="131" Column="13" EndLine="131" EndColumn="102" Covered="True" />
-          <Statement FileIndex="71" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="109" Column="9" EndLine="109" EndColumn="10" Covered="True" />
+          <Statement FileIndex="87" Line="111" Column="13" EndLine="111" EndColumn="107" Covered="True" />
+          <Statement FileIndex="87" Line="112" Column="13" EndLine="112" EndColumn="107" Covered="True" />
+          <Statement FileIndex="87" Line="114" Column="13" EndLine="118" EndColumn="16" Covered="True" />
+          <Statement FileIndex="87" Line="120" Column="13" EndLine="120" EndColumn="77" Covered="True" />
+          <Statement FileIndex="87" Line="121" Column="13" EndLine="121" EndColumn="151" Covered="True" />
+          <Statement FileIndex="87" Line="122" Column="13" EndLine="122" EndColumn="108" Covered="True" />
+          <Statement FileIndex="87" Line="125" Column="13" EndLine="125" EndColumn="49" Covered="True" />
+          <Statement FileIndex="87" Line="128" Column="13" EndLine="128" EndColumn="43" Covered="True" />
+          <Statement FileIndex="87" Line="129" Column="13" EndLine="129" EndColumn="75" Covered="True" />
+          <Statement FileIndex="87" Line="130" Column="13" EndLine="130" EndColumn="145" Covered="True" />
+          <Statement FileIndex="87" Line="131" Column="13" EndLine="131" EndColumn="102" Covered="True" />
+          <Statement FileIndex="87" Line="132" Column="9" EndLine="132" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="ConvertToQueryValidatorTests" CoveredStatements="66" TotalStatements="66" CoveragePercent="100">
         <Method Name=".ctor():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="72" Line="20" Column="9" EndLine="20" EndColumn="46" Covered="True" />
-          <Statement FileIndex="72" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
-          <Statement FileIndex="72" Line="22" Column="13" EndLine="22" EndColumn="83" Covered="True" />
-          <Statement FileIndex="72" Line="23" Column="13" EndLine="23" EndColumn="79" Covered="True" />
-          <Statement FileIndex="72" Line="25" Column="13" EndLine="25" EndColumn="67" Covered="True" />
-          <Statement FileIndex="72" Line="27" Column="13" EndLine="27" EndColumn="121" Covered="True" />
-          <Statement FileIndex="72" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="20" Column="9" EndLine="20" EndColumn="46" Covered="True" />
+          <Statement FileIndex="88" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="22" Column="13" EndLine="22" EndColumn="83" Covered="True" />
+          <Statement FileIndex="88" Line="23" Column="13" EndLine="23" EndColumn="79" Covered="True" />
+          <Statement FileIndex="88" Line="25" Column="13" EndLine="25" EndColumn="67" Covered="True" />
+          <Statement FileIndex="88" Line="27" Column="13" EndLine="27" EndColumn="121" Covered="True" />
+          <Statement FileIndex="88" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ConversionValidation_Failed():System.Void" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
-          <Statement FileIndex="72" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
-          <Statement FileIndex="72" Line="76" Column="13" EndLine="76" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="77" Column="13" EndLine="77" EndColumn="46" Covered="True" />
-          <Statement FileIndex="72" Line="78" Column="13" EndLine="78" EndColumn="132" Covered="True" />
-          <Statement FileIndex="72" Line="79" Column="13" EndLine="79" EndColumn="88" Covered="True" />
-          <Statement FileIndex="72" Line="81" Column="13" EndLine="81" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="83" Column="13" EndLine="83" EndColumn="149" Covered="True" />
-          <Statement FileIndex="72" Line="84" Column="13" EndLine="84" EndColumn="77" Covered="True" />
-          <Statement FileIndex="72" Line="85" Column="13" EndLine="85" EndColumn="108" Covered="True" />
-          <Statement FileIndex="72" Line="86" Column="13" EndLine="86" EndColumn="150" Covered="True" />
-          <Statement FileIndex="72" Line="89" Column="13" EndLine="89" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="92" Column="13" EndLine="92" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="93" Column="13" EndLine="93" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="94" Column="13" EndLine="94" EndColumn="72" Covered="True" />
-          <Statement FileIndex="72" Line="95" Column="13" EndLine="95" EndColumn="143" Covered="True" />
-          <Statement FileIndex="72" Line="96" Column="13" EndLine="96" EndColumn="75" Covered="True" />
-          <Statement FileIndex="72" Line="97" Column="13" EndLine="97" EndColumn="96" Covered="True" />
-          <Statement FileIndex="72" Line="98" Column="13" EndLine="98" EndColumn="186" Covered="True" />
-          <Statement FileIndex="72" Line="99" Column="9" EndLine="99" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="76" Column="13" EndLine="76" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="77" Column="13" EndLine="77" EndColumn="46" Covered="True" />
+          <Statement FileIndex="88" Line="78" Column="13" EndLine="78" EndColumn="132" Covered="True" />
+          <Statement FileIndex="88" Line="79" Column="13" EndLine="79" EndColumn="88" Covered="True" />
+          <Statement FileIndex="88" Line="81" Column="13" EndLine="81" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="83" Column="13" EndLine="83" EndColumn="149" Covered="True" />
+          <Statement FileIndex="88" Line="84" Column="13" EndLine="84" EndColumn="77" Covered="True" />
+          <Statement FileIndex="88" Line="85" Column="13" EndLine="85" EndColumn="108" Covered="True" />
+          <Statement FileIndex="88" Line="86" Column="13" EndLine="86" EndColumn="150" Covered="True" />
+          <Statement FileIndex="88" Line="89" Column="13" EndLine="89" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="92" Column="13" EndLine="92" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="93" Column="13" EndLine="93" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="94" Column="13" EndLine="94" EndColumn="72" Covered="True" />
+          <Statement FileIndex="88" Line="95" Column="13" EndLine="95" EndColumn="143" Covered="True" />
+          <Statement FileIndex="88" Line="96" Column="13" EndLine="96" EndColumn="75" Covered="True" />
+          <Statement FileIndex="88" Line="97" Column="13" EndLine="97" EndColumn="96" Covered="True" />
+          <Statement FileIndex="88" Line="98" Column="13" EndLine="98" EndColumn="186" Covered="True" />
+          <Statement FileIndex="88" Line="99" Column="9" EndLine="99" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="FileValidation_Failed():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
-          <Statement FileIndex="72" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
-          <Statement FileIndex="72" Line="52" Column="13" EndLine="52" EndColumn="86" Covered="True" />
-          <Statement FileIndex="72" Line="54" Column="13" EndLine="54" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="56" Column="13" EndLine="56" EndColumn="149" Covered="True" />
-          <Statement FileIndex="72" Line="57" Column="13" EndLine="57" EndColumn="77" Covered="True" />
-          <Statement FileIndex="72" Line="58" Column="13" EndLine="58" EndColumn="119" Covered="True" />
-          <Statement FileIndex="72" Line="61" Column="13" EndLine="61" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="64" Column="13" EndLine="64" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="65" Column="13" EndLine="65" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="66" Column="13" EndLine="66" EndColumn="72" Covered="True" />
-          <Statement FileIndex="72" Line="67" Column="13" EndLine="67" EndColumn="143" Covered="True" />
-          <Statement FileIndex="72" Line="68" Column="13" EndLine="68" EndColumn="75" Covered="True" />
-          <Statement FileIndex="72" Line="69" Column="13" EndLine="69" EndColumn="96" Covered="True" />
-          <Statement FileIndex="72" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="52" Column="13" EndLine="52" EndColumn="86" Covered="True" />
+          <Statement FileIndex="88" Line="54" Column="13" EndLine="54" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="56" Column="13" EndLine="56" EndColumn="149" Covered="True" />
+          <Statement FileIndex="88" Line="57" Column="13" EndLine="57" EndColumn="77" Covered="True" />
+          <Statement FileIndex="88" Line="58" Column="13" EndLine="58" EndColumn="119" Covered="True" />
+          <Statement FileIndex="88" Line="61" Column="13" EndLine="61" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="64" Column="13" EndLine="64" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="65" Column="13" EndLine="65" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="66" Column="13" EndLine="66" EndColumn="72" Covered="True" />
+          <Statement FileIndex="88" Line="67" Column="13" EndLine="67" EndColumn="143" Covered="True" />
+          <Statement FileIndex="88" Line="68" Column="13" EndLine="68" EndColumn="75" Covered="True" />
+          <Statement FileIndex="88" Line="69" Column="13" EndLine="69" EndColumn="96" Covered="True" />
+          <Statement FileIndex="88" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="QueryValidation_Failed():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="72" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
-          <Statement FileIndex="72" Line="34" Column="13" EndLine="34" EndColumn="86" Covered="True" />
-          <Statement FileIndex="72" Line="36" Column="13" EndLine="36" EndColumn="149" Covered="True" />
-          <Statement FileIndex="72" Line="37" Column="13" EndLine="37" EndColumn="74" Covered="True" />
-          <Statement FileIndex="72" Line="40" Column="13" EndLine="40" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="43" Column="13" EndLine="43" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="44" Column="13" EndLine="44" EndColumn="141" Covered="True" />
-          <Statement FileIndex="72" Line="45" Column="13" EndLine="45" EndColumn="75" Covered="True" />
-          <Statement FileIndex="72" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="34" Column="13" EndLine="34" EndColumn="86" Covered="True" />
+          <Statement FileIndex="88" Line="36" Column="13" EndLine="36" EndColumn="149" Covered="True" />
+          <Statement FileIndex="88" Line="37" Column="13" EndLine="37" EndColumn="74" Covered="True" />
+          <Statement FileIndex="88" Line="40" Column="13" EndLine="40" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="43" Column="13" EndLine="43" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="44" Column="13" EndLine="44" EndColumn="141" Covered="True" />
+          <Statement FileIndex="88" Line="45" Column="13" EndLine="45" EndColumn="75" Covered="True" />
+          <Statement FileIndex="88" Line="46" Column="9" EndLine="46" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Success():System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-          <Statement FileIndex="72" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
-          <Statement FileIndex="72" Line="105" Column="13" EndLine="105" EndColumn="42" Covered="True" />
-          <Statement FileIndex="72" Line="106" Column="13" EndLine="106" EndColumn="46" Covered="True" />
-          <Statement FileIndex="72" Line="107" Column="13" EndLine="107" EndColumn="132" Covered="True" />
-          <Statement FileIndex="72" Line="108" Column="13" EndLine="108" EndColumn="88" Covered="True" />
-          <Statement FileIndex="72" Line="110" Column="13" EndLine="110" EndColumn="149" Covered="True" />
-          <Statement FileIndex="72" Line="111" Column="13" EndLine="111" EndColumn="77" Covered="True" />
-          <Statement FileIndex="72" Line="112" Column="13" EndLine="112" EndColumn="108" Covered="True" />
-          <Statement FileIndex="72" Line="113" Column="13" EndLine="113" EndColumn="139" Covered="True" />
-          <Statement FileIndex="72" Line="116" Column="13" EndLine="116" EndColumn="49" Covered="True" />
-          <Statement FileIndex="72" Line="119" Column="13" EndLine="119" EndColumn="43" Covered="True" />
-          <Statement FileIndex="72" Line="120" Column="13" EndLine="120" EndColumn="41" Covered="True" />
-          <Statement FileIndex="72" Line="121" Column="13" EndLine="121" EndColumn="143" Covered="True" />
-          <Statement FileIndex="72" Line="122" Column="13" EndLine="122" EndColumn="75" Covered="True" />
-          <Statement FileIndex="72" Line="123" Column="13" EndLine="123" EndColumn="96" Covered="True" />
-          <Statement FileIndex="72" Line="124" Column="13" EndLine="124" EndColumn="182" Covered="True" />
-          <Statement FileIndex="72" Line="125" Column="9" EndLine="125" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+          <Statement FileIndex="88" Line="105" Column="13" EndLine="105" EndColumn="42" Covered="True" />
+          <Statement FileIndex="88" Line="106" Column="13" EndLine="106" EndColumn="46" Covered="True" />
+          <Statement FileIndex="88" Line="107" Column="13" EndLine="107" EndColumn="132" Covered="True" />
+          <Statement FileIndex="88" Line="108" Column="13" EndLine="108" EndColumn="88" Covered="True" />
+          <Statement FileIndex="88" Line="110" Column="13" EndLine="110" EndColumn="149" Covered="True" />
+          <Statement FileIndex="88" Line="111" Column="13" EndLine="111" EndColumn="77" Covered="True" />
+          <Statement FileIndex="88" Line="112" Column="13" EndLine="112" EndColumn="108" Covered="True" />
+          <Statement FileIndex="88" Line="113" Column="13" EndLine="113" EndColumn="139" Covered="True" />
+          <Statement FileIndex="88" Line="116" Column="13" EndLine="116" EndColumn="49" Covered="True" />
+          <Statement FileIndex="88" Line="119" Column="13" EndLine="119" EndColumn="43" Covered="True" />
+          <Statement FileIndex="88" Line="120" Column="13" EndLine="120" EndColumn="41" Covered="True" />
+          <Statement FileIndex="88" Line="121" Column="13" EndLine="121" EndColumn="143" Covered="True" />
+          <Statement FileIndex="88" Line="122" Column="13" EndLine="122" EndColumn="75" Covered="True" />
+          <Statement FileIndex="88" Line="123" Column="13" EndLine="123" EndColumn="96" Covered="True" />
+          <Statement FileIndex="88" Line="124" Column="13" EndLine="124" EndColumn="182" Covered="True" />
+          <Statement FileIndex="88" Line="125" Column="9" EndLine="125" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="ExportFileQueryValidatorTests" CoveredStatements="42" TotalStatements="42" CoveragePercent="100">
         <Method Name=".ctor():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="73" Line="23" Column="9" EndLine="23" EndColumn="47" Covered="True" />
-          <Statement FileIndex="73" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
-          <Statement FileIndex="73" Line="25" Column="13" EndLine="25" EndColumn="81" Covered="True" />
-          <Statement FileIndex="73" Line="26" Column="13" EndLine="26" EndColumn="75" Covered="True" />
-          <Statement FileIndex="73" Line="28" Column="13" EndLine="28" EndColumn="67" Covered="True" />
-          <Statement FileIndex="73" Line="30" Column="13" EndLine="30" EndColumn="115" Covered="True" />
-          <Statement FileIndex="73" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="23" Column="9" EndLine="23" EndColumn="47" Covered="True" />
+          <Statement FileIndex="89" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="25" Column="13" EndLine="25" EndColumn="81" Covered="True" />
+          <Statement FileIndex="89" Line="26" Column="13" EndLine="26" EndColumn="75" Covered="True" />
+          <Statement FileIndex="89" Line="28" Column="13" EndLine="28" EndColumn="67" Covered="True" />
+          <Statement FileIndex="89" Line="30" Column="13" EndLine="30" EndColumn="115" Covered="True" />
+          <Statement FileIndex="89" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ExtensionValidation_Failed():System.Void" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
-          <Statement FileIndex="73" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
-          <Statement FileIndex="73" Line="55" Column="13" EndLine="58" EndColumn="15" Covered="True" />
-          <Statement FileIndex="73" Line="60" Column="13" EndLine="60" EndColumn="49" Covered="True" />
-          <Statement FileIndex="73" Line="62" Column="13" EndLine="62" EndColumn="147" Covered="True" />
-          <Statement FileIndex="73" Line="63" Column="13" EndLine="63" EndColumn="77" Covered="True" />
-          <Statement FileIndex="73" Line="64" Column="13" EndLine="64" EndColumn="116" Covered="True" />
-          <Statement FileIndex="73" Line="67" Column="13" EndLine="67" EndColumn="49" Covered="True" />
-          <Statement FileIndex="73" Line="70" Column="13" EndLine="70" EndColumn="42" Covered="True" />
-          <Statement FileIndex="73" Line="71" Column="13" EndLine="71" EndColumn="42" Covered="True" />
-          <Statement FileIndex="73" Line="72" Column="13" EndLine="72" EndColumn="72" Covered="True" />
-          <Statement FileIndex="73" Line="73" Column="13" EndLine="73" EndColumn="141" Covered="True" />
-          <Statement FileIndex="73" Line="74" Column="13" EndLine="74" EndColumn="75" Covered="True" />
-          <Statement FileIndex="73" Line="75" Column="13" EndLine="75" EndColumn="122" Covered="True" />
-          <Statement FileIndex="73" Line="76" Column="9" EndLine="76" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="53" Column="9" EndLine="53" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="55" Column="13" EndLine="58" EndColumn="15" Covered="True" />
+          <Statement FileIndex="89" Line="60" Column="13" EndLine="60" EndColumn="49" Covered="True" />
+          <Statement FileIndex="89" Line="62" Column="13" EndLine="62" EndColumn="147" Covered="True" />
+          <Statement FileIndex="89" Line="63" Column="13" EndLine="63" EndColumn="77" Covered="True" />
+          <Statement FileIndex="89" Line="64" Column="13" EndLine="64" EndColumn="116" Covered="True" />
+          <Statement FileIndex="89" Line="67" Column="13" EndLine="67" EndColumn="49" Covered="True" />
+          <Statement FileIndex="89" Line="70" Column="13" EndLine="70" EndColumn="42" Covered="True" />
+          <Statement FileIndex="89" Line="71" Column="13" EndLine="71" EndColumn="42" Covered="True" />
+          <Statement FileIndex="89" Line="72" Column="13" EndLine="72" EndColumn="72" Covered="True" />
+          <Statement FileIndex="89" Line="73" Column="13" EndLine="73" EndColumn="141" Covered="True" />
+          <Statement FileIndex="89" Line="74" Column="13" EndLine="74" EndColumn="75" Covered="True" />
+          <Statement FileIndex="89" Line="75" Column="13" EndLine="75" EndColumn="122" Covered="True" />
+          <Statement FileIndex="89" Line="76" Column="9" EndLine="76" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="QueryValidation_Failed():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="73" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
-          <Statement FileIndex="73" Line="37" Column="13" EndLine="37" EndColumn="49" Covered="True" />
-          <Statement FileIndex="73" Line="39" Column="13" EndLine="39" EndColumn="147" Covered="True" />
-          <Statement FileIndex="73" Line="40" Column="13" EndLine="40" EndColumn="76" Covered="True" />
-          <Statement FileIndex="73" Line="43" Column="13" EndLine="43" EndColumn="49" Covered="True" />
-          <Statement FileIndex="73" Line="46" Column="13" EndLine="46" EndColumn="42" Covered="True" />
-          <Statement FileIndex="73" Line="47" Column="13" EndLine="47" EndColumn="141" Covered="True" />
-          <Statement FileIndex="73" Line="48" Column="13" EndLine="48" EndColumn="75" Covered="True" />
-          <Statement FileIndex="73" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="37" Column="13" EndLine="37" EndColumn="49" Covered="True" />
+          <Statement FileIndex="89" Line="39" Column="13" EndLine="39" EndColumn="147" Covered="True" />
+          <Statement FileIndex="89" Line="40" Column="13" EndLine="40" EndColumn="76" Covered="True" />
+          <Statement FileIndex="89" Line="43" Column="13" EndLine="43" EndColumn="49" Covered="True" />
+          <Statement FileIndex="89" Line="46" Column="13" EndLine="46" EndColumn="42" Covered="True" />
+          <Statement FileIndex="89" Line="47" Column="13" EndLine="47" EndColumn="141" Covered="True" />
+          <Statement FileIndex="89" Line="48" Column="13" EndLine="48" EndColumn="75" Covered="True" />
+          <Statement FileIndex="89" Line="49" Column="9" EndLine="49" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Success():System.Void" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
-          <Statement FileIndex="73" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
-          <Statement FileIndex="73" Line="82" Column="13" EndLine="85" EndColumn="15" Covered="True" />
-          <Statement FileIndex="73" Line="87" Column="13" EndLine="87" EndColumn="147" Covered="True" />
-          <Statement FileIndex="73" Line="88" Column="13" EndLine="88" EndColumn="77" Covered="True" />
-          <Statement FileIndex="73" Line="89" Column="13" EndLine="89" EndColumn="105" Covered="True" />
-          <Statement FileIndex="73" Line="92" Column="13" EndLine="92" EndColumn="49" Covered="True" />
-          <Statement FileIndex="73" Line="95" Column="13" EndLine="95" EndColumn="43" Covered="True" />
-          <Statement FileIndex="73" Line="96" Column="13" EndLine="96" EndColumn="41" Covered="True" />
-          <Statement FileIndex="73" Line="97" Column="13" EndLine="97" EndColumn="141" Covered="True" />
-          <Statement FileIndex="73" Line="98" Column="13" EndLine="98" EndColumn="75" Covered="True" />
-          <Statement FileIndex="73" Line="99" Column="13" EndLine="99" EndColumn="122" Covered="True" />
-          <Statement FileIndex="73" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+          <Statement FileIndex="89" Line="82" Column="13" EndLine="85" EndColumn="15" Covered="True" />
+          <Statement FileIndex="89" Line="87" Column="13" EndLine="87" EndColumn="147" Covered="True" />
+          <Statement FileIndex="89" Line="88" Column="13" EndLine="88" EndColumn="77" Covered="True" />
+          <Statement FileIndex="89" Line="89" Column="13" EndLine="89" EndColumn="105" Covered="True" />
+          <Statement FileIndex="89" Line="92" Column="13" EndLine="92" EndColumn="49" Covered="True" />
+          <Statement FileIndex="89" Line="95" Column="13" EndLine="95" EndColumn="43" Covered="True" />
+          <Statement FileIndex="89" Line="96" Column="13" EndLine="96" EndColumn="41" Covered="True" />
+          <Statement FileIndex="89" Line="97" Column="13" EndLine="97" EndColumn="141" Covered="True" />
+          <Statement FileIndex="89" Line="98" Column="13" EndLine="98" EndColumn="75" Covered="True" />
+          <Statement FileIndex="89" Line="99" Column="13" EndLine="99" EndColumn="122" Covered="True" />
+          <Statement FileIndex="89" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="FileByOptionsValidatorTests" CoveredStatements="54" TotalStatements="54" CoveragePercent="100">
         <Method Name=".ctor():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="74" Line="17" Column="9" EndLine="17" EndColumn="45" Covered="True" />
-          <Statement FileIndex="74" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="19" Column="13" EndLine="31" EndColumn="16" Covered="True" />
-          <Statement FileIndex="74" Line="33" Column="13" EndLine="33" EndColumn="61" Covered="True" />
-          <Statement FileIndex="74" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="14" Column="9" EndLine="14" EndColumn="45" Covered="True" />
+          <Statement FileIndex="90" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="16" Column="13" EndLine="28" EndColumn="16" Covered="True" />
+          <Statement FileIndex="90" Line="30" Column="13" EndLine="30" EndColumn="60" Covered="True" />
+          <Statement FileIndex="90" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateConversion_NotAllowedConversion():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
-          <Statement FileIndex="74" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="121" Column="13" EndLine="121" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="122" Column="13" EndLine="122" EndColumn="40" Covered="True" />
-          <Statement FileIndex="74" Line="125" Column="13" EndLine="125" EndColumn="82" Covered="True" />
-          <Statement FileIndex="74" Line="128" Column="13" EndLine="128" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="129" Column="13" EndLine="129" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="130" Column="13" EndLine="130" EndColumn="150" Covered="True" />
-          <Statement FileIndex="74" Line="131" Column="9" EndLine="131" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="116" Column="9" EndLine="116" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="118" Column="13" EndLine="118" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="119" Column="13" EndLine="119" EndColumn="40" Covered="True" />
+          <Statement FileIndex="90" Line="122" Column="13" EndLine="122" EndColumn="82" Covered="True" />
+          <Statement FileIndex="90" Line="125" Column="13" EndLine="125" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="126" Column="13" EndLine="126" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="127" Column="13" EndLine="127" EndColumn="150" Covered="True" />
+          <Statement FileIndex="90" Line="128" Column="9" EndLine="128" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateConversion_NotAllowedSourceExtension():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="74" Line="104" Column="9" EndLine="104" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="106" Column="13" EndLine="106" EndColumn="53" Covered="True" />
-          <Statement FileIndex="74" Line="109" Column="13" EndLine="109" EndColumn="81" Covered="True" />
-          <Statement FileIndex="74" Line="112" Column="13" EndLine="112" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="113" Column="13" EndLine="113" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="114" Column="13" EndLine="114" EndColumn="135" Covered="True" />
-          <Statement FileIndex="74" Line="115" Column="9" EndLine="115" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="101" Column="9" EndLine="101" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="103" Column="13" EndLine="103" EndColumn="53" Covered="True" />
+          <Statement FileIndex="90" Line="106" Column="13" EndLine="106" EndColumn="81" Covered="True" />
+          <Statement FileIndex="90" Line="109" Column="13" EndLine="109" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="110" Column="13" EndLine="110" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="111" Column="13" EndLine="111" EndColumn="135" Covered="True" />
+          <Statement FileIndex="90" Line="112" Column="9" EndLine="112" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateExtension_NotAllowedExtension():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-          <Statement FileIndex="74" Line="89" Column="9" EndLine="89" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="91" Column="13" EndLine="91" EndColumn="34" Covered="True" />
-          <Statement FileIndex="74" Line="94" Column="13" EndLine="94" EndColumn="51" Covered="True" />
-          <Statement FileIndex="74" Line="97" Column="13" EndLine="97" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="98" Column="13" EndLine="98" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="99" Column="13" EndLine="99" EndColumn="129" Covered="True" />
-          <Statement FileIndex="74" Line="100" Column="9" EndLine="100" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="88" Column="13" EndLine="88" EndColumn="34" Covered="True" />
+          <Statement FileIndex="90" Line="91" Column="13" EndLine="91" EndColumn="51" Covered="True" />
+          <Statement FileIndex="90" Line="94" Column="13" EndLine="94" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="95" Column="13" EndLine="95" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="96" Column="13" EndLine="96" EndColumn="129" Covered="True" />
+          <Statement FileIndex="90" Line="97" Column="9" EndLine="97" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateFile_EmptyFile():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="74" Line="72" Column="9" EndLine="72" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="74" Column="13" EndLine="74" EndColumn="39" Covered="True" />
-          <Statement FileIndex="74" Line="75" Column="13" EndLine="75" EndColumn="50" Covered="True" />
-          <Statement FileIndex="74" Line="76" Column="13" EndLine="76" EndColumn="91" Covered="True" />
-          <Statement FileIndex="74" Line="79" Column="13" EndLine="79" EndColumn="57" Covered="True" />
-          <Statement FileIndex="74" Line="82" Column="13" EndLine="82" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="83" Column="13" EndLine="83" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="84" Column="13" EndLine="84" EndColumn="119" Covered="True" />
-          <Statement FileIndex="74" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="69" Column="9" EndLine="69" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="71" Column="13" EndLine="71" EndColumn="39" Covered="True" />
+          <Statement FileIndex="90" Line="72" Column="13" EndLine="72" EndColumn="50" Covered="True" />
+          <Statement FileIndex="90" Line="73" Column="13" EndLine="73" EndColumn="91" Covered="True" />
+          <Statement FileIndex="90" Line="76" Column="13" EndLine="76" EndColumn="57" Covered="True" />
+          <Statement FileIndex="90" Line="79" Column="13" EndLine="79" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="80" Column="13" EndLine="80" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="81" Column="13" EndLine="81" EndColumn="119" Covered="True" />
+          <Statement FileIndex="90" Line="82" Column="9" EndLine="82" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateFile_MaxLengthExceed():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="74" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="57" Column="13" EndLine="57" EndColumn="39" Covered="True" />
-          <Statement FileIndex="74" Line="58" Column="13" EndLine="58" EndColumn="50" Covered="True" />
-          <Statement FileIndex="74" Line="59" Column="13" EndLine="59" EndColumn="92" Covered="True" />
-          <Statement FileIndex="74" Line="62" Column="13" EndLine="62" EndColumn="57" Covered="True" />
-          <Statement FileIndex="74" Line="65" Column="13" EndLine="65" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="66" Column="13" EndLine="66" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="67" Column="13" EndLine="67" EndColumn="123" Covered="True" />
-          <Statement FileIndex="74" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="54" Column="13" EndLine="54" EndColumn="39" Covered="True" />
+          <Statement FileIndex="90" Line="55" Column="13" EndLine="55" EndColumn="50" Covered="True" />
+          <Statement FileIndex="90" Line="56" Column="13" EndLine="56" EndColumn="92" Covered="True" />
+          <Statement FileIndex="90" Line="59" Column="13" EndLine="59" EndColumn="57" Covered="True" />
+          <Statement FileIndex="90" Line="62" Column="13" EndLine="62" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="63" Column="13" EndLine="63" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="64" Column="13" EndLine="64" EndColumn="123" Covered="True" />
+          <Statement FileIndex="90" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="ValidateFile_NotAllowedContentType():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
-          <Statement FileIndex="74" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
-          <Statement FileIndex="74" Line="40" Column="13" EndLine="40" EndColumn="39" Covered="True" />
-          <Statement FileIndex="74" Line="41" Column="13" EndLine="41" EndColumn="45" Covered="True" />
-          <Statement FileIndex="74" Line="42" Column="13" EndLine="42" EndColumn="91" Covered="True" />
-          <Statement FileIndex="74" Line="45" Column="13" EndLine="45" EndColumn="57" Covered="True" />
-          <Statement FileIndex="74" Line="48" Column="13" EndLine="48" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="49" Column="13" EndLine="49" EndColumn="42" Covered="True" />
-          <Statement FileIndex="74" Line="50" Column="13" EndLine="50" EndColumn="138" Covered="True" />
-          <Statement FileIndex="74" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="90" Line="37" Column="13" EndLine="37" EndColumn="39" Covered="True" />
+          <Statement FileIndex="90" Line="38" Column="13" EndLine="38" EndColumn="45" Covered="True" />
+          <Statement FileIndex="90" Line="39" Column="13" EndLine="39" EndColumn="91" Covered="True" />
+          <Statement FileIndex="90" Line="42" Column="13" EndLine="42" EndColumn="57" Covered="True" />
+          <Statement FileIndex="90" Line="45" Column="13" EndLine="45" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="46" Column="13" EndLine="46" EndColumn="42" Covered="True" />
+          <Statement FileIndex="90" Line="47" Column="13" EndLine="47" EndColumn="138" Covered="True" />
+          <Statement FileIndex="90" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -2285,30 +2285,30 @@
       <Type Name="JsonToYamlFileConverterTests" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Json&gt;b__0():System.Threading.Tasks.Task" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="81" Line="33" Column="65" EndLine="33" EndColumn="114" Covered="True" />
+            <Statement FileIndex="71" Line="33" Column="65" EndLine="33" EndColumn="114" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Empty_Json&gt;d__2" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="81" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
-            <Statement FileIndex="81" Line="21" Column="13" EndLine="21" EndColumn="34" Covered="True" />
-            <Statement FileIndex="81" Line="23" Column="13" EndLine="23" EndColumn="80" Covered="True" />
-            <Statement FileIndex="81" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
-            <Statement FileIndex="81" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+            <Statement FileIndex="71" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+            <Statement FileIndex="71" Line="21" Column="13" EndLine="21" EndColumn="34" Covered="True" />
+            <Statement FileIndex="71" Line="23" Column="13" EndLine="23" EndColumn="80" Covered="True" />
+            <Statement FileIndex="71" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
+            <Statement FileIndex="71" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Invalid_Json&gt;d__3" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="81" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
-            <Statement FileIndex="81" Line="33" Column="13" EndLine="33" EndColumn="116" Covered="True" />
-            <Statement FileIndex="81" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+            <Statement FileIndex="71" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+            <Statement FileIndex="71" Line="33" Column="13" EndLine="33" EndColumn="116" Covered="True" />
+            <Statement FileIndex="71" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="81" Line="12" Column="9" EndLine="12" EndColumn="46" Covered="True" />
-          <Statement FileIndex="81" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
-          <Statement FileIndex="81" Line="14" Column="13" EndLine="14" EndColumn="50" Covered="True" />
-          <Statement FileIndex="81" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="71" Line="12" Column="9" EndLine="12" EndColumn="46" Covered="True" />
+          <Statement FileIndex="71" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="71" Line="14" Column="13" EndLine="14" EndColumn="50" Covered="True" />
+          <Statement FileIndex="71" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -2316,118 +2316,118 @@
       <Type Name="InvalidByteData" CoveredStatements="5" TotalStatements="6" CoveragePercent="83">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="90" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="90" Line="9" Column="13" EndLine="9" EndColumn="70" Covered="True" />
-            <Statement FileIndex="90" Line="10" Column="13" EndLine="10" EndColumn="71" Covered="True" />
-            <Statement FileIndex="90" Line="11" Column="13" EndLine="11" EndColumn="66" Covered="True" />
-            <Statement FileIndex="90" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+            <Statement FileIndex="80" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="80" Line="9" Column="13" EndLine="9" EndColumn="70" Covered="True" />
+            <Statement FileIndex="80" Line="10" Column="13" EndLine="10" EndColumn="71" Covered="True" />
+            <Statement FileIndex="80" Line="11" Column="13" EndLine="11" EndColumn="66" Covered="True" />
+            <Statement FileIndex="80" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="90" Line="14" Column="52" EndLine="14" EndColumn="67" Covered="False" />
+          <Statement FileIndex="80" Line="14" Column="52" EndLine="14" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="InvalidConverters" CoveredStatements="17" TotalStatements="18" CoveragePercent="94">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-            <Statement FileIndex="91" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="91" Line="9" Column="13" EndLine="9" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="10" Column="13" EndLine="10" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="11" Column="13" EndLine="11" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="12" Column="13" EndLine="12" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="13" Column="13" EndLine="13" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="14" Column="13" EndLine="14" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="15" Column="13" EndLine="15" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="16" Column="13" EndLine="16" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="17" Column="13" EndLine="17" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="18" Column="13" EndLine="18" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="19" Column="13" EndLine="19" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="20" Column="13" EndLine="20" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="21" Column="13" EndLine="21" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="22" Column="13" EndLine="22" EndColumn="57" Covered="True" />
-            <Statement FileIndex="91" Line="23" Column="13" EndLine="23" EndColumn="56" Covered="True" />
-            <Statement FileIndex="91" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+            <Statement FileIndex="81" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="81" Line="9" Column="13" EndLine="9" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="10" Column="13" EndLine="10" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="11" Column="13" EndLine="11" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="12" Column="13" EndLine="12" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="13" Column="13" EndLine="13" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="14" Column="13" EndLine="14" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="15" Column="13" EndLine="15" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="16" Column="13" EndLine="16" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="17" Column="13" EndLine="17" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="18" Column="13" EndLine="18" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="19" Column="13" EndLine="19" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="20" Column="13" EndLine="20" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="21" Column="13" EndLine="21" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="22" Column="13" EndLine="22" EndColumn="57" Covered="True" />
+            <Statement FileIndex="81" Line="23" Column="13" EndLine="23" EndColumn="56" Covered="True" />
+            <Statement FileIndex="81" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="91" Line="26" Column="52" EndLine="26" EndColumn="67" Covered="False" />
+          <Statement FileIndex="81" Line="26" Column="52" EndLine="26" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="InvalidJsonData" CoveredStatements="4" TotalStatements="5" CoveragePercent="80">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-            <Statement FileIndex="92" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="92" Line="9" Column="13" EndLine="9" EndColumn="54" Covered="True" />
-            <Statement FileIndex="92" Line="10" Column="13" EndLine="10" EndColumn="58" Covered="True" />
-            <Statement FileIndex="92" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+            <Statement FileIndex="82" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="82" Line="9" Column="13" EndLine="9" EndColumn="54" Covered="True" />
+            <Statement FileIndex="82" Line="10" Column="13" EndLine="10" EndColumn="58" Covered="True" />
+            <Statement FileIndex="82" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="92" Line="13" Column="52" EndLine="13" EndColumn="67" Covered="False" />
+          <Statement FileIndex="82" Line="13" Column="52" EndLine="13" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="InvalidXmlData" CoveredStatements="4" TotalStatements="5" CoveragePercent="80">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-            <Statement FileIndex="93" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="93" Line="9" Column="13" EndLine="9" EndColumn="49" Covered="True" />
-            <Statement FileIndex="93" Line="10" Column="13" EndLine="10" EndColumn="61" Covered="True" />
-            <Statement FileIndex="93" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+            <Statement FileIndex="83" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="83" Line="9" Column="13" EndLine="9" EndColumn="49" Covered="True" />
+            <Statement FileIndex="83" Line="10" Column="13" EndLine="10" EndColumn="61" Covered="True" />
+            <Statement FileIndex="83" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="93" Line="13" Column="52" EndLine="13" EndColumn="67" Covered="False" />
+          <Statement FileIndex="83" Line="13" Column="52" EndLine="13" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="InvalidYamlData" CoveredStatements="3" TotalStatements="4" CoveragePercent="75">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="94" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="94" Line="9" Column="13" EndLine="9" EndColumn="98" Covered="True" />
-            <Statement FileIndex="94" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
+            <Statement FileIndex="84" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="84" Line="9" Column="13" EndLine="9" EndColumn="98" Covered="True" />
+            <Statement FileIndex="84" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="94" Line="12" Column="52" EndLine="12" EndColumn="67" Covered="False" />
+          <Statement FileIndex="84" Line="12" Column="52" EndLine="12" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="UknownByteData" CoveredStatements="5" TotalStatements="6" CoveragePercent="83">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="95" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
-            <Statement FileIndex="95" Line="9" Column="13" EndLine="9" EndColumn="74" Covered="True" />
-            <Statement FileIndex="95" Line="10" Column="13" EndLine="10" EndColumn="75" Covered="True" />
-            <Statement FileIndex="95" Line="11" Column="13" EndLine="11" EndColumn="69" Covered="True" />
-            <Statement FileIndex="95" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+            <Statement FileIndex="85" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="True" />
+            <Statement FileIndex="85" Line="9" Column="13" EndLine="9" EndColumn="74" Covered="True" />
+            <Statement FileIndex="85" Line="10" Column="13" EndLine="10" EndColumn="75" Covered="True" />
+            <Statement FileIndex="85" Line="11" Column="13" EndLine="11" EndColumn="69" Covered="True" />
+            <Statement FileIndex="85" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="95" Line="14" Column="52" EndLine="14" EndColumn="67" Covered="False" />
+          <Statement FileIndex="85" Line="14" Column="52" EndLine="14" EndColumn="67" Covered="False" />
         </Method>
       </Type>
       <Type Name="ValidConverters" CoveredStatements="7" TotalStatements="8" CoveragePercent="88">
         <Type Name="&lt;GetEnumerator&gt;d__0" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
           <Method Name="MoveNext():System.Boolean" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
-            <Statement FileIndex="96" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
-            <Statement FileIndex="96" Line="10" Column="13" EndLine="10" EndColumn="89" Covered="True" />
-            <Statement FileIndex="96" Line="11" Column="13" EndLine="11" EndColumn="91" Covered="True" />
-            <Statement FileIndex="96" Line="12" Column="13" EndLine="12" EndColumn="91" Covered="True" />
-            <Statement FileIndex="96" Line="13" Column="13" EndLine="13" EndColumn="89" Covered="True" />
-            <Statement FileIndex="96" Line="14" Column="13" EndLine="14" EndColumn="89" Covered="True" />
-            <Statement FileIndex="96" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+            <Statement FileIndex="86" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+            <Statement FileIndex="86" Line="10" Column="13" EndLine="10" EndColumn="89" Covered="True" />
+            <Statement FileIndex="86" Line="11" Column="13" EndLine="11" EndColumn="91" Covered="True" />
+            <Statement FileIndex="86" Line="12" Column="13" EndLine="12" EndColumn="91" Covered="True" />
+            <Statement FileIndex="86" Line="13" Column="13" EndLine="13" EndColumn="89" Covered="True" />
+            <Statement FileIndex="86" Line="14" Column="13" EndLine="14" EndColumn="89" Covered="True" />
+            <Statement FileIndex="86" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name="System.Collections.IEnumerable.GetEnumerator():System.Collections.IEnumerator" CoveredStatements="0" TotalStatements="1" CoveragePercent="0">
-          <Statement FileIndex="96" Line="17" Column="52" EndLine="17" EndColumn="67" Covered="False" />
+          <Statement FileIndex="86" Line="17" Column="52" EndLine="17" EndColumn="67" Covered="False" />
         </Method>
       </Type>
     </Namespace>
     <Namespace Name="File.Infrastructure.UnitTests.Extensions" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
       <Type Name="AssertExtensions" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
         <Method Name="EqualFileContent(System.String,System.String):System.Void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
-          <Statement FileIndex="89" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
-          <Statement FileIndex="89" Line="9" Column="13" EndLine="11" EndColumn="104" Covered="False" />
-          <Statement FileIndex="89" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="False" />
+          <Statement FileIndex="79" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
+          <Statement FileIndex="79" Line="9" Column="13" EndLine="11" EndColumn="104" Covered="False" />
+          <Statement FileIndex="79" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="False" />
         </Method>
       </Type>
     </Namespace>
@@ -2435,100 +2435,100 @@
       <Type Name="EncodingFactoryTests" CoveredStatements="12" TotalStatements="12" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Data&gt;b__0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="82" Line="23" Column="51" EndLine="23" EndColumn="76" Covered="True" />
+            <Statement FileIndex="72" Line="23" Column="51" EndLine="23" EndColumn="76" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="82" Line="12" Column="9" EndLine="12" EndColumn="38" Covered="True" />
-          <Statement FileIndex="82" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
-          <Statement FileIndex="82" Line="14" Column="13" EndLine="14" EndColumn="42" Covered="True" />
-          <Statement FileIndex="82" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="12" Column="9" EndLine="12" EndColumn="38" Covered="True" />
+          <Statement FileIndex="72" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="14" Column="13" EndLine="14" EndColumn="42" Covered="True" />
+          <Statement FileIndex="72" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="DefaultEncoding(System.Byte[]):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="82" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
-          <Statement FileIndex="82" Line="32" Column="13" EndLine="32" EndColumn="54" Covered="True" />
-          <Statement FileIndex="82" Line="34" Column="13" EndLine="34" EndColumn="52" Covered="True" />
-          <Statement FileIndex="82" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="32" Column="13" EndLine="32" EndColumn="54" Covered="True" />
+          <Statement FileIndex="72" Line="34" Column="13" EndLine="34" EndColumn="52" Covered="True" />
+          <Statement FileIndex="72" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Invalid_Data(System.Byte[]):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="82" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
-          <Statement FileIndex="82" Line="23" Column="13" EndLine="23" EndColumn="78" Covered="True" />
-          <Statement FileIndex="82" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="72" Line="23" Column="13" EndLine="23" EndColumn="78" Covered="True" />
+          <Statement FileIndex="72" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="FileConversionServiceTests" CoveredStatements="38" TotalStatements="38" CoveragePercent="100">
         <Type Name="&lt;ConvertTo_Failed&gt;d__4" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
-            <Statement FileIndex="83" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
-            <Statement FileIndex="83" Line="30" Column="13" EndLine="30" EndColumn="35" Covered="True" />
-            <Statement FileIndex="83" Line="31" Column="13" EndLine="31" EndColumn="42" Covered="True" />
-            <Statement FileIndex="83" Line="32" Column="13" EndLine="32" EndColumn="105" Covered="True" />
-            <Statement FileIndex="83" Line="33" Column="13" EndLine="33" EndColumn="73" Covered="True" />
-            <Statement FileIndex="83" Line="35" Column="13" EndLine="35" EndColumn="109" Covered="True" />
-            <Statement FileIndex="83" Line="37" Column="13" EndLine="37" EndColumn="56" Covered="True" />
-            <Statement FileIndex="83" Line="38" Column="13" EndLine="38" EndColumn="60" Covered="True" />
-            <Statement FileIndex="83" Line="39" Column="13" EndLine="39" EndColumn="147" Covered="True" />
-            <Statement FileIndex="83" Line="40" Column="13" EndLine="40" EndColumn="126" Covered="True" />
-            <Statement FileIndex="83" Line="43" Column="13" EndLine="43" EndColumn="98" Covered="True" />
-            <Statement FileIndex="83" Line="46" Column="13" EndLine="46" EndColumn="42" Covered="True" />
-            <Statement FileIndex="83" Line="47" Column="13" EndLine="47" EndColumn="82" Covered="True" />
-            <Statement FileIndex="83" Line="48" Column="13" EndLine="48" EndColumn="109" Covered="True" />
-            <Statement FileIndex="83" Line="49" Column="13" EndLine="49" EndColumn="155" Covered="True" />
-            <Statement FileIndex="83" Line="50" Column="13" EndLine="50" EndColumn="109" Covered="True" />
-            <Statement FileIndex="83" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+            <Statement FileIndex="73" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+            <Statement FileIndex="73" Line="30" Column="13" EndLine="30" EndColumn="35" Covered="True" />
+            <Statement FileIndex="73" Line="31" Column="13" EndLine="31" EndColumn="42" Covered="True" />
+            <Statement FileIndex="73" Line="32" Column="13" EndLine="32" EndColumn="105" Covered="True" />
+            <Statement FileIndex="73" Line="33" Column="13" EndLine="33" EndColumn="73" Covered="True" />
+            <Statement FileIndex="73" Line="35" Column="13" EndLine="35" EndColumn="109" Covered="True" />
+            <Statement FileIndex="73" Line="37" Column="13" EndLine="37" EndColumn="56" Covered="True" />
+            <Statement FileIndex="73" Line="38" Column="13" EndLine="38" EndColumn="60" Covered="True" />
+            <Statement FileIndex="73" Line="39" Column="13" EndLine="39" EndColumn="147" Covered="True" />
+            <Statement FileIndex="73" Line="40" Column="13" EndLine="40" EndColumn="126" Covered="True" />
+            <Statement FileIndex="73" Line="43" Column="13" EndLine="43" EndColumn="98" Covered="True" />
+            <Statement FileIndex="73" Line="46" Column="13" EndLine="46" EndColumn="42" Covered="True" />
+            <Statement FileIndex="73" Line="47" Column="13" EndLine="47" EndColumn="82" Covered="True" />
+            <Statement FileIndex="73" Line="48" Column="13" EndLine="48" EndColumn="109" Covered="True" />
+            <Statement FileIndex="73" Line="49" Column="13" EndLine="49" EndColumn="155" Covered="True" />
+            <Statement FileIndex="73" Line="50" Column="13" EndLine="50" EndColumn="109" Covered="True" />
+            <Statement FileIndex="73" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;ExportTo_Failed&gt;d__5" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
-            <Statement FileIndex="83" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="True" />
-            <Statement FileIndex="83" Line="57" Column="13" EndLine="57" EndColumn="34" Covered="True" />
-            <Statement FileIndex="83" Line="58" Column="13" EndLine="61" EndColumn="15" Covered="True" />
-            <Statement FileIndex="83" Line="63" Column="13" EndLine="63" EndColumn="109" Covered="True" />
-            <Statement FileIndex="83" Line="65" Column="13" EndLine="65" EndColumn="56" Covered="True" />
-            <Statement FileIndex="83" Line="66" Column="13" EndLine="66" EndColumn="60" Covered="True" />
-            <Statement FileIndex="83" Line="67" Column="13" EndLine="67" EndColumn="147" Covered="True" />
-            <Statement FileIndex="83" Line="68" Column="13" EndLine="68" EndColumn="126" Covered="True" />
-            <Statement FileIndex="83" Line="71" Column="13" EndLine="71" EndColumn="90" Covered="True" />
-            <Statement FileIndex="83" Line="74" Column="13" EndLine="74" EndColumn="42" Covered="True" />
-            <Statement FileIndex="83" Line="75" Column="13" EndLine="75" EndColumn="82" Covered="True" />
-            <Statement FileIndex="83" Line="76" Column="13" EndLine="76" EndColumn="111" Covered="True" />
-            <Statement FileIndex="83" Line="77" Column="13" EndLine="77" EndColumn="159" Covered="True" />
-            <Statement FileIndex="83" Line="78" Column="13" EndLine="78" EndColumn="109" Covered="True" />
-            <Statement FileIndex="83" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+            <Statement FileIndex="73" Line="55" Column="9" EndLine="55" EndColumn="10" Covered="True" />
+            <Statement FileIndex="73" Line="57" Column="13" EndLine="57" EndColumn="34" Covered="True" />
+            <Statement FileIndex="73" Line="58" Column="13" EndLine="61" EndColumn="15" Covered="True" />
+            <Statement FileIndex="73" Line="63" Column="13" EndLine="63" EndColumn="109" Covered="True" />
+            <Statement FileIndex="73" Line="65" Column="13" EndLine="65" EndColumn="56" Covered="True" />
+            <Statement FileIndex="73" Line="66" Column="13" EndLine="66" EndColumn="60" Covered="True" />
+            <Statement FileIndex="73" Line="67" Column="13" EndLine="67" EndColumn="147" Covered="True" />
+            <Statement FileIndex="73" Line="68" Column="13" EndLine="68" EndColumn="126" Covered="True" />
+            <Statement FileIndex="73" Line="71" Column="13" EndLine="71" EndColumn="90" Covered="True" />
+            <Statement FileIndex="73" Line="74" Column="13" EndLine="74" EndColumn="42" Covered="True" />
+            <Statement FileIndex="73" Line="75" Column="13" EndLine="75" EndColumn="82" Covered="True" />
+            <Statement FileIndex="73" Line="76" Column="13" EndLine="76" EndColumn="111" Covered="True" />
+            <Statement FileIndex="73" Line="77" Column="13" EndLine="77" EndColumn="159" Covered="True" />
+            <Statement FileIndex="73" Line="78" Column="13" EndLine="78" EndColumn="109" Covered="True" />
+            <Statement FileIndex="73" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-          <Statement FileIndex="83" Line="18" Column="9" EndLine="18" EndColumn="44" Covered="True" />
-          <Statement FileIndex="83" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
-          <Statement FileIndex="83" Line="20" Column="13" EndLine="20" EndColumn="75" Covered="True" />
-          <Statement FileIndex="83" Line="21" Column="13" EndLine="21" EndColumn="65" Covered="True" />
-          <Statement FileIndex="83" Line="23" Column="13" EndLine="23" EndColumn="109" Covered="True" />
-          <Statement FileIndex="83" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="73" Line="18" Column="9" EndLine="18" EndColumn="44" Covered="True" />
+          <Statement FileIndex="73" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="73" Line="20" Column="13" EndLine="20" EndColumn="75" Covered="True" />
+          <Statement FileIndex="73" Line="21" Column="13" EndLine="21" EndColumn="65" Covered="True" />
+          <Statement FileIndex="73" Line="23" Column="13" EndLine="23" EndColumn="109" Covered="True" />
+          <Statement FileIndex="73" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="FileConverterFactoryTests" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Create_Converter_Failed&gt;b__0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="84" Line="36" Column="57" EndLine="36" EndColumn="78" Covered="True" />
+            <Statement FileIndex="74" Line="36" Column="57" EndLine="36" EndColumn="78" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="84" Line="11" Column="9" EndLine="11" EndColumn="43" Covered="True" />
-          <Statement FileIndex="84" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
-          <Statement FileIndex="84" Line="13" Column="13" EndLine="13" EndColumn="47" Covered="True" />
-          <Statement FileIndex="84" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="11" Column="9" EndLine="11" EndColumn="43" Covered="True" />
+          <Statement FileIndex="74" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="13" Column="13" EndLine="13" EndColumn="47" Covered="True" />
+          <Statement FileIndex="74" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Create_Converter(System.String,System.String,System.Type):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-          <Statement FileIndex="84" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
-          <Statement FileIndex="84" Line="24" Column="13" EndLine="24" EndColumn="48" Covered="True" />
-          <Statement FileIndex="84" Line="27" Column="13" EndLine="27" EndColumn="36" Covered="True" />
-          <Statement FileIndex="84" Line="28" Column="13" EndLine="28" EndColumn="53" Covered="True" />
-          <Statement FileIndex="84" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="24" Column="13" EndLine="24" EndColumn="48" Covered="True" />
+          <Statement FileIndex="74" Line="27" Column="13" EndLine="27" EndColumn="36" Covered="True" />
+          <Statement FileIndex="74" Line="28" Column="13" EndLine="28" EndColumn="53" Covered="True" />
+          <Statement FileIndex="74" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="Create_Converter_Failed(System.String,System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="84" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
-          <Statement FileIndex="84" Line="36" Column="13" EndLine="36" EndColumn="80" Covered="True" />
-          <Statement FileIndex="84" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+          <Statement FileIndex="74" Line="36" Column="13" EndLine="36" EndColumn="80" Covered="True" />
+          <Statement FileIndex="74" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -2536,118 +2536,118 @@
       <Type Name="JsonToXmlFileConverterTests" CoveredStatements="14" TotalStatements="14" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Json&gt;b__0():System.Threading.Tasks.Task" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="85" Line="35" Column="65" EndLine="35" EndColumn="114" Covered="True" />
+            <Statement FileIndex="75" Line="35" Column="65" EndLine="35" EndColumn="114" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Empty_Json&gt;d__2" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
-            <Statement FileIndex="85" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
-            <Statement FileIndex="85" Line="21" Column="13" EndLine="21" EndColumn="34" Covered="True" />
-            <Statement FileIndex="85" Line="23" Column="13" EndLine="23" EndColumn="80" Covered="True" />
-            <Statement FileIndex="85" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
-            <Statement FileIndex="85" Line="26" Column="13" EndLine="26" EndColumn="59" Covered="True" />
-            <Statement FileIndex="85" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+            <Statement FileIndex="75" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+            <Statement FileIndex="75" Line="21" Column="13" EndLine="21" EndColumn="34" Covered="True" />
+            <Statement FileIndex="75" Line="23" Column="13" EndLine="23" EndColumn="80" Covered="True" />
+            <Statement FileIndex="75" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
+            <Statement FileIndex="75" Line="26" Column="13" EndLine="26" EndColumn="59" Covered="True" />
+            <Statement FileIndex="75" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Invalid_Json&gt;d__3" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="85" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
-            <Statement FileIndex="85" Line="35" Column="13" EndLine="35" EndColumn="116" Covered="True" />
-            <Statement FileIndex="85" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+            <Statement FileIndex="75" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+            <Statement FileIndex="75" Line="35" Column="13" EndLine="35" EndColumn="116" Covered="True" />
+            <Statement FileIndex="75" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="85" Line="12" Column="9" EndLine="12" EndColumn="45" Covered="True" />
-          <Statement FileIndex="85" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
-          <Statement FileIndex="85" Line="14" Column="13" EndLine="14" EndColumn="49" Covered="True" />
-          <Statement FileIndex="85" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="75" Line="12" Column="9" EndLine="12" EndColumn="45" Covered="True" />
+          <Statement FileIndex="75" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="75" Line="14" Column="13" EndLine="14" EndColumn="49" Covered="True" />
+          <Statement FileIndex="75" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="XmlToJsonFileConverterTests" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Xml&gt;b__0():System.Threading.Tasks.Task" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="86" Line="34" Column="58" EndLine="34" EndColumn="106" Covered="True" />
+            <Statement FileIndex="76" Line="34" Column="58" EndLine="34" EndColumn="106" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Empty_Xml&gt;d__2" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="86" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
-            <Statement FileIndex="86" Line="23" Column="13" EndLine="23" EndColumn="81" Covered="True" />
-            <Statement FileIndex="86" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
-            <Statement FileIndex="86" Line="26" Column="13" EndLine="26" EndColumn="43" Covered="True" />
-            <Statement FileIndex="86" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
+            <Statement FileIndex="76" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+            <Statement FileIndex="76" Line="23" Column="13" EndLine="23" EndColumn="81" Covered="True" />
+            <Statement FileIndex="76" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
+            <Statement FileIndex="76" Line="26" Column="13" EndLine="26" EndColumn="43" Covered="True" />
+            <Statement FileIndex="76" Line="27" Column="9" EndLine="27" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Invalid_Xml&gt;d__3" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="86" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
-            <Statement FileIndex="86" Line="34" Column="13" EndLine="34" EndColumn="108" Covered="True" />
-            <Statement FileIndex="86" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+            <Statement FileIndex="76" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+            <Statement FileIndex="76" Line="34" Column="13" EndLine="34" EndColumn="108" Covered="True" />
+            <Statement FileIndex="76" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="86" Line="13" Column="9" EndLine="13" EndColumn="45" Covered="True" />
-          <Statement FileIndex="86" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
-          <Statement FileIndex="86" Line="15" Column="13" EndLine="15" EndColumn="49" Covered="True" />
-          <Statement FileIndex="86" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="76" Line="13" Column="9" EndLine="13" EndColumn="45" Covered="True" />
+          <Statement FileIndex="76" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="76" Line="15" Column="13" EndLine="15" EndColumn="49" Covered="True" />
+          <Statement FileIndex="76" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="XmlToYamlFileConverterTests" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Xml&gt;b__0():System.Threading.Tasks.Task" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="87" Line="33" Column="58" EndLine="33" EndColumn="106" Covered="True" />
+            <Statement FileIndex="77" Line="33" Column="58" EndLine="33" EndColumn="106" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Empty_Xml&gt;d__2" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="87" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
-            <Statement FileIndex="87" Line="22" Column="13" EndLine="22" EndColumn="81" Covered="True" />
-            <Statement FileIndex="87" Line="24" Column="13" EndLine="24" EndColumn="43" Covered="True" />
-            <Statement FileIndex="87" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
-            <Statement FileIndex="87" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+            <Statement FileIndex="77" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+            <Statement FileIndex="77" Line="22" Column="13" EndLine="22" EndColumn="81" Covered="True" />
+            <Statement FileIndex="77" Line="24" Column="13" EndLine="24" EndColumn="43" Covered="True" />
+            <Statement FileIndex="77" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
+            <Statement FileIndex="77" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Invalid_Xml&gt;d__3" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="87" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
-            <Statement FileIndex="87" Line="33" Column="13" EndLine="33" EndColumn="108" Covered="True" />
-            <Statement FileIndex="87" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+            <Statement FileIndex="77" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+            <Statement FileIndex="77" Line="33" Column="13" EndLine="33" EndColumn="108" Covered="True" />
+            <Statement FileIndex="77" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="87" Line="12" Column="9" EndLine="12" EndColumn="45" Covered="True" />
-          <Statement FileIndex="87" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
-          <Statement FileIndex="87" Line="14" Column="13" EndLine="14" EndColumn="49" Covered="True" />
-          <Statement FileIndex="87" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="77" Line="12" Column="9" EndLine="12" EndColumn="45" Covered="True" />
+          <Statement FileIndex="77" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="77" Line="14" Column="13" EndLine="14" EndColumn="49" Covered="True" />
+          <Statement FileIndex="77" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
       <Type Name="YamlToJsonFileConverterTests" CoveredStatements="13" TotalStatements="13" CoveragePercent="100">
         <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
           <Method Name="&lt;Invalid_Yaml&gt;b__0():System.Threading.Tasks.Task" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
-            <Statement FileIndex="88" Line="33" Column="66" EndLine="33" EndColumn="115" Covered="True" />
+            <Statement FileIndex="78" Line="33" Column="66" EndLine="33" EndColumn="115" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Empty_Yaml&gt;d__2" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
-            <Statement FileIndex="88" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
-            <Statement FileIndex="88" Line="22" Column="13" EndLine="22" EndColumn="73" Covered="True" />
-            <Statement FileIndex="88" Line="24" Column="13" EndLine="24" EndColumn="43" Covered="True" />
-            <Statement FileIndex="88" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
-            <Statement FileIndex="88" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+            <Statement FileIndex="78" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+            <Statement FileIndex="78" Line="22" Column="13" EndLine="22" EndColumn="73" Covered="True" />
+            <Statement FileIndex="78" Line="24" Column="13" EndLine="24" EndColumn="43" Covered="True" />
+            <Statement FileIndex="78" Line="25" Column="13" EndLine="25" EndColumn="43" Covered="True" />
+            <Statement FileIndex="78" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Type Name="&lt;Invalid_Yaml&gt;d__3" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
           <Method Name="MoveNext():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-            <Statement FileIndex="88" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
-            <Statement FileIndex="88" Line="33" Column="13" EndLine="33" EndColumn="117" Covered="True" />
-            <Statement FileIndex="88" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+            <Statement FileIndex="78" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+            <Statement FileIndex="78" Line="33" Column="13" EndLine="33" EndColumn="117" Covered="True" />
+            <Statement FileIndex="78" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
           </Method>
         </Type>
         <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
-          <Statement FileIndex="88" Line="12" Column="9" EndLine="12" EndColumn="46" Covered="True" />
-          <Statement FileIndex="88" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
-          <Statement FileIndex="88" Line="14" Column="13" EndLine="14" EndColumn="50" Covered="True" />
-          <Statement FileIndex="88" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="78" Line="12" Column="9" EndLine="12" EndColumn="46" Covered="True" />
+          <Statement FileIndex="78" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+          <Statement FileIndex="78" Line="14" Column="13" EndLine="14" EndColumn="50" Covered="True" />
+          <Statement FileIndex="78" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
@@ -2656,14 +2656,14 @@
     <Namespace Name="File.UnitTests.Common.Extensions" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
       <Type Name="MoqLoggerExtensions" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
         <Method Name="VerifyLog&lt;T&gt;(Moq.Mock&lt;Microsoft.Extensions.Logging.ILogger&lt;T&gt;&gt;,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="80" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
-          <Statement FileIndex="80" Line="22" Column="13" EndLine="29" EndColumn="23" Covered="True" />
-          <Statement FileIndex="80" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="96" Line="21" Column="9" EndLine="21" EndColumn="10" Covered="True" />
+          <Statement FileIndex="96" Line="22" Column="13" EndLine="29" EndColumn="23" Covered="True" />
+          <Statement FileIndex="96" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
         </Method>
         <Method Name="VerifyLog&lt;T&gt;(Moq.Mock&lt;Microsoft.Extensions.Logging.ILogger&lt;T&gt;&gt;,Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,Moq.Times):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
-          <Statement FileIndex="80" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
-          <Statement FileIndex="80" Line="10" Column="13" EndLine="17" EndColumn="23" Covered="True" />
-          <Statement FileIndex="80" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="96" Line="9" Column="9" EndLine="9" EndColumn="10" Covered="True" />
+          <Statement FileIndex="96" Line="10" Column="13" EndLine="17" EndColumn="23" Covered="True" />
+          <Statement FileIndex="96" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
         </Method>
       </Type>
     </Namespace>
