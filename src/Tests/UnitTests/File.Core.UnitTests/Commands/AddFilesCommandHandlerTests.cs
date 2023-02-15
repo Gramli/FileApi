@@ -14,7 +14,6 @@ namespace File.Core.UnitTests.Commands
     {
         private readonly Mock<IAddFilesCommandValidator> _addFilesCommandValidatorMock;
         private readonly Mock<IFileCommandsRepository> _fileCommandsRepositoryMock;
-        private readonly Mock<ILogger<IAddFilesCommandHandler>> _loggerMock;
 
         private readonly IAddFilesCommandHandler _uut;
 
@@ -22,9 +21,9 @@ namespace File.Core.UnitTests.Commands
         {
             _addFilesCommandValidatorMock = new Mock<IAddFilesCommandValidator>();
             _fileCommandsRepositoryMock = new Mock<IFileCommandsRepository>();
-            _loggerMock = new Mock<ILogger<IAddFilesCommandHandler>>();
+            var loggerMock = new Mock<ILogger<IAddFilesCommandHandler>>();
 
-            _uut = new AddFilesCommandHandler(_addFilesCommandValidatorMock.Object, _fileCommandsRepositoryMock.Object, _loggerMock.Object);
+            _uut = new AddFilesCommandHandler(_addFilesCommandValidatorMock.Object, _fileCommandsRepositoryMock.Object, loggerMock.Object);
         }
 
         [Fact]
@@ -52,7 +51,7 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFile>();
             var iFileMockTwo = new Mock<IFile>();
 
-            var request = new AddFilesCommand(new List<IFile>()
+            var request = new AddFilesCommand(new List<IFile>
             {
                 iFileMockOne.Object, 
                 iFileMockTwo.Object

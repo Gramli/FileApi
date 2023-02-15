@@ -55,7 +55,7 @@ namespace File.Infrastructure.UnitTests.FileConversions
         {
             //Arrange
             var extension = "ss";
-            var file = new FileDto()
+            var file = new FileDto
             {
                 FileName = $"sss.{extension}"
             };

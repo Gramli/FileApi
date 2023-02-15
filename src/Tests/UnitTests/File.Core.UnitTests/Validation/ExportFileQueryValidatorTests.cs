@@ -52,7 +52,7 @@ namespace File.Core.UnitTests.Validation
         public void ExtensionValidation_Failed()
         {
             //Arrange
-            var request = new ExportFileQuery()
+            var request = new ExportFileQuery
             {
                 Extension = "ex"
             };

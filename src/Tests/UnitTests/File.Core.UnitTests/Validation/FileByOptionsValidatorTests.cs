@@ -4,33 +4,30 @@ using File.Core.UnitTests.Assets;
 using File.Core.Validation;
 using File.Domain.Options;
 using Microsoft.Extensions.Options;
-using Xunit;
 
 namespace File.Core.UnitTests.Validation
 {
     public class FileByOptionsValidatorTests
     {
-        private readonly IOptions<FilesOptions> _fileOptions;
-
         private readonly IFileByOptionsValidator _uut;
 
         public FileByOptionsValidatorTests()
         {
-            _fileOptions = Options.Create(new FilesOptions
+            var fileOptions = Options.Create(new FilesOptions
             {
                 MaxFileLength = 10,
-                AllowedFiles = new AllowedFile[]
+                AllowedFiles = new []
                 {
                     new AllowedFile 
                     { 
-                        CanBeExportedTo = new string[] {"xml", "csv"},
+                        CanBeExportedTo = new []{"xml", "csv"},
                         ContentType = "application/json",
                         Format = "json",
                     }
                 }
             });
 
-            _uut = new FileByOptionsValidator(_fileOptions);
+            _uut = new FileByOptionsValidator(fileOptions);
         }
 
         [Fact]
