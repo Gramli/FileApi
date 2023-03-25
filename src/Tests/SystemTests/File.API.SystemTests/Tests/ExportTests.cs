@@ -1,5 +1,6 @@
 ﻿using File.API.SystemTests.Extensions;
 using File.Domain.Dtos;
+using File.Domain.Http;
 using File.Domain.Queries;
 using Newtonsoft.Json;
 using System.Text;
@@ -16,7 +17,12 @@ namespace File.API.SystemTests.Tests
                 .EnsureSuccessStatusCode();
 
             using var fileInfo = await _httpClient.GetAsync("file/v1/files-info");
-            var fileToDownload = (await fileInfo.GetResponseData<IEnumerable<FileInfoDto>>()).First();
+            var fileToDownload = (await fileInfo.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>())?.Data?.First();
+
+            if (fileToDownload is null)
+            {
+                Assert.Fail("Downloaded file is empty.");
+            }
 
             var body = JsonConvert.SerializeObject(new ExportFileQuery
             {

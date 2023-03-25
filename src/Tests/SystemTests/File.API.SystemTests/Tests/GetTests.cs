@@ -1,5 +1,6 @@
 ﻿using File.API.SystemTests.Extensions;
 using File.Domain.Dtos;
+using File.Domain.Http;
 
 namespace File.API.SystemTests.Tests
 {
@@ -16,8 +17,9 @@ namespace File.API.SystemTests.Tests
             var result = await _httpClient.GetAsync("file/v1/files-info");
 
             //Assert
-            var resultData = await result.GetResponseData<IEnumerable<FileInfoDto>>();
-            Assert.NotEmpty(resultData);
+            var resultData = await result.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>();
+            Assert.NotNull(resultData);
+            Assert.NotEmpty(resultData?.Data);
         }
     }
 }

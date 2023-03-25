@@ -29,7 +29,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapPost("v1/upload",
                 async (IFormFileCollection files, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
-                        .Produces<bool>()
+                        .Produces<DataResponse<bool>>()
                         .WithName("AddFiles")
                         .WithTags("Post");
             return endpointRouteBuilder;
@@ -51,7 +51,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapGet("v1/files-info",
                 async ([FromServices] IGetFilesInfoQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(EmptyRequest.Instance, cancellationToken))
-                        .Produces<IEnumerable<FileInfoDto>>()
+                        .Produces<DataResponse<IEnumerable<FileInfoDto>>>()
                         .WithName("GetFilesInfo")
                         .WithTags("Get");
             return endpointRouteBuilder;
