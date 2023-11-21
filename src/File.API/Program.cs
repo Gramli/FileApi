@@ -27,6 +27,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseMiddleware<ExceptionMiddleware>();
-app.BuildWeatherEndpoints();
+app.BuildFileEndpoints();
 
 app.Run();

@@ -13,7 +13,7 @@ namespace File.API.EndpointBuilders
 {
     public static class FileEndpointsBuilder
     {
-        public static IEndpointRouteBuilder BuildWeatherEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
+        public static IEndpointRouteBuilder BuildFileEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             return endpointRouteBuilder
                 .MapGroup("file")
@@ -29,6 +29,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapPost("v1/upload",
                 async (IFormFileCollection files, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
                     await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
+                        .DisableAntiforgery()
                         .Produces<DataResponse<bool>>()
                         .WithName("AddFiles")
                         .WithTags("Post");
@@ -40,6 +41,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapGet("v1/download",
                 async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new DownloadFileQuery(id), cancellationToken))
+                        .DisableAntiforgery()
                         .Produces<FileContentHttpResult>()
                         .WithName("DownloadFile")
                         .WithTags("Get");
@@ -62,6 +64,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapPost("v1/export",
                 async ([FromBody]ExportFileQuery parseFileQuery,[FromServices] IExportFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(parseFileQuery, cancellationToken))
+                        .DisableAntiforgery()
                         .Produces<FileContentHttpResult>()
                         .WithName("Export")
                         .WithTags("Post");
