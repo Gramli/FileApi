@@ -39,7 +39,7 @@ namespace File.API.Middlewares
             await context.Response.WriteAsync(jsonResult);
         }
 
-        private string CreateResponseJson(string errorMessage)
+        private static string CreateResponseJson(string errorMessage)
         {
             var response = new DataResponse<object>();
             response.Errors.Add(errorMessage);
@@ -50,7 +50,7 @@ namespace File.API.Middlewares
             => generalEx switch
             {
                 TaskCanceledException taskCanceledException => (HttpStatusCode.NoContent, taskCanceledException.Message),
-                _ => (HttpStatusCode.InternalServerError, "Generic error occured on server. Check logs for more info.")
+                _ => (HttpStatusCode.InternalServerError, "Generic error occurred on server. Check logs for more info.")
             };
     }
 }
