@@ -76,6 +76,7 @@ namespace File.API.EndpointBuilders
             endpointRouteBuilder.MapPost("v1/convert",
                 async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
+                        .DisableAntiforgery()
                         .Produces<FileContentHttpResult>()
                         .WithName("ConvertTo")
                         .WithTags("Post");

@@ -8,6 +8,6 @@
 
         public long Length { get; init; }
 
-        public byte[] Data { get; init; } = new byte[0];
+        public byte[] Data { get; init; } = [];
     }
 }
