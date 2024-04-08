@@ -67,3 +67,6 @@ Solution contains four layers:
 * [Moq](https://github.com/moq/moq4)
 * [Xunit](https://github.com/xunit/xunit)
 * [ChoETL](https://github.com/Cinchoo/ChoETL)
+
+## Tips
+Uploading File with parametrs: **Notice that the controller action does not take any parameters. That's because we process the request body inside the action, without invoking a media-type formatter. ** https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/sending-html-form-data-part-2
