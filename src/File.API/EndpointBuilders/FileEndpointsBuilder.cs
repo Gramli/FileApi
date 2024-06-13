@@ -45,6 +45,15 @@ namespace File.API.EndpointBuilders
                         .Produces<FileContentHttpResult>()
                         .WithName("DownloadFile")
                         .WithTags("Get");
+
+            endpointRouteBuilder.MapGet("v1/downloadAsJson",
+                async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
+                    await handler.GetJsonFileAsync(new DownloadFileQuery(id), cancellationToken))
+                        .DisableAntiforgery()
+                        .Produces<DataResponse<StringContentFileDto>>()
+                        .WithName("DownloadFileAsJson")
+                        .WithTags("Get");
+
             return endpointRouteBuilder;
         }
 
