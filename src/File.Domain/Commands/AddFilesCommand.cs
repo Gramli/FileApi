@@ -4,7 +4,7 @@ namespace File.Domain.Commands
 {
     public sealed class AddFilesCommand
     {
-        public IEnumerable<IFile> Files { get; init; } = Enumerable.Empty<IFile>();
+        public IEnumerable<IFile> Files { get; init; } = [];
 
         public AddFilesCommand(IEnumerable<IFile> files)
         {

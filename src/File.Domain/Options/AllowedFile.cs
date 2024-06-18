@@ -6,6 +6,6 @@
 
         public string ContentType { get; set; } = string.Empty;
 
-        public string[] CanBeExportedTo { get; set; } = new string[0];
+        public string[] CanBeExportedTo { get; set; } = [];
     }
 }
