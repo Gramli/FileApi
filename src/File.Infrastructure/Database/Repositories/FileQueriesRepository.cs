@@ -26,7 +26,13 @@ namespace File.Infrastructure.Database.Repositories
                 return Result.Fail(string.Format(ErrorMessages.FileNotExists, downloadFileQuery.Id));
             }
 
-            return Result.Ok(file.Adapt<FileDto>());
+            return Result.Ok(new FileDto
+            {
+                ContentType = file.ContentType,
+                Data = file.Data,
+                FileName = file.FileName,
+                Length = file.Data.Length,
+            });
         }
 
         public async Task<IEnumerable<FileInfoDto>> GetFilesInfo(CancellationToken cancellationToken)

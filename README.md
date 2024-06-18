@@ -9,6 +9,10 @@ REST API solution demonstrates how to create clean and modern API with Clean Arc
 
 Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **convert between json, xml, yml formats**.
 
+Two methods for downloading files are demonstrated:
+* Using the **GetFileAsync** extension method, which returns the file as a byte array.
+* Using the **GetJsonFileAsync** method, which returns the file inside a JSON object. The file is converted to a Base64 string to preserve encoding.
+
 # Menu
 * [Get Started](#get-started)
 * [Motivation](#motivation)
