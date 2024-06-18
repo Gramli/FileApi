@@ -4,11 +4,12 @@ using File.Core.Extensions;
 using File.Core.Resources;
 using File.Domain.Dtos;
 using File.Domain.Extensions;
-using File.Domain.Http;
 using File.Domain.Logging;
 using File.Domain.Queries;
 using Mapster;
 using Microsoft.Extensions.Logging;
+using SmallApiToolkit.Core.Extensions;
+using SmallApiToolkit.Core.Response;
 
 namespace File.Core.Queries
 {

@@ -3,7 +3,7 @@ using File.Domain.Abstractions;
 
 namespace File.API.Files
 {
-    internal sealed class FormFileProxy : IFile
+    internal sealed class FormFileProxy : IFileProxy
     {
         private readonly IFormFile _formFile;
         public string ContentType => _formFile.ContentType;

@@ -5,9 +5,6 @@ using File.Core.UnitTests.Assets;
 using File.Domain.Abstractions;
 using File.Domain.Logging;
 using File.UnitTests.Common.Extensions;
-using FluentResults;
-using Microsoft.Extensions.Logging;
-using Moq;
 using System.Net;
 
 namespace File.Core.UnitTests.Queries
@@ -18,7 +15,7 @@ namespace File.Core.UnitTests.Queries
         private readonly Mock<IConvertToQueryValidator> _convertToQueryValidatorMock;
         private readonly Mock<IFileConvertService> _fileConvertServiceMock;
 
-        private readonly Mock<IFile> _fileMock;
+        private readonly Mock<IFileProxy> _fileMock;
 
         private readonly IConvertToQueryHandler _uut;
 
@@ -28,7 +25,7 @@ namespace File.Core.UnitTests.Queries
             _convertToQueryValidatorMock = new Mock<IConvertToQueryValidator>();
             _fileConvertServiceMock = new Mock<IFileConvertService>();
 
-            _fileMock = new Mock<IFile>();
+            _fileMock = new Mock<IFileProxy>();
 
             _uut = new ConvertToQueryHandler(_loggerMock.Object, _fileConvertServiceMock.Object, _convertToQueryValidatorMock.Object);
         }
@@ -61,7 +58,7 @@ namespace File.Core.UnitTests.Queries
             var request = new ConvertToQuery(_fileMock.Object, format);
             var failedMessage = nameof(FileConvert_Failed);
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>())).Returns(Result.Ok(true));
-            _fileConvertServiceMock.Setup(x => x.ConvertTo(It.IsAny<IFile>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(Result.Fail(failedMessage));
+            _fileConvertServiceMock.Setup(x => x.ConvertTo(It.IsAny<IFileProxy>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(Result.Fail(failedMessage));
             _fileMock.SetupGet(x => x.FileName).Returns(fileName);
 
             //Act
@@ -72,7 +69,7 @@ namespace File.Core.UnitTests.Queries
             Assert.Single(result.Errors);
             Assert.Equal(result.Errors.First(), string.Format(ErrorMessages.ConvertFileFailed, fileName, format));
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request))), Times.Once);
-            _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFile>(), It.Is<string>(y=>y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
+            _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFileProxy>(), It.Is<string>(y=>y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
             _loggerMock.VerifyLog(LogLevel.Error, LogEvents.ConvertFileGeneralError, Times.Once());
         }
 
@@ -86,7 +83,7 @@ namespace File.Core.UnitTests.Queries
             var format = "xml";
             var request = new ConvertToQuery(_fileMock.Object, format);
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>())).Returns(Result.Ok(true));
-            _fileConvertServiceMock.Setup(x => x.ConvertTo(It.IsAny<IFile>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(Result.Ok(resultFileMock.Object));
+            _fileConvertServiceMock.Setup(x => x.ConvertTo(It.IsAny<IFileProxy>(), It.IsAny<string>(), It.IsAny<CancellationToken>())).ReturnsAsync(Result.Ok(resultFileMock.Object));
             _fileMock.SetupGet(x => x.FileName).Returns(nameof(FileConvert_Failed));
 
             //Act
@@ -95,7 +92,7 @@ namespace File.Core.UnitTests.Queries
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request))), Times.Once);
-            _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFile>(), It.Is<string>(y => y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
+            _fileConvertServiceMock.Verify(x => x.ConvertTo(It.IsAny<IFileProxy>(), It.Is<string>(y => y.Equals(format)), It.IsAny<CancellationToken>()), Times.Once);
             resultFileMock.VerifyGet(x => x.ContentType, Times.Once);
             resultFileMock.VerifyGet(x => x.FileName, Times.Once);
             resultFileMock.VerifyGet(x => x.Length, Times.Once);

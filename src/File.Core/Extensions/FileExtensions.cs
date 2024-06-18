@@ -5,7 +5,7 @@ namespace File.Core.Extensions
 {
     internal static class FileExtensions
     {
-        public async static Task<FileDto> CreateFileDto(this IFile file, CancellationToken cancellationToken)
+        public async static Task<FileDto> CreateFileDto(this IFileProxy file, CancellationToken cancellationToken)
         {
             return new FileDto
             {

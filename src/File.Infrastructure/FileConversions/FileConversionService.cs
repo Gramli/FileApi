@@ -19,18 +19,18 @@ namespace File.Infrastructure.FileConversions
             _encodingFactory = Guard.Against.Null(encodingFactory);
         }
 
-        public async Task<Result<IFile>> ConvertTo(IFile sourceFile, string destinationExtension, CancellationToken cancellationToken)
+        public async Task<Result<IFileProxy>> ConvertTo(IFileProxy sourceFile, string destinationExtension, CancellationToken cancellationToken)
         {
             var data = await sourceFile.GetData(cancellationToken);
             return await ConvertFile(data, sourceFile.FileName, sourceFile.ContentType, destinationExtension, cancellationToken);
         }
 
-        public async Task<Result<IFile>> ExportTo(FileDto sourceFile, string destinationExtension, CancellationToken cancellationToken)
+        public async Task<Result<IFileProxy>> ExportTo(FileDto sourceFile, string destinationExtension, CancellationToken cancellationToken)
         {
             return await ConvertFile(sourceFile.Data, sourceFile.FileName, sourceFile.ContentType, destinationExtension, cancellationToken);
         }
 
-        private async Task<Result<IFile>> ConvertFile(byte[] data, string fileName, string contentType, string destinationExtension, CancellationToken cancellationToken)
+        private async Task<Result<IFileProxy>> ConvertFile(byte[] data, string fileName, string contentType, string destinationExtension, CancellationToken cancellationToken)
         {
             var encoding = _encodingFactory.CreateEncoding(data);
 
@@ -39,13 +39,13 @@ namespace File.Infrastructure.FileConversions
 
             if(convertedContentResult.IsFailed)
             {
-                return Result.Fail<IFile>(convertedContentResult.Errors);
+                return Result.Fail<IFileProxy>(convertedContentResult.Errors);
             }
 
             var convertedData = encoding.GetBytes(convertedContentResult.Value);
             var convertedFileName = $"{Path.GetFileNameWithoutExtension(fileName)}.{destinationExtension}";
 
-            return Result.Ok<IFile>(new ConvertedFile(convertedFileName, contentType, convertedData));
+            return Result.Ok<IFileProxy>(new ConvertedFile(convertedFileName, contentType, convertedData));
         }
     }
 }

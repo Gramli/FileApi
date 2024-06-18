@@ -16,7 +16,7 @@ namespace File.Core.Validation
             _fileOptions = Guard.Against.Null(fileOptions);
         }
 
-        public Result<bool> Validate(IFile file)
+        public Result<bool> Validate(IFileProxy file)
         {
             var options = _fileOptions.Value.AllowedFiles.SingleOrDefault(x => x.ContentType.Equals(file.ContentType));
             if (options is null)

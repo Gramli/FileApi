@@ -1,7 +1,7 @@
 ﻿using ChoETL;
 using File.API.SystemTests.Extensions;
 using File.Domain.Dtos;
-using File.Domain.Http;
+using SmallApiToolkit.Core.Response;
 using System.Net.Http.Json;
 
 namespace File.API.SystemTests.Tests

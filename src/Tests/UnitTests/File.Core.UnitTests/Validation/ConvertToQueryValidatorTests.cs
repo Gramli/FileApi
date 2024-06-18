@@ -31,7 +31,7 @@ namespace File.Core.UnitTests.Validation
         public void QueryValidation_Failed()
         {
             //Arrange
-            var request = new ConvertToQuery(new Mock<IFile>().Object, string.Empty);
+            var request = new ConvertToQuery(new Mock<IFileProxy>().Object, string.Empty);
 
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
             _validationResultMock.SetupGet(x=>x.AnyErrors).Returns(true);
@@ -49,13 +49,13 @@ namespace File.Core.UnitTests.Validation
         public void FileValidation_Failed()
         {
             //Arrange
-            var request = new ConvertToQuery(new Mock<IFile>().Object, string.Empty);
+            var request = new ConvertToQuery(new Mock<IFileProxy>().Object, string.Empty);
 
             var failedMessage = "failedMessage";
 
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFile>())).Returns(Result.Fail(failedMessage));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFileProxy>())).Returns(Result.Fail(failedMessage));
 
             //Act
             var result = _uut.Validate(request);
@@ -66,7 +66,7 @@ namespace File.Core.UnitTests.Validation
             Assert.Equal(failedMessage, result.Errors.First().Message);
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request)), It.IsAny<bool>()), Times.Once);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Once);
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Once);
         }
 
         [Fact]
@@ -82,7 +82,7 @@ namespace File.Core.UnitTests.Validation
 
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFile>())).Returns(Result.Ok(true));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFileProxy>())).Returns(Result.Ok(true));
             _fileByOptionsValidatorMock.Setup(x => x.ValidateConversion(It.IsAny<string>(), It.IsAny<string>())).Returns(Result.Fail(failedMessage));
 
             //Act
@@ -94,7 +94,7 @@ namespace File.Core.UnitTests.Validation
             Assert.Equal(failedMessage, result.Errors.First().Message);
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request)), It.IsAny<bool>()), Times.Once);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Once);
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Once);
             _fileByOptionsValidatorMock.Verify(x => x.ValidateConversion(It.Is<string>(y => y.Equals(sourceExtension)), It.Is<string>(y => y.Equals(destinationExtension))), Times.Once);
         }
 
@@ -109,7 +109,7 @@ namespace File.Core.UnitTests.Validation
 
             _convertToQueryValidatorMock.Setup(x => x.Validate(It.IsAny<ConvertToQuery>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFile>())).Returns(Result.Ok(true));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFileProxy>())).Returns(Result.Ok(true));
             _fileByOptionsValidatorMock.Setup(x => x.ValidateConversion(It.IsAny<string>(), It.IsAny<string>())).Returns(Result.Ok(true));
 
             //Act
@@ -120,7 +120,7 @@ namespace File.Core.UnitTests.Validation
             Assert.Empty(result.Errors);
             _convertToQueryValidatorMock.Verify(x => x.Validate(It.Is<ConvertToQuery>(y => y.Equals(request)), It.IsAny<bool>()), Times.Once);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Once);
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Once);
             _fileByOptionsValidatorMock.Verify(x => x.ValidateConversion(It.Is<string>(y=>y.Equals(sourceExtension)), It.Is<string>(y=>y.Equals(destinationExtension))), Times.Once);
         }
     }

@@ -1,5 +1,5 @@
 ﻿using File.API.SystemTests.Extensions;
-using File.Domain.Http;
+using SmallApiToolkit.Core.Response;
 
 namespace File.API.SystemTests.Tests
 {
