@@ -48,11 +48,11 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFileProxy>();
             var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFileProxy>
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object, 
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
@@ -77,11 +77,11 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFileProxy>();
             var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFileProxy>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
@@ -108,11 +108,11 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFileProxy>();
             var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFileProxy>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
@@ -141,11 +141,11 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFileProxy>();
             var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFileProxy>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockOne.SetupGet(x => x.FileName).Returns(fileName);
@@ -175,11 +175,11 @@ namespace File.Core.UnitTests.Commands
             var iFileMockOne = new Mock<IFileProxy>();
             var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFileProxy>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
