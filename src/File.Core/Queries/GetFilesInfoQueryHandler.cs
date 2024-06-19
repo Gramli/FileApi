@@ -1,8 +1,8 @@
 ﻿using Ardalis.GuardClauses;
 using File.Core.Abstractions;
 using File.Domain.Dtos;
-using File.Domain.Extensions;
-using File.Domain.Http;
+using SmallApiToolkit.Core.Extensions;
+using SmallApiToolkit.Core.Response;
 
 namespace File.Core.Queries
 {

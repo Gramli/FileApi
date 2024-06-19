@@ -3,9 +3,6 @@ using File.Core.Commands;
 using File.Domain.Abstractions;
 using File.Domain.Commands;
 using File.Domain.Dtos;
-using FluentResults;
-using Microsoft.Extensions.Logging;
-using Moq;
 using System.Net;
 
 namespace File.Core.UnitTests.Commands
@@ -31,7 +28,7 @@ namespace File.Core.UnitTests.Commands
         {
             //Arrange
             var validationFailedMessage = "validationFailedMessage";
-            var request = new AddFilesCommand(Enumerable.Empty<IFile>());
+            var request = new AddFilesCommand(Enumerable.Empty<IFileProxy>());
 
             _addFilesCommandValidatorMock.Setup(x => x.Validate(It.IsAny<AddFilesCommand>())).Returns(Result.Fail<bool>(validationFailedMessage));
 
@@ -48,14 +45,14 @@ namespace File.Core.UnitTests.Commands
         public async Task AddFileAsync_IOException_All_Failed()
         {
             //Arrange
-            var iFileMockOne = new Mock<IFile>();
-            var iFileMockTwo = new Mock<IFile>();
+            var iFileMockOne = new Mock<IFileProxy>();
+            var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFile>
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object, 
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
@@ -67,7 +64,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(2, result.Errors.Count);
+            Assert.Equal(2, result.Errors.Count());
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
@@ -77,14 +74,14 @@ namespace File.Core.UnitTests.Commands
         public async Task AddFileAsync_IOException_One_Failed()
         {
             //Arrange
-            var iFileMockOne = new Mock<IFile>();
-            var iFileMockTwo = new Mock<IFile>();
+            var iFileMockOne = new Mock<IFileProxy>();
+            var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFile>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ThrowsAsync(new IOException());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
@@ -97,7 +94,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(1, result.Errors.Count);
+            Assert.Single(result.Errors);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
@@ -108,14 +105,14 @@ namespace File.Core.UnitTests.Commands
         public async Task AddFileAsync_All_Failed()
         {
             //Arrange
-            var iFileMockOne = new Mock<IFile>();
-            var iFileMockTwo = new Mock<IFile>();
+            var iFileMockOne = new Mock<IFileProxy>();
+            var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFile>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
@@ -128,7 +125,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(2, result.Errors.Count);
+            Assert.Equal(2, result.Errors.Count());
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
@@ -141,14 +138,14 @@ namespace File.Core.UnitTests.Commands
             //Arrange
             var fileName = "fileName";
 
-            var iFileMockOne = new Mock<IFile>();
-            var iFileMockTwo = new Mock<IFile>();
+            var iFileMockOne = new Mock<IFileProxy>();
+            var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFile>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockOne.SetupGet(x => x.FileName).Returns(fileName);
@@ -164,7 +161,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(1, result.Errors.Count);
+            Assert.Single(result.Errors);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
@@ -175,14 +172,14 @@ namespace File.Core.UnitTests.Commands
         public async Task Success()
         {
             //Arrange
-            var iFileMockOne = new Mock<IFile>();
-            var iFileMockTwo = new Mock<IFile>();
+            var iFileMockOne = new Mock<IFileProxy>();
+            var iFileMockTwo = new Mock<IFileProxy>();
 
-            var request = new AddFilesCommand(new List<IFile>()
-            {
+            var request = new AddFilesCommand(
+            [
                 iFileMockOne.Object,
                 iFileMockTwo.Object
-            });
+            ]);
 
             iFileMockOne.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());
             iFileMockTwo.Setup(x => x.GetData(CancellationToken.None)).ReturnsAsync(Array.Empty<byte>());

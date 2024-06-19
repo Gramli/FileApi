@@ -1,6 +1,6 @@
 ﻿namespace File.Domain.Abstractions
 {
-    public interface IFile
+    public interface IFileProxy
     {
         string FileName { get; }
         string ContentType { get; }

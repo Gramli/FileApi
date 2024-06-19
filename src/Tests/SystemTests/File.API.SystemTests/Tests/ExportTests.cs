@@ -1,8 +1,8 @@
 ﻿using File.API.SystemTests.Extensions;
 using File.Domain.Dtos;
-using File.Domain.Http;
 using File.Domain.Queries;
 using Newtonsoft.Json;
+using SmallApiToolkit.Core.Response;
 using System.Text;
 
 namespace File.API.SystemTests.Tests

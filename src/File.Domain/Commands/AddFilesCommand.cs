@@ -4,9 +4,9 @@ namespace File.Domain.Commands
 {
     public sealed class AddFilesCommand
     {
-        public IEnumerable<IFile> Files { get; init; } = [];
+        public IEnumerable<IFileProxy> Files { get; init; } = [];
 
-        public AddFilesCommand(IEnumerable<IFile> files)
+        public AddFilesCommand(IEnumerable<IFileProxy> files)
         {
             Files = files;
         }

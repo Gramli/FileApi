@@ -29,7 +29,7 @@ namespace File.Core.UnitTests.Validation
         public void CommandValidation_Failed()
         {
             //Arrange
-            var command = new AddFilesCommand(Enumerable.Empty<IFile>());
+            var command = new AddFilesCommand([]);
 
             _validationResultMock.SetupGet(x=>x.AnyErrors).Returns(true);
             _addFilesCommandValidatorMock.Setup(x=>x.Validate(It.IsAny<AddFilesCommand>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
@@ -50,16 +50,16 @@ namespace File.Core.UnitTests.Validation
             var fileMockOne = FileMockFactory.CreateMock(new byte[10], "application/json", "resultFileOneName");
             var fileMockTwo = FileMockFactory.CreateMock(new byte[10], "application/json", "resultFileTwoName");
 
-            var command = new AddFilesCommand(new List<IFile>
-            {
+            var command = new AddFilesCommand(
+            [
                 fileMockOne.Object, 
                 fileMockTwo.Object
-            });
+            ]);
             var failedMessage = "failedMessage";
 
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
             _addFilesCommandValidatorMock.Setup(x => x.Validate(It.IsAny<AddFilesCommand>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFile>())).Returns(Result.Fail(failedMessage));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFileProxy>())).Returns(Result.Fail(failedMessage));
 
             //Act
             var result = _uut.Validate(command);
@@ -69,7 +69,7 @@ namespace File.Core.UnitTests.Validation
             Assert.True(result.IsFailed);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(command)), It.IsAny<bool>()), Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Once);
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Once);
         }
 
         [Fact]
@@ -82,7 +82,7 @@ namespace File.Core.UnitTests.Validation
             var fileMockOne = FileMockFactory.CreateMock(new byte[10], "application/json", fileNameOne);
             var fileMockTwo = FileMockFactory.CreateMock(new byte[10], "application/json", fileNameTwo);
 
-            var command = new AddFilesCommand(new List<IFile>
+            var command = new AddFilesCommand(new List<IFileProxy>
             {
                 fileMockOne.Object,
                 fileMockTwo.Object
@@ -91,8 +91,8 @@ namespace File.Core.UnitTests.Validation
 
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
             _addFilesCommandValidatorMock.Setup(x => x.Validate(It.IsAny<AddFilesCommand>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.Is<IFile>(y=>y.FileName.Equals(fileNameTwo)))).Returns(Result.Fail(failedMessage));
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.Is<IFile>(y =>y.FileName.Equals(fileNameOne)))).Returns(Result.Ok(true));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.Is<IFileProxy>(y=>y.FileName.Equals(fileNameTwo)))).Returns(Result.Fail(failedMessage));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.Is<IFileProxy>(y =>y.FileName.Equals(fileNameOne)))).Returns(Result.Ok(true));
 
             //Act
             var result = _uut.Validate(command);
@@ -101,7 +101,7 @@ namespace File.Core.UnitTests.Validation
             Assert.True(result.IsFailed);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(command)), It.IsAny<bool>()), Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Exactly(2));
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Exactly(2));
         }
 
         [Fact]
@@ -111,7 +111,7 @@ namespace File.Core.UnitTests.Validation
             var fileMockOne = FileMockFactory.CreateMock(new byte[10], "application/json", "fileNameOne");
             var fileMockTwo = FileMockFactory.CreateMock(new byte[10], "application/json", "fileNameTwo");
 
-            var command = new AddFilesCommand(new List<IFile>
+            var command = new AddFilesCommand(new List<IFileProxy>
             {
                 fileMockOne.Object,
                 fileMockTwo.Object
@@ -119,7 +119,7 @@ namespace File.Core.UnitTests.Validation
 
             _validationResultMock.SetupGet(x => x.AnyErrors).Returns(false);
             _addFilesCommandValidatorMock.Setup(x => x.Validate(It.IsAny<AddFilesCommand>(), It.IsAny<bool>())).Returns(_validationResultMock.Object);
-            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFile>())).Returns(Result.Ok(true));
+            _fileByOptionsValidatorMock.Setup(x => x.Validate(It.IsAny<IFileProxy>())).Returns(Result.Ok(true));
 
             //Act
             var result = _uut.Validate(command);
@@ -128,7 +128,7 @@ namespace File.Core.UnitTests.Validation
             Assert.True(result.IsSuccess);
             _validationResultMock.VerifyGet(x => x.AnyErrors, Times.Once);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(command)), It.IsAny<bool>()), Times.Once);
-            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFile>()), Times.Exactly(2));
+            _fileByOptionsValidatorMock.Verify(x => x.Validate(It.IsAny<IFileProxy>()), Times.Exactly(2));
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using File.Infrastructure.Abstractions;
 using File.Infrastructure.FileConversions.Converters;
 using File.Infrastructure.UnitTests.Assets;
-using SharpYaml;
+using YamlDotNet.Core;
 
 namespace File.Infrastructure.UnitTests.FileConversions.Converters
 {

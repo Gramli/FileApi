@@ -4,9 +4,10 @@ using File.Core.Extensions;
 using File.Core.Resources;
 using File.Domain.Commands;
 using File.Domain.Extensions;
-using File.Domain.Http;
 using File.Domain.Logging;
 using Microsoft.Extensions.Logging;
+using SmallApiToolkit.Core.Extensions;
+using SmallApiToolkit.Core.Response;
 
 namespace File.Core.Commands
 {

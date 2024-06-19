@@ -1,9 +1,10 @@
 ﻿using File.Domain.Dtos;
-using File.Domain.Http;
+using SmallApiToolkit.Core.RequestHandlers;
+using SmallApiToolkit.Core.Response;
 
 namespace File.Core.Abstractions
 {
-    public interface IGetFilesInfoQueryHandler : IRequestHandler<IEnumerable<FileInfoDto>, EmptyRequest>
+    public interface IGetFilesInfoQueryHandler : IHttpRequestHandler<IEnumerable<FileInfoDto>, EmptyRequest>
     {
     }
 }

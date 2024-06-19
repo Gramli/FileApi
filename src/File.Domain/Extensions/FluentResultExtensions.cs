@@ -8,7 +8,7 @@ namespace File.Domain.Extensions
         {
             if(!errors.HasAny())
             {
-                return Array.Empty<string>();
+                return [];
             }
 
             return errors.Select(error => error.Message);

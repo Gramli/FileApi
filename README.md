@@ -64,6 +64,7 @@ Solution contains four layers:
 ## Technologies
 * [ASP.NET Core 7](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-7.0)
 * [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
+* [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
 * [Mapster](https://github.com/MapsterMapper/Mapster)
 * [FluentResuls](https://github.com/altmann/FluentResults)
 * [Validot](https://github.com/bartoszlenar/Validot)

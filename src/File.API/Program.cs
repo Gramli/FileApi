@@ -1,9 +1,9 @@
 using File.API.Configuration;
 using File.API.EndpointBuilders;
 using File.API.Extensions;
-using File.API.Middlewares;
 using File.Core.Configuration;
 using File.Infrastructure.Configuration;
+using SmallApiToolkit.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 

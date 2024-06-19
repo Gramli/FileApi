@@ -28,7 +28,7 @@ namespace File.Infrastructure.UnitTests.FileConversions
         {
             //Arrange
             var extension = "tst";
-            var file = new Mock<IFile>();
+            var file = new Mock<IFileProxy>();
             file.Setup(x => x.GetData(It.IsAny<CancellationToken>())).ReturnsAsync(Array.Empty<byte>());
             file.SetupGet(x => x.FileName).Returns($"sone.{extension}");
 
