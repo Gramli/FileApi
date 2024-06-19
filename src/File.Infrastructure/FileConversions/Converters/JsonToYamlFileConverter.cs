@@ -1,8 +1,9 @@
-﻿using ChoETL;
-using File.Infrastructure.Abstractions;
+﻿using File.Infrastructure.Abstractions;
 using File.Infrastructure.Extensions;
 using FluentResults;
-using System.Text;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.Dynamic;
 
 namespace File.Infrastructure.FileConversions.Converters
 {
@@ -10,11 +11,11 @@ namespace File.Infrastructure.FileConversions.Converters
     {
         public Task<Result<string>> Convert(string fileContent, CancellationToken cancellationToken)
         {
-            using var jsonCoReader = ChoJSONReader.LoadText(fileContent);
-            var stringBuilder = new StringBuilder();
-            using var yamlWriter = new ChoYamlWriter(stringBuilder).SingleDocument();
-            yamlWriter.Write(jsonCoReader);
-            var yamlContent = stringBuilder.ToString();
+            var expConverter = new ExpandoObjectConverter();
+            var deserializedObject = JsonConvert.DeserializeObject<ExpandoObject>(fileContent, expConverter);
+
+            var serializer = new YamlDotNet.Serialization.Serializer();
+            var yamlContent = serializer.Serialize(deserializedObject);
             return Task.FromResult(yamlContent.OkIfNotNull());
         }
     }

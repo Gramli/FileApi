@@ -19,7 +19,7 @@ namespace File.API.SystemTests.Tests
             //Assert
             var resultData = await result.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>();
             Assert.NotNull(resultData);
-            Assert.NotEmpty(resultData?.Data);
+            Assert.NotEmpty(resultData.Data);
         }
     }
 }

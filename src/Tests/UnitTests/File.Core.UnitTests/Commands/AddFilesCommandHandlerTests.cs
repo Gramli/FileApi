@@ -94,7 +94,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(1, result.Errors.Count());
+            Assert.Single(result.Errors);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
@@ -161,7 +161,7 @@ namespace File.Core.UnitTests.Commands
 
             //Assert
             Assert.Equal(HttpStatusCode.OK, result.StatusCode);
-            Assert.Equal(1, result.Errors.Count());
+            Assert.Single(result.Errors);
             _addFilesCommandValidatorMock.Verify(x => x.Validate(It.Is<AddFilesCommand>(y => y.Equals(request))), Times.Once);
             iFileMockOne.Verify(x => x.GetData(CancellationToken.None), Times.Once);
             iFileMockTwo.Verify(x => x.GetData(CancellationToken.None), Times.Once);
