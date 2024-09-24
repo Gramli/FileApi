@@ -5,6 +5,8 @@ using File.Core.Configuration;
 using File.Infrastructure.Configuration;
 using SmallApiToolkit.Middleware;
 
+var myAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddLogging();
@@ -13,6 +15,11 @@ builder.Services.AddCore(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: myAllowSpecificOrigins, policy => { policy.WithOrigins("http://127.0.0.1:4200", "http://localhost:4200"); });
+});
 
 var app = builder.Build();
 
@@ -23,6 +30,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors(myAllowSpecificOrigins);
 
 app.UseHttpsRedirection();
 
