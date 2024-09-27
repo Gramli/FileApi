@@ -8,4 +8,11 @@ export interface IFile {
   name: string;
   fileName: string;
   contentType: string;
-} 
+}
+
+export interface IBase64File {
+  fileName: string;
+  contentType: string;
+  length: string;
+  data: string;
+}

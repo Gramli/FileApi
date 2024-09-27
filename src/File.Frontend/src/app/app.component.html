@@ -1,59 +1,52 @@
 <div class="container-fluid">
-    <h1 class="mx-1">File Api</h1>
-    <div class="d-flex align-items-start">
-        <div class="nav flex-column nav-pills me-3 mx-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <button class="nav-link active my-1" id="v-pills-down-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info" aria-selected="true" onclick="">Files Info</button>
-            <button class="nav-link my-1" id="v-pills-convert-tab" data-bs-toggle="pill" data-bs-target="#v-pills-convert" type="button" role="tab" aria-controls="v-pills-convert" aria-selected="false">Convert</button>
-            <button class="nav-link my-1" id="v-pills-export-tab" data-bs-toggle="pill" data-bs-target="#v-pills-export" type="button" role="tab" aria-controls="v-pills-export" aria-selected="false">Export</button>
-        </div>
-        <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel" aria-labelledby="v-pills-info-tab">
-                <div *ngIf="loading" class="m-2 p-4">
-                    <h4>Processing...</h4>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-                    </div>
-                </div>
-                <table class="table table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <td scope="col">Id</td>
-                            <td scope="col">Name</td>
-                            <td scope="col">FileName</td>
-                            <td scope="col">Type</td>
-                            <td scope="col">#</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let item of data">
-                            <th scope="row">{{ item.id }}</th>
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.fileName }}</td>
-                            <td>{{ item.contentType}}</td>
-                            <td>
-                                <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFile(item.id)">Download</button>
-                                <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFileAsJson(item.id)">Download as Json</button>
-                                <button class="btn btn-info btn-sm mx-1">Export</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <input type="file" class="file-input"
-                       (change)="onFileSelected($event)" #fileUpload>
-
-                <div>
-                    <button class="btn btn-primary mx-1" (click)="fileUpload.click()">
-                        <fa-icon [icon]="faUpload"></fa-icon>
-                        Upload
-                    </button>
-                    <button class="btn btn-primary mx-1"><fa-icon [icon]="faFileImport"></fa-icon>Convert</button>
-                </div>
-
-            </div>
-            <div class="tab-pane fade" id="v-pills-convert" role="tabpanel" aria-labelledby="v-pills-messages-tab">Convert</div>
-            <div class="tab-pane fade" id="v-pills-export" role="tabpanel" aria-labelledby="v-pills-settings-tab">Export</div>
+    <h1 class="mx-1">File.Frontend</h1>
+    <div *ngIf="loading" class="m-2 p-4">
+        <h4>Processing...</h4>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
         </div>
     </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <td scope="col">Id</td>
+                <td scope="col">Name</td>
+                <td scope="col">FileName</td>
+                <td scope="col">Type</td>
+                <td scope="col">Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <th scope="row">{{ item.id }}</th>
+                <td>{{ item.name }}</td>
+                <td>{{ item.fileName }}</td>
+                <td>{{ item.contentType}}</td>
+                <td>
+                    <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFile(item.id)">Download</button>
+                    <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFileAsJson(item.id)">Download as Json</button>
+                    <button class="btn btn-info btn-sm mx-1">Export</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <input type="file" class="file-input"
+           (change)="onFileSelected($event)" #fileUpload>
+
+    <div>
+        <button class="btn btn-primary mx-1" (click)="fileUpload.click()">
+            <fa-icon [icon]="faUpload"></fa-icon>
+            Upload
+        </button>
+        <button class="btn btn-primary mx-1" (click)="convert()"><fa-icon [icon]="faFileImport" class="mx-1"></fa-icon>Convert</button>
+    </div>
+
 </div>
+
+<ng-template #dialog let-modal>
+    <app-select-extension [modalRef]="modal" (onSelectedExtension)="selectedExtension($event)">
+    </app-select-extension>
+</ng-template>
+
 <router-outlet />
