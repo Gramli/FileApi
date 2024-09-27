@@ -45,8 +45,8 @@
 </div>
 
 <ng-template #dialog let-modal>
-    <app-select-extension [modalRef]="modal" (onSelectedExtension)="selectedExtension($event)">
-    </app-select-extension>
+    <app-select-extension-modal [modalRef]="modal" (onSelectedExtension)="selectedExtension($event)">
+    </app-select-extension-modal>
 </ng-template>
 
 <router-outlet />

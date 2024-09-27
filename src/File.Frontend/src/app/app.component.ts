@@ -10,7 +10,8 @@ import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [FileApiService]
 })
 export class AppComponent implements OnInit {
   faUpload = faUpload;

@@ -2,10 +2,10 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { NgbActiveModal, NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
-  selector: 'app-select-extension',
-  templateUrl: './select-extension.component.html',
+  selector: 'app-select-extension-modal',
+  templateUrl: './select-extension-modal.component.html',
 })
-export class SelectExtensionComponent {
+export class SelectExtensionModalComponent {
   @Input({ required: true }) modalRef!: NgbModalRef;
   @Output() onSelectedExtension: EventEmitter<string> = new EventEmitter();
 

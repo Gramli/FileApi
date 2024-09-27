@@ -5,7 +5,7 @@ import { IBase64File, IDataResponse, IFile } from '../app.model';
 @Injectable({
   providedIn: 'root'
 })
-export class FileService {
+export class FileApiService {
   private apiBaseUrl: string = 'https://localhost:7270/file/v1'
   constructor(private httpClient: HttpClient) { }
 
