@@ -6,17 +6,17 @@ import { Buffer } from 'buffer';
 
 @Injectable()
 export class FileLoadingService {
-  public loading: boolean = false;
+  public loading = false;
+
+  private filesInfo$: Subject<IFile[]> = new Subject<IFile[]>();
+
+  constructor(private fileService: FileApiHttpService) { }
 
   public get filesInfo() {
     return this.filesInfo$.asObservable();
   }
 
-  private filesInfo$ = new Subject<IFile[]>();
-
-  constructor(private fileService: FileApiHttpService) { }
-
-  public downloadFile(id: number, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void) {
+  public downloadFile(id: number, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void): void {
     this.runSubScriptionWithProgress(() =>
       this.fileService.downloadFile(id).subscribe({
         next: (response) => onSuccess(response),
@@ -24,7 +24,7 @@ export class FileLoadingService {
       }));
   }
 
-  public downloadFileAsJson(id: number, onSuccess: (fileContent: string) => void, onError?: (error: any) => void) {
+  public downloadFileAsJson(id: number, onSuccess: (fileContent: string) => void, onError?: (error: any) => void): void {
     this.runSubScriptionWithProgress(() =>
       this.fileService.downloadFileAsString(id).subscribe({
         next: (response) => {
@@ -35,7 +35,7 @@ export class FileLoadingService {
       }));
   }
 
-  public uploadFile(file: File, onSuccess?: () => void, onError?: (error: any) => void) {
+  public uploadFile(file: File, onSuccess?: () => void, onError?: (error: any) => void): void {
     if (file) {
       const upload$ = this.fileService.uploadFile(file);
 
@@ -52,7 +52,7 @@ export class FileLoadingService {
     }
   }
 
-  public loadFileData() {
+  public loadFileData(): void{
     this.runSubScriptionWithProgress(() =>
       this.fileService.getFiles().subscribe({
         next: (response) => {
@@ -62,7 +62,7 @@ export class FileLoadingService {
       }));
   }
 
-  public exportFile(id: number, extension: string, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void) {
+  public exportFile(id: number, extension: string, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void): void {
     this.runSubScriptionWithProgress(() =>
       this.fileService.exportFile(id, extension).subscribe({
         next: (response) => onSuccess(response),
@@ -70,7 +70,7 @@ export class FileLoadingService {
       }));
   }
 
-  public convertFile(file: File, extension: string, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void) {
+  public convertFile(file: File, extension: string, onSuccess: (fileContent: Blob) => void, onError?: (error: any) => void): void {
     if (file) {
       const upload$ = this.fileService.convertFile(file, extension);
 
@@ -84,7 +84,7 @@ export class FileLoadingService {
     }
   }
 
-  private processError(error: any, onError?: (error: any) => void) {
+  private processError(error: any, onError?: (error: any) => void) : void {
     if (onError) {
       onError(error);
     }
@@ -93,7 +93,7 @@ export class FileLoadingService {
     }
   }
 
-  private runSubScriptionWithProgress(action: () => Subscription) {
+  private runSubScriptionWithProgress(action: () => Subscription): void {
     this.loading = true;
     action().add(() => { this.loading = false; });
   }
