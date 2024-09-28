@@ -4,8 +4,7 @@ import { faUpload, faFileImport } from '@fortawesome/free-solid-svg-icons';
 import { saveAs } from "file-saver";
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FileLoadingService } from './services/file-loading.service';
-
-// TRY https://www.npmjs.com/package/ngx-toastr
+import { NotificationAdapterService } from './services/notification-adapter.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +18,7 @@ export class AppComponent implements OnInit {
 
   @ViewChild('dialog') dialogRef!: TemplateRef<any>;
   data: IFile[] | undefined;
-  constructor(protected fileService: FileLoadingService, private ngbModal: NgbModal) { }
+  constructor(protected fileService: FileLoadingService, private ngbModal: NgbModal, private notifierService: NotificationAdapterService) { }
 
   ngOnInit(): void {
     this.fileService.filesInfo.subscribe({
@@ -27,7 +26,7 @@ export class AppComponent implements OnInit {
         this.data = response;
       },
       error: (error) => {
-        console.log(error);
+        this.notifierService.showError(`Error: ${error}`);
       }
     });
 
@@ -40,6 +39,9 @@ export class AppComponent implements OnInit {
     }).closed.subscribe((selectedExtension: string) => {
       this.fileService.convertFile(file, selectedExtension, (fileContent) => {
         saveAs(fileContent, this.replaceExtension(fileName, selectedExtension));
+        this.notifierService.showSuccess(`Successfuly converted file: ${fileName}`);
+      }, () => {
+        this.notifierService.showError(`Error to convert file: ${fileName}`);
       })
     });
   }
@@ -50,6 +52,9 @@ export class AppComponent implements OnInit {
     }).closed.subscribe((selectedExtension: string) => {
       this.fileService.exportFile(id, selectedExtension, (fileContent) => {
         this.saveFile(id, fileContent, selectedExtension);
+        this.notifierService.showSuccess(`Successfuly exported file id: ${id}`);
+      }, () => {
+        this.notifierService.showError(`Error to export file id: ${id}`);
       })
     });
   }
@@ -57,13 +62,19 @@ export class AppComponent implements OnInit {
   protected onDownloadFile(id: number) {
     this.fileService.downloadFile(id, (fileContent) => {
       this.saveFile(id, fileContent);
+      this.notifierService.showSuccess(`Successfuly downloaded file id: ${id}`);
+    }, () => {
+      this.notifierService.showError(`Error to download file id: ${id}`);
     });
   }
 
   protected onDownloadFileAsJson(id: number) {
     this.fileService.downloadFileAsJson(id, (fileContent) => {
       this.saveFile(id, fileContent);
-    });
+      this.notifierService.showSuccess(`Successfuly downloaded as json file id: ${id}`);
+    }, () => {
+      this.notifierService.showError(`Error to download file id: ${id}`);
+    });;
   }
 
   private saveFile(id: number, fileContent: Blob | string, extension?: string) {
@@ -73,7 +84,11 @@ export class AppComponent implements OnInit {
 
   protected onUploadFileSelected(event: any) {
     const file = this.getTargetFile(event);
-    this.fileService.uploadFile(file);
+    this.fileService.uploadFile(file, ()=> {
+      this.notifierService.showSuccess(`Successfuly uploaded file id: ${file.name}`);
+    }, (error) => {
+      this.notifierService.showError(`Error: ${error}`);
+    });
   }
 
   protected onConvertFileSelected(event: any) {

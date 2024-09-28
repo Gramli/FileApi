@@ -28,6 +28,7 @@
     "bootstrap": "^5.3.3",
     "buffer": "^6.0.3",
     "file-saver": "^2.0.5",
+    "gramli-angular-notifier": "^16.0.1",
     "jest-editor-support": "*",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
