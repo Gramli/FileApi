@@ -5,30 +5,67 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5d085f95f33a4412aa9bf3fe4904a151)](https://www.codacy.com/gh/Gramli/FileApi/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gramli/FileApi&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5d085f95f33a4412aa9bf3fe4904a151)](https://www.codacy.com/gh/Gramli/FileApi/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Gramli/FileApi&utm_campaign=Badge_Coverage)
 
-REST API solution demonstrates how to create clean and modern API with Clean Architecture, minimal API and various of design patterns.
+This full-stack solution allows for file uploads and downloads. The backend is a C# REST API, demonstrating how to create a clean, modern API using Clean Architecture, minimal APIs, and various design patterns. The frontend is an Angular project that demonstrates file upload and download functionality.
 
-Example API allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **convert between json, xml, yml formats**.
+Example solution allows to **upload/download files with .txt, .json, .csv, .xml, .yml extensions** and get collection of uploaded files. Also allow to **convert between json, xml, yml formats**.
 
 Two methods for downloading files are demonstrated:
 * Using the **GetFileAsync** extension method, which returns the file as a byte array.
 * Using the **GetJsonFileAsync** method, which returns the file inside a JSON object. The file is converted to a Base64 string to preserve encoding.
 
 # Menu
+* [Prerequisites](#prerequisites)
+* [Installation](#installation)
 * [Get Started](#get-started)
 * [Motivation](#motivation)
-* [Architecture](#architecture)
+	* [Backend Architecture](#backend-architecture)
+	* [Frontend Example](#frontend-example)
 * [Technologies](#technologies)
+
+# Prerequisites
+* **.NET SDK 8.0+**
+* **Angular CLI 18+**
+* **Node.js 18.19.1+**
+
+# Installation
+
+To install the project using Git Bash:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gramli/FileApi.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd FileApi/src
+   ```
+3. Install the backend dependencies:
+   ```bash
+   dotnet restore
+   ```
+4. Navigate to the frontend directory and install dependencies:
+   ```bash
+   cd File.Frontend
+   npm install
+   ```
+5. Run the solution in Visual Studio 2019+ by selecting the "Run API and FE" startup item to start both the API and the frontend servers. More about run in next section.
 
 # Get Started
 
-Simply Run **File.API** and try it. Or in case You need to edit Content Type, use Postman. [Example gif of how to change ContentType in Postman](doc/img/contentType.gif).
+**Expected IDE: Visual Studio 2019+**
+
+### Run Solution
+Simply select the **"Run API and FE"** startup item. This will start both the API and the frontend servers.
+
+### Run only Backend
+Select the **"File.API"** startup item and try it. Or in case You need to edit Content Type, use Postman. [Example gif of how to change ContentType in Postman](doc/img/contentType.gif).
 
 ![Swagger](doc/img/upload.gif)
 
 # Motivation
-Main motivation is to write practical example of minimal API with Clean Architecture and experiment with libraries for validation and mapping.
+The main motivation is to create a practical example of a minimal API using Clean Architecture, while experimenting with libraries for validation and mapping, and to further improve my skills with Angular.
 
-# Architecture
+## Backend Architecture
 
 Projects folows **[Clean Architecture](https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures#clean-architecture)**, but application layer is splitted to Core and Domain projects where Core project holds business rules and Domain project contains business entities.
 
@@ -40,29 +77,11 @@ Important part of every project are **[tests](https://github.com/Gramli/WeatherA
 
 In this solution, each 'code' project has its own unit test project and every **unit test** project copy the same directory structure as 'code' project, which is very helpful for orientation in test project. Infrastructure project has also **integration tests**, because for format conversion is used third party library and we want to know that conversion works always as expected (for example when we update library version).
 
-#### Clean Architecture Layers
-
-Solution contains four layers: 
-* **File.API** - entry point of the application, top layer
-	*  Endpoints
-	*  Middlewares (or Filters)
-	*  API Configuration
-* **File.Infrastructure** - layer for communication with external resources like database, cache, web service.. 
-	*  Repositories Implementation - access to database
-	*  External Services Proxies - proxy classes implementation - to obtain data from external web services
-	*  Infastructure Specific Services - services which are needed to interact with external libraries and frameworks
-* **File.Core** - business logic of the application
-	*  Request Handlers/Managers/.. - business implementation
-	*  Abstractions - besides abstractions for business logic are there abstractions for Infrastructure layer (Service, Repository, ..) to be able use them in this (core) layer
-* **File.Domain** - all what should be shared across all projects
-	* DTOs
-	* General Extensions
-
-#### Horizontal Diagram (references)
-![Project Clean Architecture Diagram](./doc/img/cleanArchitecture.jpg)
+## Frontend Example
+The frontend is a simple project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/).
 
 ## Technologies
-* [ASP.NET Core 7](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-7.0)
+* [ASP.NET Core 8](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-8.0)
 * [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
 * [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
 * [Mapster](https://github.com/MapsterMapper/Mapster)
@@ -72,3 +91,4 @@ Solution contains four layers:
 * [Moq](https://github.com/moq/moq4)
 * [Xunit](https://github.com/xunit/xunit)
 * [ChoETL](https://github.com/Cinchoo/ChoETL)
+* [Angular 18](https://angular.dev)
