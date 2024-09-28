@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { provideHttpClient } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SelectExtensionModalComponent } from './components/select-extension.component';
 import { FormsModule } from '@angular/forms';
+import { SelectExtensionModalComponent } from './components/select-extension-modal.component';
 
 @NgModule({
   declarations: [

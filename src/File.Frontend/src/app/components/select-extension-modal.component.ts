@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
-import { NgbActiveModal, NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
+import { NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-select-extension-modal',
@@ -7,7 +7,6 @@ import { NgbActiveModal, NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
 })
 export class SelectExtensionModalComponent {
   @Input({ required: true }) modalRef!: NgbModalRef;
-  @Output() onSelectedExtension: EventEmitter<string> = new EventEmitter();
 
   extensions: string[] = ['json', 'xml', 'yaml'];
 
@@ -25,8 +24,7 @@ export class SelectExtensionModalComponent {
   }
 
   protected submit() {
-    this.modalRef.close();
-    this.onSelectedExtension.emit(this.selectedExtension);
+    this.modalRef.close(this.selectedExtension);
   }
 
 }
