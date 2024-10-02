@@ -16,8 +16,8 @@ jobs:
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18.19.x
+          node-version: 20.11.x
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build Example
         run: npm run build
