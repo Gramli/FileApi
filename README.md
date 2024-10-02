@@ -2,6 +2,7 @@
 
 # Clean Architecture FileApi
 [![.NET Build and Test](https://github.com/Gramli/FileApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Gramli/FileApi/actions/workflows/dotnet.yml)
+[![Angular Build](https://github.com/Gramli/FileApi/actions/workflows/angular.yaml/badge.svg)](https://github.com/Gramli/FileApi/actions/workflows/angular.yaml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5d085f95f33a4412aa9bf3fe4904a151)](https://www.codacy.com/gh/Gramli/FileApi/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Gramli/FileApi&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5d085f95f33a4412aa9bf3fe4904a151)](https://www.codacy.com/gh/Gramli/FileApi/dashboard?utm_source=github.com&utm_medium=referral&utm_content=Gramli/FileApi&utm_campaign=Badge_Coverage)
 
