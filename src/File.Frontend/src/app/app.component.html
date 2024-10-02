@@ -1,55 +1,82 @@
 <div class="container-fluid">
-    <h1 class="mx-1">File.Frontend</h1>
-    <div *ngIf="fileService.loading" class="m-2 p-4">
-        <h4>Processing...</h4>
-        <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-        </div>
+  <h1 class="mx-1">File.Frontend</h1>
+  <div *ngIf="fileService.loading" class="m-2 p-4">
+    <h4>Processing...</h4>
+    <div class="progress">
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuenow="75"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 100%"
+      ></div>
     </div>
-    <table class="table table-bordered table-hover">
-        <thead>
-            <tr>
-                <td scope="col">Id</td>
-                <td scope="col">Name</td>
-                <td scope="col">FileName</td>
-                <td scope="col">Type</td>
-                <td scope="col">Action</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of data">
-                <th scope="row">{{ item.id }}</th>
-                <td>{{ item.name }}</td>
-                <td>{{ item.fileName }}</td>
-                <td>{{ item.contentType}}</td>
-                <td>
-                    <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFile(item.id)">Download</button>
-                    <button class="btn btn-info btn-sm mx-1" (click)="onDownloadFileAsJson(item.id)">Download as Json</button>
-                    <button class="btn btn-info btn-sm mx-1" (click)="export(item.id)">Export</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  </div>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <td scope="col">Id</td>
+        <td scope="col">Name</td>
+        <td scope="col">FileName</td>
+        <td scope="col">Type</td>
+        <td scope="col">Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.name }}</td>
+        <td>{{ item.fileName }}</td>
+        <td>{{ item.contentType }}</td>
+        <td>
+          <button
+            class="btn btn-info btn-sm mx-1"
+            (click)="onDownloadFile(item.id)"
+          >
+            Download
+          </button>
+          <button
+            class="btn btn-info btn-sm mx-1"
+            (click)="onDownloadFileAsJson(item.id)"
+          >
+            Download as Json
+          </button>
+          <button class="btn btn-info btn-sm mx-1" (click)="export(item.id)">
+            Export
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-    <input type="file" class="file-input"
-           (change)="onUploadFileSelected($event)" #fileUpload>
+  <input
+    type="file"
+    class="file-input"
+    (change)="onUploadFileSelected($event)"
+    #fileUpload
+  />
 
-    <input type="file" class="file-input"
-           (change)="onConvertFileSelected($event)" #fileConvert>
+  <input
+    type="file"
+    class="file-input"
+    (change)="onConvertFileSelected($event)"
+    #fileConvert
+  />
 
-    <div>
-        <button class="btn btn-primary mx-1" (click)="fileUpload.click()">
-            <fa-icon [icon]="faUpload"></fa-icon>
-            Upload
-        </button>
-        <button class="btn btn-primary mx-1" (click)="fileConvert.click()"><fa-icon [icon]="faFileImport" class="mx-1"></fa-icon>Convert</button>
-    </div>
-
+  <div>
+    <button class="btn btn-primary mx-1" (click)="fileUpload.click()">
+      <fa-icon [icon]="faUpload"></fa-icon>
+      Upload
+    </button>
+    <button class="btn btn-primary mx-1" (click)="fileConvert.click()">
+      <fa-icon [icon]="faFileImport" class="mx-1"></fa-icon>Convert
+    </button>
+  </div>
 </div>
 
 <ng-template #dialog let-modal>
-    <app-select-extension-modal [modalRef]="modal">
-    </app-select-extension-modal>
+  <app-select-extension-modal [modalRef]="modal"> </app-select-extension-modal>
 </ng-template>
 
 <notifier-container></notifier-container>

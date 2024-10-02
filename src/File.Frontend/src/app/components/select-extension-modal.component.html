@@ -1,14 +1,23 @@
 <div class="fluid-container">
-    <div class="row m-2">
-        <label for="extensions">Choose a extension:</label>
-        <select class="form-select my-1" name="extensions" id="extensions" [(ngModel)]="selectedExtension">
-            <option *ngFor="let extension of extensions" [ngValue]="extension">{{extension}}</option>
-        </select>
+  <div class="row m-2">
+    <label for="extensions">Choose a extension:</label>
+    <select
+      class="form-select my-1"
+      name="extensions"
+      id="extensions"
+      [(ngModel)]="selectedExtension"
+    >
+      <option *ngFor="let extension of extensions" [ngValue]="extension">
+        {{ extension }}
+      </option>
+    </select>
+  </div>
+  <div class="row mx-2 p-2 d-flex">
+    <div class="col"></div>
+    <div class="col">
+      <button class="w-50 btn btn-primary float-end" (click)="submit()">
+        OK
+      </button>
     </div>
-    <div class="row mx-2 p-2 d-flex">
-        <div class="col"></div>
-        <div class="col">
-            <button class="w-50 btn btn-primary float-end" (click)="submit()">OK</button>
-        </div>
-    </div>
+  </div>
 </div>

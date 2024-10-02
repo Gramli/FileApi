@@ -10,10 +10,7 @@ import { SelectExtensionModalComponent } from './components/select-extension-mod
 import { NotifierModule } from 'gramli-angular-notifier';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SelectExtensionModalComponent
-  ],
+  declarations: [AppComponent, SelectExtensionModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,12 +20,12 @@ import { NotifierModule } from 'gramli-angular-notifier';
     NotifierModule.withConfig({
       position: {
         horizontal: {
-          position: 'right'
-        }
-      }
-    })
+          position: 'right',
+        },
+      },
+    }),
   ],
   providers: [provideHttpClient()],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
