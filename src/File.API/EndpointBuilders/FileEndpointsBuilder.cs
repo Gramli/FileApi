@@ -30,8 +30,8 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildUploadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapPost("upload",
-                async (IFormFileCollection files, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
-                    await handler.SendAsync(new AddFilesCommand(files.Select(file => new FormFileProxy(file))), cancellationToken))
+                async (IFormFile file, [FromServices] IAddFilesCommandHandler handler, CancellationToken cancellationToken) =>
+                    await handler.SendAsync(new AddFilesCommand([new FormFileProxy(file)]), cancellationToken))
                         .DisableAntiforgery()
                         .ProducesDataResponse<bool>()
                         .WithName("AddFiles")
@@ -42,7 +42,7 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildDownloadEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapGet("download",
-                async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
+                async ([FromQuery] int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetFileAsync(new DownloadFileQuery(id), cancellationToken))
                         .DisableAntiforgery()
                         .Produces<FileContentHttpResult>()
@@ -50,7 +50,7 @@ namespace File.API.EndpointBuilders
                         .WithTags("Get");
 
             endpointRouteBuilder.MapGet("downloadAsJson",
-                async (int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
+                async ([FromQuery] int id, [FromServices] IDownloadFileQueryHandler handler, CancellationToken cancellationToken) =>
                     await handler.GetJsonFileAsync(new DownloadFileQuery(id), cancellationToken))
                         .DisableAntiforgery()
                         .ProducesDataResponse<StringContentFileDto>()
@@ -86,8 +86,8 @@ namespace File.API.EndpointBuilders
         private static IEndpointRouteBuilder BuildExportEndpoints(this IEndpointRouteBuilder endpointRouteBuilder)
         {
             endpointRouteBuilder.MapPost("convert",
-                async (IFormFile file, string formatToExport, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
-                    await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToExport), cancellationToken))
+                async (IFormFile file, [FromForm]string formatToConvert, [FromServices] IConvertToQueryHandler handler, CancellationToken cancellationToken) =>
+                    await handler.GetFileAsync(new ConvertToQuery(new FormFileProxy(file), formatToConvert), cancellationToken))
                         .DisableAntiforgery()
                         .ProducesDataResponse<FileContentHttpResult>()
                         .WithName("ConvertTo")

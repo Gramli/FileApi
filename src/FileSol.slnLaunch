@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Run API and FE",
+    "Projects": [
+      {
+        "Path": "File.API\\File.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "File.Frontend\\File.Frontend.esproj",
+        "Action": "Start",
+        "DebugTarget": "localhost (Chrome)"
+      }
+    ]
+  }
+]
