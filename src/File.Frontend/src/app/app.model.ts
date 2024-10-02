@@ -1,8 +1,8 @@
-
 export interface IDataResponse<T> {
   data: T;
   errors: string[];
 }
+
 export interface IFile {
   id: number;
   name: string;

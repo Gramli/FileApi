@@ -1,5 +1,5 @@
-import { Component, Input } from "@angular/core";
-import { NgbModalRef } from "@ng-bootstrap/ng-bootstrap";
+import { Component, Input } from '@angular/core';
+import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-select-extension-modal',
@@ -26,5 +26,4 @@ export class SelectExtensionModalComponent {
   protected submit() {
     this.modalRef.close(this.selectedExtension);
   }
-
 }
