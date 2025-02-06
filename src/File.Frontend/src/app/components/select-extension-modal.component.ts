@@ -2,8 +2,9 @@ import { Component, Input } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-select-extension-modal',
-  templateUrl: './select-extension-modal.component.html',
+    selector: 'app-select-extension-modal',
+    templateUrl: './select-extension-modal.component.html',
+    standalone: false
 })
 export class SelectExtensionModalComponent {
   @Input({ required: true }) modalRef!: NgbModalRef;

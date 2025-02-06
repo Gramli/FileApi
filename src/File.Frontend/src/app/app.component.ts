@@ -11,10 +11,11 @@ import { FileLoadingService } from './services/file-loading.service';
 import { NotificationAdapterService } from './services/notification-adapter.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  providers: [FileLoadingService],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    providers: [FileLoadingService],
+    standalone: false
 })
 export class AppComponent implements OnInit {
   protected faUpload: IconDefinition = faUpload;
