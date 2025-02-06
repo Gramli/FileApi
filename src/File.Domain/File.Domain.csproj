@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentResults" Version="3.16.0" />
-    <PackageReference Include="SmallApiToolkit.Core" Version="1.0.0.5" />
+    <PackageReference Include="SmallApiToolkit.Core" Version="1.0.0.7" />
   </ItemGroup>
 
 </Project>
