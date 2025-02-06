@@ -26,9 +26,9 @@ Two methods for downloading files are demonstrated:
   - [Technologies](#technologies)
 
 # Prerequisites
-* **.NET SDK 8.0+**
-* **Angular CLI 18+**
-* **Node.js 18.19.1+**
+* **.NET SDK 9.0+**
+* **Angular CLI 19+**
+* **Node.js 20.11.1+**
 
 # Installation
 
@@ -84,7 +84,7 @@ In this solution, each 'code' project has its own unit test project and every **
 The frontend is a simple Angular 18 project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). Additionally, there are examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier).
 
 ## Technologies
-* [ASP.NET Core 8](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-8.0)
+* [ASP.NET Core 9](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0)
 * [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
 * [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
 * [Mapster](https://github.com/MapsterMapper/Mapster)
@@ -94,4 +94,4 @@ The frontend is a simple Angular 18 project that demonstrates how to upload and 
 * [Moq](https://github.com/moq/moq4)
 * [Xunit](https://github.com/xunit/xunit)
 * [ChoETL](https://github.com/Cinchoo/ChoETL)
-* [Angular 18](https://angular.dev)
+* [Angular 19](https://angular.dev)
