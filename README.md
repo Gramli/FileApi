@@ -15,6 +15,8 @@ Two methods for downloading files are demonstrated:
 * Using the **GetJsonFileAsync** method, which returns the file inside a JSON object. The file is converted to a Base64 string to preserve encoding.
 
 # Menu
+- [Clean Architecture FileApi](#clean-architecture-fileapi)
+- [Menu](#menu)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Get Started](#get-started)
@@ -81,7 +83,7 @@ Important part of every project are **[tests](https://github.com/Gramli/WeatherA
 In this solution, each 'code' project has its own unit test project and every **unit test** project copy the same directory structure as 'code' project, which is very helpful for orientation in test project. Infrastructure project has also **integration tests**, because for format conversion is used third party library and we want to know that conversion works always as expected (for example when we update library version).
 
 ## Frontend Example
-The frontend is a simple Angular 18 project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). Additionally, there are examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier).
+The frontend is a simple Angular project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). It also includes examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and showing toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier). Additionally, it demonstrates how to use translations in an Angular project with the [@ngx-translate/core](https://ngx-translate.org/) library, including a custom implementation of TranslateLoader to handle multiple translation files.
 
 ## Technologies
 * [ASP.NET Core 9](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0)

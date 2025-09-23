@@ -1,6 +1,6 @@
 <div class="fluid-container">
   <div class="row m-2">
-    <label for="extensions">Choose a extension:</label>
+    <label for="extensions">{{ 'extension' | translate  }}</label>
     <select
       class="form-select my-1"
       name="extensions"
@@ -16,7 +16,7 @@
     <div class="col"></div>
     <div class="col">
       <button class="w-50 btn btn-primary float-end" (click)="submit()">
-        OK
+        {{ 'ok' | translate  }}
       </button>
     </div>
   </div>

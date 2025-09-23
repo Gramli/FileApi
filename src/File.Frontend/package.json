@@ -23,6 +23,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "@ngx-translate/core": "^17.0.0",
+    "@ngx-translate/http-loader": "^17.0.0",
     "@popperjs/core": "^2.11.8",
     "@types/node": "^22.7.2",
     "bootstrap": "^5.3.3",

@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class FileApiHttpService {
-  private apiBaseUrl: string = 'https://localhost:7270/file/v1';
+  private apiBaseUrl: string = 'https://localhost:7270/v1/files';
   constructor(private httpClient: HttpClient) {}
 
   public getFiles(): Observable<IDataResponse<IFile[]>> {
     return this.httpClient.get<IDataResponse<IFile[]>>(
-      `${this.apiBaseUrl}/files-info`
+      `${this.apiBaseUrl}/`
     );
   }
 
@@ -26,7 +26,7 @@ export class FileApiHttpService {
   }
 
   public downloadFile(id: number): Observable<Blob> {
-    return this.httpClient.get(`${this.apiBaseUrl}/download?id=${id}`, {
+    return this.httpClient.get(`${this.apiBaseUrl}/${id}/download/`, {
       responseType: 'blob',
     });
   }
@@ -35,17 +35,13 @@ export class FileApiHttpService {
     id: number
   ): Observable<IDataResponse<IBase64File>> {
     return this.httpClient.get<IDataResponse<IBase64File>>(
-      `${this.apiBaseUrl}/downloadAsJson?id=${id}`
+      `${this.apiBaseUrl}/${id}/download/json`
     );
   }
 
   public exportFile(id: number, extension: string): Observable<Blob> {
-    return this.httpClient.post(
-      `${this.apiBaseUrl}/export`,
-      {
-        id,
-        extension,
-      },
+    return this.httpClient.get(
+      `${this.apiBaseUrl}/${id}/export?extension=${extension}`,
       { responseType: 'blob' }
     );
   }
