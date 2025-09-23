@@ -1,0 +1,16 @@
+{
+    "ok": "OK",
+    "processing": "Processing...",
+    "upload": "Upload",
+    "downloadAsJson": "Download as Json",
+    "download": "Download",
+    "export": "Export",
+    "convert": "Convert",
+    "table": {
+        "id": "Id",
+        "name": "Name",
+        "fileName": "FileName",
+        "type": "Type",
+        "action": "Action"
+    }
+}

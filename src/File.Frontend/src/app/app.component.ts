@@ -9,6 +9,7 @@ import { saveAs } from 'file-saver';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FileLoadingService } from './services/file-loading.service';
 import { NotificationAdapterService } from './services/notification-adapter.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-root',
@@ -26,7 +27,8 @@ export class AppComponent implements OnInit {
   constructor(
     protected fileService: FileLoadingService,
     private ngbModal: NgbModal,
-    private notifierService: NotificationAdapterService
+    private notifierService: NotificationAdapterService,
+    private translateService: TranslateService
   ) {}
 
   public ngOnInit(): void {
