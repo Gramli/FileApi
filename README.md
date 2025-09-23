@@ -15,8 +15,6 @@ Two methods for downloading files are demonstrated:
 * Using the **GetJsonFileAsync** method, which returns the file inside a JSON object. The file is converted to a Base64 string to preserve encoding.
 
 # Menu
-- [Clean Architecture FileApi](#clean-architecture-fileapi)
-- [Menu](#menu)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Get Started](#get-started)
