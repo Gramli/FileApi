@@ -26,7 +26,7 @@ Two methods for downloading files are demonstrated:
   - [Technologies](#technologies)
 
 # Prerequisites
-* **.NET SDK 9.0+**
+* **.NET SDK 10.0+**
 * **Angular CLI 19+**
 * **Node.js 20.11.1+**
 
@@ -84,7 +84,7 @@ In this solution, each 'code' project has its own unit test project and every **
 The frontend is a simple Angular project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). It also includes examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and showing toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier). Additionally, it demonstrates how to use translations in an Angular project with the [@ngx-translate/core](https://ngx-translate.org/) library, including a custom implementation of TranslateLoader to handle multiple translation files.
 
 ## Technologies
-* [ASP.NET Core 9](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-9.0)
+* [ASP.NET Core 10](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-10.0)
 * [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
 * [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
 * [Mapster](https://github.com/MapsterMapper/Mapster)
