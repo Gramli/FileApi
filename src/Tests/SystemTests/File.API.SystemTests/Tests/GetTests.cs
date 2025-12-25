@@ -14,7 +14,7 @@ namespace File.API.SystemTests.Tests
                 .EnsureSuccessStatusCode();
 
             //Act
-            var result = await _httpClient.GetAsync("file/v1/files-info");
+            var result = await _httpClient.GetAsync("v1/file");
 
             //Assert
             var resultData = await result.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>();

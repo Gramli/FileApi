@@ -11,7 +11,7 @@ namespace File.API.SystemTests.Tests
             using var content = new MultipartFormDataContent().AddFileFromAssets("new.json");
 
             //Act
-            using var response = await _httpClient.PostAsync("file/v1/convert?formatToExport=xml", content);
+            using var response = await _httpClient.PostAsync("v1/file/convert?formatToExport=xml", content);
             using var stream = await response.Content.ReadAsStreamAsync();
 
             //Assert

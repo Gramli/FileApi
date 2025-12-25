@@ -1,0 +1,32 @@
+<Project>
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0" />
+		<PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageVersion Include="SmallApiToolkit" Version="10.0.0" />
+		<PackageVersion Include="Swashbuckle.AspNetCore" Version="10.0.1" />
+		<PackageVersion Include="Ardalis.GuardClauses" Version="5.0.0" />
+		<PackageVersion Include="Mapster" Version="7.4.0" />
+		<PackageVersion Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.0" />
+		<PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0" />
+		<PackageVersion Include="Microsoft.Extensions.Options" Version="10.0.0" />
+		<PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.0" />
+		<PackageVersion Include="SmallApiToolkit.Core" Version="10.0.0" />
+		<PackageVersion Include="Validot" Version="2.6.0" />
+		<PackageVersion Include="FluentResults" Version="3.16.0" />
+		<PackageVersion Include="ChoETL.Yaml" Version="1.0.0.38" />
+		<PackageVersion Include="Mapster" Version="7.4.0" />
+		<PackageVersion Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.0" />
+		<PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
+		<PackageVersion Include="YamlDotNet" Version="16.3.0" />
+		<PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+		<PackageVersion Include="xunit" Version="2.9.3" />
+		<PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5"/>
+		<PackageVersion Include="coverlet.collector" Version="6.0.4"/>
+		<PackageVersion Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.0" />
+		<PackageVersion Include="Moq" Version="4.20.72" />
+		<PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0"/>
+	</ItemGroup>
+</Project>
