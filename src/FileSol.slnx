@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/IntegrationTests/">
+    <Project Path="Tests/IntegrationTests/File.Infrastructure.IntegrationTests/File.Infrastructure.IntegrationTests.csproj" />
+  </Folder>
+  <Folder Name="/Tests/SystemTests/">
+    <Project Path="Tests/SystemTests/File.API.SystemTests/File.API.SystemTests.csproj" />
+  </Folder>
+  <Folder Name="/Tests/UnitTests/">
+    <Project Path="Tests/UnitTests/File.API.UnitTests/File.API.UnitTests.csproj" />
+    <Project Path="Tests/UnitTests/File.Core.UnitTests/File.Core.UnitTests.csproj" />
+    <Project Path="Tests/UnitTests/File.Domain.UnitTests/File.Domain.UnitTests.csproj" />
+    <Project Path="Tests/UnitTests/File.Infrastructure.UnitTests/File.Infrastructure.UnitTests.csproj" />
+    <Project Path="Tests/UnitTests/File.UnitTests.Common/File.UnitTests.Common.csproj" />
+  </Folder>
+  <Project Path="File.API/File.API.csproj" />
+  <Project Path="File.Core/File.Core.csproj" />
+  <Project Path="File.Domain/File.Domain.csproj" />
+  <Project Path="File.Frontend/File.Frontend.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="File.Infrastructure/File.Infrastructure.csproj" />
+</Solution>

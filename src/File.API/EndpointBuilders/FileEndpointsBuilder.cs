@@ -19,7 +19,7 @@ namespace File.API.EndpointBuilders
         {
             return endpointRouteBuilder
                 .MapVersionGroup(1)
-                .MapGroup("files")
+                .MapGroup("file")
                 .BuildUploadEndpoints()
                 .BuildDownloadEndpoints()
                 .BuildGetEndpoints()

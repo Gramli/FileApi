@@ -15,7 +15,7 @@ namespace File.API.SystemTests.Tests
             using var uploadResponse = (await _httpClient.UploadAssetsFile("new.json"))
                 .EnsureSuccessStatusCode();
 
-            using var fileInfo = await _httpClient.GetAsync("file/v1/files-info");
+            using var fileInfo = await _httpClient.GetAsync("v1/file");
             var fileToDownload = (await fileInfo.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>())?.Data?.First();
 
             if(fileToDownload is null)
@@ -24,7 +24,7 @@ namespace File.API.SystemTests.Tests
             }
 
             //Act
-            using var response = await _httpClient.GetAsync($"file/v1/download/?id={fileToDownload.Id}");
+            using var response = await _httpClient.GetAsync($"v1/file/{fileToDownload.Id}/download");
             using var stream = await response.Content.ReadAsStreamAsync();
 
             //Assert
@@ -38,7 +38,7 @@ namespace File.API.SystemTests.Tests
             using var uploadResponse = (await _httpClient.UploadAssetsFile("new.json"))
                 .EnsureSuccessStatusCode();
 
-            using var fileInfo = await _httpClient.GetAsync("file/v1/files-info");
+            using var fileInfo = await _httpClient.GetAsync("v1/file");
             var fileToDownload = (await fileInfo.GetResponseData<DataResponse<IEnumerable<FileInfoDto>>>())?.Data?.First();
 
             if (fileToDownload is null)
@@ -47,7 +47,7 @@ namespace File.API.SystemTests.Tests
             }
 
             //Act
-            using var response = await _httpClient.GetAsync($"file/v1/downloadAsJson/?id={fileToDownload.Id}");
+            using var response = await _httpClient.GetAsync($"v1/file/{fileToDownload.Id}/download/json");
             var responseFile = await response.Content.ReadFromJsonAsync<DataResponse<StringContentFileDto>>();
 
             //Assert

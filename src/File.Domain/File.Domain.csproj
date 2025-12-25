@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentResults" Version="3.16.0" />
-    <PackageReference Include="SmallApiToolkit.Core" Version="10.0.0" />
+    <PackageReference Include="FluentResults" />
+    <PackageReference Include="SmallApiToolkit.Core" />
   </ItemGroup>
 
 </Project>
