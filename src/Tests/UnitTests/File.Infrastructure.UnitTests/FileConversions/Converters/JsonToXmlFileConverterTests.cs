@@ -28,7 +28,7 @@ namespace File.Infrastructure.UnitTests.FileConversions.Converters
 
 
         [Theory]
-        [ClassData(typeof(InvalidJsonData))]
+        [MemberData(nameof(InvalidJsonData.Values), MemberType = typeof(InvalidJsonData))]
         public async Task Invalid_Json(string invalidJson)
         {
             //Act & Assert

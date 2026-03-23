@@ -4,6 +4,7 @@ using File.Domain.Abstractions;
 using File.Domain.Commands;
 using File.Domain.Dtos;
 using System.Net;
+using static System.Net.WebRequestMethods;
 
 namespace File.Core.UnitTests.Commands
 {
@@ -29,7 +30,6 @@ namespace File.Core.UnitTests.Commands
             //Arrange
             var validationFailedMessage = "validationFailedMessage";
             var request = new AddFilesCommand(Enumerable.Empty<IFileProxy>());
-
             _addFilesCommandValidatorMock.Setup(x => x.Validate(It.IsAny<AddFilesCommand>())).Returns(Result.Fail<bool>(validationFailedMessage));
 
             //Act

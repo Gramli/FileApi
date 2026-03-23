@@ -1,15 +1,11 @@
-﻿using System.Collections;
-
-namespace File.Infrastructure.UnitTests.Assets
+﻿namespace File.Infrastructure.UnitTests.Assets
 {
-    internal class InvalidJsonData : IEnumerable<object[]>
+    internal static class InvalidJsonData
     {
-        public IEnumerator<object[]> GetEnumerator()
+        public static TheoryData<string> Values => new()
         {
-            yield return new object[] { "root: {}" };
-            yield return new object[] { @"\{root: {}}" };
-        }
-
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+            { "root: {}" },
+            { @"\{root: {}}" },
+        };
     }
 }
