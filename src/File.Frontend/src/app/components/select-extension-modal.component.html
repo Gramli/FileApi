@@ -7,9 +7,11 @@
       id="extensions"
       [(ngModel)]="selectedExtension"
     >
-      <option *ngFor="let extension of extensions" [ngValue]="extension">
-        {{ extension }}
-      </option>
+      @for (extension of extensions; track extension) {
+        <option [ngValue]="extension">
+          {{ extension }}
+        </option>
+      }
     </select>
   </div>
   <div class="row mx-2 p-2 d-flex">

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class FileApiHttpService {
-  private apiBaseUrl: string = 'https://localhost:7270/v1/files';
+  private apiBaseUrl: string = 'https://localhost:7270/v1/file';
   constructor(private httpClient: HttpClient) {}
 
   public getFiles(): Observable<IDataResponse<IFile[]>> {

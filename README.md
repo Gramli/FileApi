@@ -19,6 +19,8 @@ Two methods for downloading files are demonstrated:
 - [Installation](#installation)
 - [Get Started](#get-started)
     - [Run Solution](#run-solution)
+        - [Using PowerShell on Windows](#using-powershell-on-windows)
+        - [Using Visual Studio](#using-visual-studio)
     - [Run only Backend](#run-only-backend)
 - [Motivation](#motivation)
   - [Backend Architecture](#backend-architecture)
@@ -26,39 +28,76 @@ Two methods for downloading files are demonstrated:
   - [Technologies](#technologies)
 
 # Prerequisites
-* **.NET SDK 10.0+**
-* **Angular CLI 19+**
-* **Node.js 20.11.1+**
+
+* **.NET SDK 10.0**
+* **Node.js 24.21.0** and **npm 11.19.0**
+* **Angular CLI 22.2.2** and **TypeScript 6.0.3** (installed with frontend dependencies)
+* **Windows and PowerShell 5.1+** for `run.ps1`
 
 # Installation
 
-To install the project using Git Bash:
+Clone the repository and navigate to its root directory:
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/Gramli/FileApi.git
    ```
 2. Navigate to the project directory:
-   ```bash
-   cd FileApi/src
+   ```sh
+   cd FileApi
    ```
-3. Install the backend dependencies:
-   ```bash
-   dotnet restore
-   ```
-4. Navigate to the frontend directory and install dependencies:
-   ```bash
-   cd File.Frontend
-   npm install
-   ```
-5. Run the solution in Visual Studio 2019+ by selecting the "Run API and FE" startup item to start both the API and the frontend servers. More about run in next section.
+
+Choose a method below to run the solution. The PowerShell script restores backend dependencies and installs frontend dependencies as needed.
 
 # Get Started
 
-**Expected IDE: Visual Studio 2019+**
-
 ### Run Solution
-Simply select the **"Run API and FE"** startup item. This will start both the API and the frontend servers.
+
+#### Using PowerShell on Windows
+
+Open PowerShell in the repository root. Before the first HTTPS launch, trust the ASP.NET Core development certificate under your Windows account:
+
+```powershell
+dotnet dev-certs https --trust
+dotnet dev-certs https --check --trust
+```
+
+Accept the certificate trust prompt. The script does not trust certificates automatically; an untrusted certificate causes browser requests to fail with `ERR_CERT_AUTHORITY_INVALID`. See the [Microsoft development certificate documentation](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-dev-certs).
+
+Build and start both applications:
+
+```powershell
+.\run.ps1
+```
+
+The script builds the backend and frontend, then opens a separate command prompt for each service. It selects the backend's `https` launch profile by default. Frontend dependencies are reused until their configuration changes; the first run may reinstall an existing dependency folder to record its configuration.
+
+Once both services are ready, open:
+
+* Frontend: [http://127.0.0.1:4200](http://127.0.0.1:4200)
+* API Swagger: [https://localhost:7270/swagger](https://localhost:7270/swagger)
+
+Stop each service with **Ctrl+C** in its command prompt, or close the window. Stop existing instances before launching again to avoid port conflicts.
+
+Common options:
+
+| Command | Behavior |
+| --- | --- |
+| `.\run.ps1 -Watch` | Runs the backend with `dotnet watch`; the frontend development server also watches for changes. |
+| `.\run.ps1 -BuildOnly` | Builds both applications without starting either service. |
+| `.\run.ps1 -Restore` | Forces frontend dependency installation before building and starting both applications. |
+| `.\run.ps1 -Configuration Release` | Builds and runs the backend in Release configuration; the frontend still uses its development server. |
+| `.\run.ps1 -LaunchProfile https` | Explicitly selects the backend HTTPS launch profile. |
+
+#### Using Visual Studio
+
+Install the frontend dependencies from the repository root:
+
+```powershell
+npm --prefix src/File.Frontend ci
+```
+
+Open the solution in a Visual Studio version that supports .NET 10, then select the **"Run API and FE"** startup item. This starts both the API and the frontend servers. Accept the HTTPS development certificate trust prompt if shown.
 
 ### Run only Backend
 Select the **"File.API"** startup item and try it. Or in case You need to edit Content Type, use Postman. [Example gif of how to change ContentType in Postman](doc/img/contentType.gif).
@@ -84,14 +123,22 @@ In this solution, each 'code' project has its own unit test project and every **
 The frontend is a simple Angular project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). It also includes examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and showing toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier). Additionally, it demonstrates how to use translations in an Angular project with the [@ngx-translate/core](https://ngx-translate.org/) library, including a custom implementation of TranslateLoader to handle multiple translation files.
 
 ## Technologies
-* [ASP.NET Core 10](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-10.0)
-* [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
-* [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
-* [Mapster](https://github.com/MapsterMapper/Mapster)
-* [FluentResuls](https://github.com/altmann/FluentResults)
-* [Validot](https://github.com/bartoszlenar/Validot)
-* [GuardClauses](https://github.com/ardalis/GuardClauses)
-* [Moq](https://github.com/moq/moq4)
-* [Xunit](https://github.com/xunit/xunit)
-* [ChoETL](https://github.com/Cinchoo/ChoETL)
-* [Angular 19](https://angular.dev)
+
+Frontend package versions below reflect [`package-lock.json`](src/File.Frontend/package-lock.json). Backend package versions are managed in [`Directory.Packages.props`](src/Directory.Packages.props).
+
+| Technology | Project version |
+| --- | --- |
+| .NET / [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-10.0) | 10.0 |
+| [Angular](https://angular.dev) / Angular CLI | 22.2.2 |
+
+Backend libraries:
+
+* [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli) 10.0.0
+* [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit) 10.0.0
+* [Mapster](https://github.com/MapsterMapper/Mapster) 7.4.0
+* [FluentResults](https://github.com/altmann/FluentResults) 3.16.0
+* [Validot](https://github.com/bartoszlenar/Validot) 2.6.0
+* [GuardClauses](https://github.com/ardalis/GuardClauses) 5.0.0
+* [Moq](https://github.com/moq/moq4) 4.20.72
+* [xUnit](https://github.com/xunit/xunit) 2.9.3
+* [ChoETL.Yaml](https://github.com/Cinchoo/ChoETL) 1.0.0.38
