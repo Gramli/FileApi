@@ -27,8 +27,8 @@ Two methods for downloading files are demonstrated:
 
 # Prerequisites
 * **.NET SDK 10.0+**
-* **Angular CLI 19+**
-* **Node.js 20.11.1+**
+* **Angular CLI 22** (installed with the frontend dependencies)
+* **Node.js 24.21.0 LTS** (see `src/File.Frontend/.nvmrc`), with **npm 11.19.0**
 
 # Installation
 
@@ -49,7 +49,7 @@ To install the project using Git Bash:
 4. Navigate to the frontend directory and install dependencies:
    ```bash
    cd File.Frontend
-   npm install
+   npm ci
    ```
 5. Run the solution in Visual Studio 2019+ by selecting the "Run API and FE" startup item to start both the API and the frontend servers. More about run in next section.
 
@@ -94,4 +94,4 @@ The frontend is a simple Angular project that demonstrates how to upload and dow
 * [Moq](https://github.com/moq/moq4)
 * [Xunit](https://github.com/xunit/xunit)
 * [ChoETL](https://github.com/Cinchoo/ChoETL)
-* [Angular 19](https://angular.dev)
+* [Angular 22](https://angular.dev)

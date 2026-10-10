@@ -1,18 +1,20 @@
 <div class="container-fluid">
   <h1 class="mx-1">File.Frontend</h1>
-  <div *ngIf="fileService.loading" class="m-2 p-4">
-    <h4>{{ 'processing' | translate}}</h4>
-    <div class="progress">
-      <div
-        class="progress-bar progress-bar-striped progress-bar-animated"
-        role="progressbar"
-        aria-valuenow="75"
-        aria-valuemin="0"
-        aria-valuemax="100"
-        style="width: 100%"
-      ></div>
+  @if (fileService.loading) {
+    <div class="m-2 p-4">
+      <h4>{{ 'processing' | translate}}</h4>
+      <div class="progress">
+        <div
+          class="progress-bar progress-bar-striped progress-bar-animated"
+          role="progressbar"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 100%"
+        ></div>
+      </div>
     </div>
-  </div>
+  }
   <table class="table table-bordered table-hover">
     <thead>
       <tr>
@@ -24,29 +26,31 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of data">
-        <th scope="row">{{ item.id }}</th>
-        <td>{{ item.name }}</td>
-        <td>{{ item.fileName }}</td>
-        <td>{{ item.contentType }}</td>
-        <td>
-          <button
-            class="btn btn-info btn-sm mx-1"
-            (click)="onDownloadFile(item.id)"
-          >
-            {{ 'download' | translate }}
-          </button>
-          <button
-            class="btn btn-info btn-sm mx-1"
-            (click)="onDownloadFileAsJson(item.id)"
-          >
-            {{ 'downloadAsJson' | translate }}
-          </button>
-          <button class="btn btn-info btn-sm mx-1" (click)="export(item.id)">
-            {{ 'export' | translate }}
-          </button>
-        </td>
-      </tr>
+      @for (item of data; track item) {
+        <tr>
+          <th scope="row">{{ item.id }}</th>
+          <td>{{ item.name }}</td>
+          <td>{{ item.fileName }}</td>
+          <td>{{ item.contentType }}</td>
+          <td>
+            <button
+              class="btn btn-info btn-sm mx-1"
+              (click)="onDownloadFile(item.id)"
+            >
+              {{ 'download' | translate }}
+            </button>
+            <button
+              class="btn btn-info btn-sm mx-1"
+              (click)="onDownloadFileAsJson(item.id)"
+            >
+              {{ 'downloadAsJson' | translate }}
+            </button>
+            <button class="btn btn-info btn-sm mx-1" (click)="export(item.id)">
+              {{ 'export' | translate }}
+            </button>
+          </td>
+        </tr>
+      }
     </tbody>
   </table>
 

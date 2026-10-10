@@ -1,4 +1,4 @@
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { IFile } from './app.model';
 import {
   faUpload,
@@ -12,11 +12,12 @@ import { NotificationAdapterService } from './services/notification-adapter.serv
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.css',
-    providers: [FileLoadingService],
-    standalone: false
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
+  providers: [FileLoadingService],
+  changeDetection: ChangeDetectionStrategy.Eager,
+  standalone: false
 })
 export class AppComponent implements OnInit {
   protected faUpload: IconDefinition = faUpload;
