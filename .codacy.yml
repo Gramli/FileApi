@@ -1,0 +1,4 @@
+---
+exclude_paths:
+  - ".agents/skills/angular-update/**"
+  - "run.ps1"
