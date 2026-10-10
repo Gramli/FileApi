@@ -29,10 +29,10 @@ Two methods for downloading files are demonstrated:
 
 # Prerequisites
 
-* **.NET SDK 10.0+**
-* **Angular CLI 22** (installed with the frontend dependencies)
-* **Node.js 24.21.0 LTS** (see `src/File.Frontend/.nvmrc`), with **npm 11.19.0**
-* **Windows and PowerShell 5.1+** to use `run.ps1`, with `dotnet`, `node`, and `npm` available on `PATH`
+* **.NET SDK 10.0**
+* **Node.js 24.21.0** and **npm 11.19.0**
+* **Angular CLI 22.2.2** and **TypeScript 6.0.3** (installed with frontend dependencies)
+* **Windows and PowerShell 5.1+** for `run.ps1`
 
 # Installation
 
@@ -123,14 +123,22 @@ In this solution, each 'code' project has its own unit test project and every **
 The frontend is a simple Angular project that demonstrates how to upload and download files as blobs or FormData from the C# API. Files are saved to the Downloads folder using the [file-saver](https://www.npmjs.com/package/file-saver) library. For styling, the project utilizes [Bootstrap](https://getbootstrap.com/). It also includes examples of displaying modals with [ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap) and showing toasts/notifications with [angular-notifier](https://www.npmjs.com/package/gramli-angular-notifier). Additionally, it demonstrates how to use translations in an Angular project with the [@ngx-translate/core](https://ngx-translate.org/) library, including a custom implementation of TranslateLoader to handle multiple translation files.
 
 ## Technologies
-* [ASP.NET Core 10](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-10.0)
-* [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli)
-* [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit)
-* [Mapster](https://github.com/MapsterMapper/Mapster)
-* [FluentResuls](https://github.com/altmann/FluentResults)
-* [Validot](https://github.com/bartoszlenar/Validot)
-* [GuardClauses](https://github.com/ardalis/GuardClauses)
-* [Moq](https://github.com/moq/moq4)
-* [Xunit](https://github.com/xunit/xunit)
-* [ChoETL](https://github.com/Cinchoo/ChoETL)
-* [Angular 22](https://angular.dev)
+
+Frontend package versions below reflect [`package-lock.json`](src/File.Frontend/package-lock.json). Backend package versions are managed in [`Directory.Packages.props`](src/Directory.Packages.props).
+
+| Technology | Project version |
+| --- | --- |
+| .NET / [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-10.0) | 10.0 |
+| [Angular](https://angular.dev) / Angular CLI | 22.2.2 |
+
+Backend libraries:
+
+* [Entity Framework Core InMemory](https://learn.microsoft.com/en-us/ef/core/providers/in-memory/?tabs=dotnet-core-cli) 10.0.0
+* [SmallApiToolkit](https://github.com/Gramli/SmallApiToolkit) 10.0.0
+* [Mapster](https://github.com/MapsterMapper/Mapster) 7.4.0
+* [FluentResults](https://github.com/altmann/FluentResults) 3.16.0
+* [Validot](https://github.com/bartoszlenar/Validot) 2.6.0
+* [GuardClauses](https://github.com/ardalis/GuardClauses) 5.0.0
+* [Moq](https://github.com/moq/moq4) 4.20.72
+* [xUnit](https://github.com/xunit/xunit) 2.9.3
+* [ChoETL.Yaml](https://github.com/Cinchoo/ChoETL) 1.0.0.38
