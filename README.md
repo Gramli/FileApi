@@ -19,6 +19,8 @@ Two methods for downloading files are demonstrated:
 - [Installation](#installation)
 - [Get Started](#get-started)
     - [Run Solution](#run-solution)
+        - [Using PowerShell on Windows](#using-powershell-on-windows)
+        - [Using Visual Studio](#using-visual-studio)
     - [Run only Backend](#run-only-backend)
 - [Motivation](#motivation)
   - [Backend Architecture](#backend-architecture)
@@ -26,39 +28,76 @@ Two methods for downloading files are demonstrated:
   - [Technologies](#technologies)
 
 # Prerequisites
+
 * **.NET SDK 10.0+**
 * **Angular CLI 22** (installed with the frontend dependencies)
 * **Node.js 24.21.0 LTS** (see `src/File.Frontend/.nvmrc`), with **npm 11.19.0**
+* **Windows and PowerShell 5.1+** to use `run.ps1`, with `dotnet`, `node`, and `npm` available on `PATH`
 
 # Installation
 
-To install the project using Git Bash:
+Clone the repository and navigate to its root directory:
 
 1. Clone the repository:
-   ```bash
+   ```sh
    git clone https://github.com/Gramli/FileApi.git
    ```
 2. Navigate to the project directory:
-   ```bash
-   cd FileApi/src
+   ```sh
+   cd FileApi
    ```
-3. Install the backend dependencies:
-   ```bash
-   dotnet restore
-   ```
-4. Navigate to the frontend directory and install dependencies:
-   ```bash
-   cd File.Frontend
-   npm ci
-   ```
-5. Run the solution in Visual Studio 2019+ by selecting the "Run API and FE" startup item to start both the API and the frontend servers. More about run in next section.
+
+Choose a method below to run the solution. The PowerShell script restores backend dependencies and installs frontend dependencies as needed.
 
 # Get Started
 
-**Expected IDE: Visual Studio 2019+**
-
 ### Run Solution
-Simply select the **"Run API and FE"** startup item. This will start both the API and the frontend servers.
+
+#### Using PowerShell on Windows
+
+Open PowerShell in the repository root. Before the first HTTPS launch, trust the ASP.NET Core development certificate under your Windows account:
+
+```powershell
+dotnet dev-certs https --trust
+dotnet dev-certs https --check --trust
+```
+
+Accept the certificate trust prompt. The script does not trust certificates automatically; an untrusted certificate causes browser requests to fail with `ERR_CERT_AUTHORITY_INVALID`. See the [Microsoft development certificate documentation](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-dev-certs).
+
+Build and start both applications:
+
+```powershell
+.\run.ps1
+```
+
+The script builds the backend and frontend, then opens a separate command prompt for each service. It selects the backend's `https` launch profile by default. Frontend dependencies are reused until their configuration changes; the first run may reinstall an existing dependency folder to record its configuration.
+
+Once both services are ready, open:
+
+* Frontend: [http://127.0.0.1:4200](http://127.0.0.1:4200)
+* API Swagger: [https://localhost:7270/swagger](https://localhost:7270/swagger)
+
+Stop each service with **Ctrl+C** in its command prompt, or close the window. Stop existing instances before launching again to avoid port conflicts.
+
+Common options:
+
+| Command | Behavior |
+| --- | --- |
+| `.\run.ps1 -Watch` | Runs the backend with `dotnet watch`; the frontend development server also watches for changes. |
+| `.\run.ps1 -BuildOnly` | Builds both applications without starting either service. |
+| `.\run.ps1 -Restore` | Forces frontend dependency installation before building and starting both applications. |
+| `.\run.ps1 -Configuration Release` | Builds and runs the backend in Release configuration; the frontend still uses its development server. |
+| `.\run.ps1 -LaunchProfile https` | Explicitly selects the backend HTTPS launch profile. |
+
+#### Using Visual Studio
+
+Install the frontend dependencies from the repository root:
+
+```powershell
+npm --prefix src/File.Frontend ci
+```
+
+Open the solution in a Visual Studio version that supports .NET 10, then select the **"Run API and FE"** startup item. This starts both the API and the frontend servers. Accept the HTTPS development certificate trust prompt if shown.
 
 ### Run only Backend
 Select the **"File.API"** startup item and try it. Or in case You need to edit Content Type, use Postman. [Example gif of how to change ContentType in Postman](doc/img/contentType.gif).
